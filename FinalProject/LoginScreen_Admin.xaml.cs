@@ -48,7 +48,8 @@ namespace FinalProject
                 Staff staff = staffService.GetByRoleUsernamePassword(username, password, roleId.Value);
                 if(staff != null)
                 {
-                    MessageBox.Show($"Hello {staff.SName}");
+                    Admin.AdminScreen adminScreen = new Admin.AdminScreen();
+                    adminScreen.ShowDialog();
                 }
                 else
                 {
