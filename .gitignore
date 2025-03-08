@@ -1,56 +1,23 @@
-# Build Folders
-bin/
-obj/
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
 
-# User-specific files
-.vscode/
-*.user
-*.suo
-*.vscode
-*.vsidx
-
-# Visual Studio Code specific
-.vscode/
+### VisualStudioCode ###
 .vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# Dotnet specific
-project.lock.json
-project.assets.json
-project.nuget.cache
-*.nuspec
-*.nupkg
-*.dll
-*.exe
-*.pdb
-*.mdb
-*.log
-*.cache
-*.ide
-*.csproj.user
-*.csproj.DotSettings
+# Local History for Visual Studio Code
+.history/
 
-# Dependencies
-packages/
-packages/*
+# Built Visual Studio Code Extensions
+*.vsix
 
-# Entity Framework
-*.mdf
-*.ldf
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
-# ASP.NET Core
-appsettings.json
-appsettings.Development.json
-
-# Rider / JetBrains
-.idea/
-*.DotSettings.user
-
-# Resharper
-*.DotSettings.user
-_ReSharper.Caches/
-
-# Ignore logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
