@@ -403,3 +403,8 @@ FodyWeavers.xsd
 *.cs
 *.editorconfig
 *.cs
+*.json
+*.cs
+*.cache
+*.editorconfig
+*.props
