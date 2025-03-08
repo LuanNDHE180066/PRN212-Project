@@ -7,8 +7,13 @@ namespace Repositories.Models;
 
 public partial class PrnFinalProjectContext : DbContext
 {
-    public PrnFinalProjectContext()
-    {
+    public static PrnFinalProjectContext Ins = new PrnFinalProjectContext();
+    public PrnFinalProjectContext(){
+    
+        if(Ins== null)
+        {
+            Ins = this;
+        }
     }
 
     public PrnFinalProjectContext(DbContextOptions<PrnFinalProjectContext> options)
