@@ -1,0 +1,64 @@
+﻿<Window x:Class="FinalProject.Admin.AdminScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject.Admin"
+        mc:Ignorable="d"
+        Title="AdminScreen" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical"></StackPanel>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel HorizontalAlignment="Center" Margin="0 0 30 0" Height="30" Grid.Row="0" Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="txtName" Width="100"></TextBox>
+                    <Button Margin="0 0 30 0" Height="30" Content="Search"></Button>
+                </StackPanel>
+                <Button Margin="0 0 30 0" Height="30" Content="Order by Name"></Button>
+                <Button Margin="0 0 30 0" Height="30" Content="Order by Name"></Button>
+                <Button Content="Add new Staff" Click="Button_Click"/>
+            </StackPanel>
+            <DataGrid x:Name="dtgStaff" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalGridLinesBrush="#FF3A1111">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="*" Header="ID" Binding="{Binding Sid}"></DataGridTextColumn>
+                    <DataGridTextColumn  Width="*" Header="Role" Binding="{Binding Role.Rid}"></DataGridTextColumn>
+                    <DataGridTextColumn  Width="2*" Header="Name" Binding="{Binding SName}"></DataGridTextColumn>
+                    <DataGridTextColumn  Width="*" Header="Phone" Binding="{Binding Phone}"></DataGridTextColumn>
+                    <DataGridTextColumn  Width="*" Header="Start Date" Binding="{Binding StartDate}"></DataGridTextColumn>
+                    <DataGridTextColumn  Width="*" Header="Address" Binding="{Binding Address}"></DataGridTextColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.Header>
+                            <TextBlock Text="Status"></TextBlock>
+                        </DataGridTemplateColumn.Header>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox SelectedValue="{Binding Status,Mode=OneWay}" SelectedValuePath="Tag">
+                                    <ComboBoxItem Content="Active" Tag="1"></ComboBoxItem>
+                                    <ComboBoxItem Content="Inactive" Tag="0"></ComboBoxItem>
+                                </ComboBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.Header>
+                            <TextBlock Text="Action"></TextBlock>
+                        </DataGridTemplateColumn.Header>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Change" Click="Button_Click_1"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>

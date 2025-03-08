@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\thanh\Downloads\SP2025\PRN211\FinalProject\FinalProject\FinalProject\App.xaml
-2-1843798403
+52017777603
 
-7-2104077791
+101943667396
 235-2131327167
-LoginScreen_Admin.xaml;MainWindow.xaml;
+Admin\AddStaff.xaml;Admin\AdminScreen.xaml;Admin\UpdateStaff.xaml;LoginScreen_Admin.xaml;MainWindow.xaml;
 
 False
 
