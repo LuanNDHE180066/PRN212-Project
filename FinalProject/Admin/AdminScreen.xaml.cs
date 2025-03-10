@@ -48,5 +48,12 @@ namespace FinalProject.Admin
                 updateStaff.ShowDialog();
             }
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            WorkingHistoryScreen history = new WorkingHistoryScreen();
+            this.Close();
+            history.ShowDialog();
+        }
     }
 }

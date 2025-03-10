@@ -12,6 +12,7 @@ namespace Services
     public class StaffService
     {
         private StaffRepository staffRepository = new StaffRepository();
+        private WorkingHistoryService workingHistoryService = new WorkingHistoryService();
         public List<Staff> GetAll()
         {
             return staffRepository.GetAll();
@@ -53,5 +54,32 @@ namespace Services
         {
             return staffRepository.GetById(id);
         }
+        public List<WorkingHistoryDTO> WorkingHistoryDTOs()
+        {
+            return staffRepository.GetAll().Select(s => new WorkingHistoryDTO()
+            {
+                Id = s.Sid,
+                Name = s.SName,
+                Role = s.Role,
+                StartDate = s.StartDate,
+                EndDate = s.EndDate,
+                Total = workingHistoryService.GetTotalHourById(s.Sid)
+            }).ToList();
+        }
+    }
+    public class WorkingHistoryDTO
+    {
+        //<DataGridTextColumn Width = "*" Header="ID" Binding="{Binding Sid}"></DataGridTextColumn>
+        //            <DataGridTextColumn Width = "*" Header="Role" Binding="{Binding Role.Rid}"></DataGridTextColumn>
+        //            <DataGridTextColumn Width = "2*" Header="Name" Binding="{Binding SName}"></DataGridTextColumn>
+        //            <DataGridTextColumn Width = "*" Header="Start Date" Binding="{Binding StartDate}"></DataGridTextColumn>
+        //            <DataGridTextColumn Width = "*" Header="Total Hours"
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public Role Role { get; set; }
+
+        public DateOnly? StartDate { get; set; }
+        public DateOnly? EndDate { get; set; }
+        public float? Total { get; set; }
     }
 }
