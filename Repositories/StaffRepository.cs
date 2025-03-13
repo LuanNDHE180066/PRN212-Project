@@ -14,5 +14,19 @@ namespace Repositories
         {
             return PrnFinalProjectContext.Ins.Staff.Include(x => x.Role).ToList();
         }
+        public void AddStaff(Staff staff)
+        {
+            PrnFinalProjectContext.Ins.Staff.Add(staff);
+            PrnFinalProjectContext.Ins.SaveChanges();
+        }
+        public void UpdateStaff(Staff staff)
+        {
+            PrnFinalProjectContext.Ins.Staff.Update(staff);
+            PrnFinalProjectContext.Ins.SaveChanges();
+        }
+        public Staff GetById(int id)
+        {
+            return PrnFinalProjectContext.Ins.Staff.Find(id);
+        }
     }
 }

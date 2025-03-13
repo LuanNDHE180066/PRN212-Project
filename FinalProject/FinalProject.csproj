@@ -10,6 +10,9 @@
 
   <ItemGroup>
     <None Remove="468189237_3784890568443525_2634252900423939169_n.jpg" />
+    <None Remove="Admin\30_j2wuIM71WDtHm.jpg" />
+    <None Remove="Admin\316538658_3315492182103932_3345412238196994957_n.jpg" />
+    <None Remove="Admin\avatars-000699683875-m5pnre-t500x500.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +23,9 @@
 
   <ItemGroup>
     <Resource Include="468189237_3784890568443525_2634252900423939169_n.jpg" />
+    <Resource Include="Admin\30_j2wuIM71WDtHm.jpg" />
+    <Resource Include="Admin\316538658_3315492182103932_3345412238196994957_n.jpg" />
+    <Resource Include="Admin\avatars-000699683875-m5pnre-t500x500.jpg" />
   </ItemGroup>
 
   <ItemGroup>

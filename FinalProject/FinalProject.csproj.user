@@ -7,15 +7,45 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Admin\AddStaff.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\AdminScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\UpdateStaff.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\WorkingHistoryDetailScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginScreen_Admin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkingHistoryScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Admin\AddStaff.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\AdminScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\UpdateStaff.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\WorkingHistoryDetailScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoginScreen_Admin.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkingHistoryScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
