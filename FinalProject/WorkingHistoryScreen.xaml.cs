@@ -25,12 +25,11 @@ namespace FinalProject
         public WorkingHistoryScreen()
         {
             InitializeComponent();
-            LoadDataGrid();
+            LoadDataGrid(staffService.WorkingHistoryDTOs());
 
         }
-        public void LoadDataGrid()
+        public void LoadDataGrid(List<WorkingHistoryDTO> list)
         {
-            List<WorkingHistoryDTO> list = staffService.WorkingHistoryDTOs();
             dtgHistory.ItemsSource = list;
         }
 
@@ -39,6 +38,25 @@ namespace FinalProject
             var selected = dtgHistory.SelectedItem as WorkingHistoryDTO;
             WorkingHistoryDetailScreen workingHistoryDetailScreen  = new WorkingHistoryDetailScreen(selected);
             workingHistoryDetailScreen.ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var list = dtgHistory.ItemsSource as List<WorkingHistoryDTO>;
+            LoadDataGrid(list.OrderBy(s=> s.Name).ToList());
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var list = dtgHistory.ItemsSource as List<WorkingHistoryDTO>;
+            LoadDataGrid(list.OrderByDescending(s => s.Total).ToList());
+        }
+
+        private void txtName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string searchName = txtName.Text;
+            var list = staffService.WorkingHistoryDTOs();
+            LoadDataGrid(list.Where(s=>s.Name.Contains(searchName,StringComparison.OrdinalIgnoreCase)).ToList());
         }
     }
 }

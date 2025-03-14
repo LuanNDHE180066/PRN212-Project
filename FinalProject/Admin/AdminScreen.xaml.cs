@@ -25,12 +25,11 @@ namespace FinalProject.Admin
         public AdminScreen()
         {
             InitializeComponent();
-            LoadDataGrid();
+            LoadDataGrid(staffService.GetAll());
         }
-        public void LoadDataGrid()
+        public void LoadDataGrid(List<Staff> staffs) 
         {
-            List<Staff> list = staffService.GetAll();
-            dtgStaff.ItemsSource = list;
+            dtgStaff.ItemsSource = staffs;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -54,6 +53,25 @@ namespace FinalProject.Admin
             WorkingHistoryScreen history = new WorkingHistoryScreen();
             this.Close();
             history.ShowDialog();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            List<Staff> currentStaffs  = dtgStaff.ItemsSource as List<Staff>;
+            LoadDataGrid(currentStaffs.OrderBy(s => s.SName).ToList());
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            List<Staff> currentStaffs = dtgStaff.ItemsSource as List<Staff>;
+            LoadDataGrid(currentStaffs.OrderBy(s => s.StartDate).ToList());
+        }
+
+        private void txtName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string searchText = txtName.Text;
+            List<Staff> staffs = staffService.GetAll();
+            LoadDataGrid(staffs.Where(s=> s.SName.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList());
         }
     }
 }

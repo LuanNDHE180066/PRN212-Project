@@ -35,11 +35,11 @@
             </Grid.RowDefinitions>
             <StackPanel HorizontalAlignment="Center" Margin="0 0 30 0" Height="30" Grid.Row="0" Orientation="Horizontal">
                 <StackPanel Orientation="Horizontal">
-                    <TextBox x:Name="txtName" Width="100"></TextBox>
+                    <TextBox x:Name="txtName" Width="100" TextChanged="txtName_TextChanged"></TextBox>
                     <Button Margin="0 0 30 0" Height="30" Content="Search"></Button>
                 </StackPanel>
-                <Button Margin="0 0 30 0" Height="30" Content="Order by Name"></Button>
-                <Button Margin="0 0 30 0" Height="30" Content="Order by Name"></Button>
+                <Button Margin="0 0 30 0" Height="30" Content="Order by Name" Click="Button_Click_3"></Button>
+                <Button Margin="0 0 30 0" Height="30" Content="Order by Date" Click="Button_Click_4"></Button>
                 <Button Content="Add new Staff" Click="Button_Click"/>
             </StackPanel>
             <DataGrid x:Name="dtgStaff" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalGridLinesBrush="#FF3A1111" Background="#FF91BEBE">

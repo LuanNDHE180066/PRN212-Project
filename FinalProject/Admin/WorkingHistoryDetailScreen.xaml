@@ -34,14 +34,12 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal" Grid.Column="0">
                 <Label >Date</Label>
                 <DatePicker  Height="30" Width="150" SelectedDateChanged="DatePicker_SelectedDateChanged"></DatePicker>
             </StackPanel>
-            <Button Grid.Column="1" Height="30" Width="120">Order by date</Button>
-            <Button Grid.Column="2" Height="30" Width="120">Order by date</Button>
+            <Button Grid.Column="1" Height="30" Width="120" Click="Button_Click">Order by date</Button>
         </Grid>
         <DataGrid HorizontalAlignment="Stretch" x:Name="dtgWorkDetail" Grid.Row="2" AutoGenerateColumns="False" CanUserAddRows="False">
             <DataGrid.Columns>
