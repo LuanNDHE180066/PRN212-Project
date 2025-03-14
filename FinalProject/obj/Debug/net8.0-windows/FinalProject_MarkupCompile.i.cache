@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\thanh\Downloads\SP2025\PRN211\FinalProject\FinalProject\FinalProject\obj\Debug\net8.0-windows\
+D:\FPT_HocTap\Semester 5\PRN212\FN_Project\PRN212-Project\FinalProject\obj\Debug\net8.0-windows\
 FinalProject
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\thanh\Downloads\SP2025\PRN211\FinalProject\FinalProject\FinalProject\App.xaml
-7-660187738
+D:\FPT_HocTap\Semester 5\PRN212\FN_Project\PRN212-Project\FinalProject\App.xaml
+10439054735
 
-12-112118823
-235-2131327167
-Admin\AddStaff.xaml;Admin\AdminScreen.xaml;Admin\UpdateStaff.xaml;Admin\WorkingHistoryDetailScreen.xaml;LoginScreen_Admin.xaml;MainWindow.xaml;WorkingHistoryScreen.xaml;
+15292022267
+235685995621
+Admin\AddStaff.xaml;Admin\AdminScreen.xaml;Admin\GoodsManageScreen.xaml;Admin\GoodTypeSreen.xaml;Admin\UpdateGoodScreen.xaml;Admin\UpdateStaff.xaml;Admin\WorkingHistoryDetailScreen.xaml;LoginScreen_Admin.xaml;MainWindow.xaml;WorkingHistoryScreen.xaml;
 
-False
+True
 

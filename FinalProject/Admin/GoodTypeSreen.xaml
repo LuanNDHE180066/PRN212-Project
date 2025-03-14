@@ -1,0 +1,97 @@
+﻿<Window x:Class="FinalProject.Admin.GoodTypeSreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject.Admin"
+        mc:Ignorable="d"
+        Title="GoodTypeSreen" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/Admin/avatars-000699683875-m5pnre-t500x500.jpg"/>
+            </StackPanel.Background>
+        </StackPanel>
+
+        <!-- <WrapPanel Grid.Row="1" Grid.Column="1" Margin="20,10,10,10">
+        <WrapPanel Orientation="Horizontal">
+            <Button Width="100" Height="100" Content="Sản phẩm 1" Margin="10"/>
+            <Button Width="100" Height="100" Content="Sản phẩm 2"/>
+            <Button Width="100" Height="100" Content="Sản phẩm 3"/>
+            <Button Width="100" Height="100" Content="Sản phẩm 4"/>
+            <Button Width="100" Height="100" Content="Sản phẩm 5"/>
+            <Button Width="100" Height="100" Content="Sản phẩm 6"/>
+            <Button Width="100" Height="100" Content="Sản phẩm 5"/>
+            <Button Width="100" Height="100" Content="Sản phẩm 6"/>
+        </WrapPanel>
+    </WrapPanel>
+    -->
+        <ScrollViewer Grid.Row="1" Grid.Column="1">
+            <DataGrid x:Name="dtgGoodType" 
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False" CanUserSortColumns="False"
+                     
+                      CanUserDeleteRows="False"
+                      CanUserResizeColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="GID" Binding="{Binding Path=Gtid}"/>
+                    <DataGridTextColumn 
+                        Binding="{Binding Path=GtName}"
+                        Header="Good Type Name"/>
+
+                </DataGrid.Columns>
+
+            </DataGrid>
+        </ScrollViewer>
+
+        <StackPanel Background="#91BEBE" Grid.Row="1" Grid.Column="0">
+            <Button Content="Add" Name="btnAdd"  Width="110" Height="40" Margin="0,150,0,0"/>
+
+            <Button Content="Good Type" Name="btnGoodType"  
+                Width="110"
+                Height="40"
+                
+                Margin="0,20,0,0"/>
+
+        </StackPanel>
+
+        <StackPanel Background="#91BEBE" Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+
+            <StackPanel Margin="0,0,0,0" Orientation="Horizontal" Width="140" Height="30">
+                <Label Content="Name" FontSize="15" />
+                <TextBox x:Name="txbName" Text="" Width="100" Height="23" FontSize="15"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,0" Orientation="Horizontal" Width="140" Height="30">
+                <Label Content="From" FontSize="15" />
+                <TextBox x:Name="txbFromPrice" Width="100" Height="23" FontSize="15"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,0" Orientation="Horizontal" Width="140" Height="30">
+                <Label Content="To" FontSize="15" />
+                <TextBox x:Name="txbToPrice" Width="100" Height="23" FontSize="15"/>
+            </StackPanel>
+
+
+            <StackPanel Margin="0,0,0,0" Orientation="Horizontal" Width="150" Height="30">
+                <Label Content="Ctg" FontSize="15" />
+                <ComboBox Name="cbxCategory" Width="150" Height="23"
+      ItemsSource="{Binding Categories}" 
+      DisplayMemberPath="GtName" 
+      SelectedValuePath="Gtid" FontSize="15" />
+            </StackPanel>
+
+            <Button Width="50" Height="23" Margin="10,0,0,0" Content="Filter" Name="btnFilter" />
+        </StackPanel>
+    </Grid>
+</Window>
