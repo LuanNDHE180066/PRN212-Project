@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\thanh\Downloads\SP2025\PRN211\FinalProject\FinalProject\FinalProject\App.xaml
-7-660187738
+9-504210706
 
-12-112118823
+14583765449
 235-2131327167
-Admin\AddStaff.xaml;Admin\AdminScreen.xaml;Admin\UpdateStaff.xaml;Admin\WorkingHistoryDetailScreen.xaml;LoginScreen_Admin.xaml;MainWindow.xaml;WorkingHistoryScreen.xaml;
+Admin\AddStaff.xaml;Admin\AdminScreen.xaml;Admin\ExpenditureGenaral.xaml;Admin\UpdateStaff.xaml;Admin\WorkingHistoryDetailScreen.xaml;ExpenditureDetail.xaml;LoginScreen_Admin.xaml;MainWindow.xaml;WorkingHistoryScreen.xaml;
 
-True
+False
 

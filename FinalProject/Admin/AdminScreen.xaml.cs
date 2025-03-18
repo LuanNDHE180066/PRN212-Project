@@ -73,5 +73,12 @@ namespace FinalProject.Admin
             List<Staff> staffs = staffService.GetAll();
             LoadDataGrid(staffs.Where(s=> s.SName.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList());
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            ExpenditureGenaral expenditureGenaral = new ExpenditureGenaral();
+            this.Close();
+            expenditureGenaral.ShowDialog();
+        }
     }
 }

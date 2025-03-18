@@ -1,0 +1,58 @@
+﻿<Window x:Class="FinalProject.ExpenditureDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="ExpenditureDetail" Height="400" Width="400">
+    <Grid Background="#FF82DDDD">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.7*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label HorizontalAlignment="Center" Grid.Row="0"
+               VerticalAlignment="Center"
+               FontSize="30"
+               FontWeight="DemiBold"
+               Name="lbNamepage"
+               >Hello</Label>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Margin="0 0 50 0">
+                <Label>ID</Label>
+                <TextBox x:Name="txtId" IsEnabled="False" Width="150" Height="25"></TextBox>
+            </StackPanel>
+            <StackPanel>
+                <Label>ads</Label>
+                <DatePicker Name="dpkDate" Width="150" Height="25"></DatePicker>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Margin="0 0 50 0">
+                <Label>Quantity</Label>
+                <TextBox Name="txtQuantity" Width="150" Height="25"></TextBox>
+            </StackPanel>
+            <StackPanel>
+                <Label>Total</Label>
+                <TextBox x:Name="txtTotal" Width="150" Height="25"></TextBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Margin="0 0 50 0">
+                <Label>Supplier</Label>
+                <TextBox x:Name="txtSupplier" Width="150" Height="25"></TextBox>
+            </StackPanel>
+            <StackPanel>
+                <Label>Goods Name</Label>
+                <ComboBox
+                    DisplayMemberPath="GName"
+                    SelectedValuePath="Gid"
+                    Name="cbGood" Width="150" Height="25"></ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <Button Grid.Row="4" Height="40" Width="100" Background="#FFD98F8F" Click="Button_Click">Save</Button>
+    </Grid>
+</Window>
