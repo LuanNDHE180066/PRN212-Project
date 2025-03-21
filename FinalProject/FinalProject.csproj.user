@@ -13,19 +13,31 @@
     <Compile Update="Admin\AdminScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\GoodsManageScreen.xaml.cs">
+    <Compile Update="Admin\GoodManageScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\GoodTypeSreen.xaml.cs">
+    <Compile Update="Admin\GoodsTypeScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\UpdateGoodScreen.xaml.cs">
+    <Compile Update="Admin\UpdateGoodsScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\UpdateGoodType.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Admin\UpdateStaff.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Admin\WorkingHistoryDetailScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cashier\CashierScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cashier\InvoiceDetailScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cashier\InvoiceManageScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginScreen_Admin.xaml.cs">
@@ -42,19 +54,31 @@
     <Page Update="Admin\AdminScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\GoodsManageScreen.xaml">
+    <Page Update="Admin\GoodManageScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\GoodTypeSreen.xaml">
+    <Page Update="Admin\GoodsTypeScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\UpdateGoodScreen.xaml">
+    <Page Update="Admin\UpdateGoodsScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\UpdateGoodType.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\UpdateStaff.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\WorkingHistoryDetailScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Cashier\CashierScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Cashier\InvoiceDetailScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Cashier\InvoiceManageScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LoginScreen_Admin.xaml">

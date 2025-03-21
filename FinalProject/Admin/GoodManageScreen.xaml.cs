@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Microsoft.Identity.Client;
 using Microsoft.IdentityModel.Tokens;
 using Repositories.Models;
 using Services;
@@ -34,15 +35,15 @@ namespace FinalProject.Admin
         {
             itcGoods.ItemsSource = goodService.GetAllActiveGood();
             List<GoodType> listGoodType = new List<GoodType>();
-            GoodType gt = new GoodType() { Gtid = 0, GtName="All" }; 
+            GoodType gt = new GoodType() { Gtid = 0, GtName = "All" };
             listGoodType.Add(gt);
-            foreach(GoodType item in goodTypeService.GetGoodTypes())
+            foreach (GoodType item in goodTypeService.GetGoodTypes())
             {
                 listGoodType.Add(item);
             }
             cbxCategory.ItemsSource = listGoodType;
             cbxCategory.SelectedIndex = 0;
-          
+
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -53,7 +54,7 @@ namespace FinalProject.Admin
             {
                 UpdateGoodsScreen u = new UpdateGoodsScreen();
                 u._selectedBook = selectedGood;
-                if(u.ShowDialog() == false)
+                if (u.ShowDialog() == false)
                 {
                     FillItcGood();
                 }
@@ -63,23 +64,44 @@ namespace FinalProject.Admin
         public void FillItcGood()
         {
             itcGoods.ItemsSource = goodService.GetAllActiveGood();
-            cbxCategory.ItemsSource = goodTypeService.GetGoodTypes();
+            List<GoodType> listGoodType = new List<GoodType>();
+            GoodType gt = new GoodType() { Gtid = 0, GtName = "All" };
+            listGoodType.Add(gt);
+            foreach (GoodType item in goodTypeService.GetGoodTypes())
+            {
+                listGoodType.Add(item);
+            }
+            cbxCategory.ItemsSource = listGoodType;
+            cbxCategory.SelectedIndex = 0;
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-
+            UpdateGoodsScreen u = new UpdateGoodsScreen();
+            u.tblHeader.Text = "Add new Good";
+            u.spnGoodId.Visibility = Visibility.Hidden;
+            u.cbxType.SelectedIndex = 0;
+            if(u.ShowDialog() == false)
+            {
+                u._selectedBook = null;
+                FillItcGood();
+            }   
         }
 
         private void btnGoodType_Click(object sender, RoutedEventArgs e)
         {
-
+            GoodsTypeScreen g = new();
+            if(g.ShowDialog() == false)
+            {
+                cbxCategory.ItemsSource = goodTypeService.GetGoodTypes();
+                FillItcGood();
+            }
         }
 
         private void btnFilter_Click(object sender, RoutedEventArgs e)
         {
             List<Good> list = goodService.GetAllActiveGood();
-            if(!txbName.Text.Trim().IsNullOrEmpty())
+            if (!txbName.Text.Trim().IsNullOrEmpty())
             {
                 list = list.Where(x => x.GName.ToLower().Contains(txbName.Text.Trim().ToLower())).ToList();
             }
@@ -96,13 +118,13 @@ namespace FinalProject.Admin
                 list = list.Where(x => x.UnitPrice <= price).ToList();
             }
 
-            int cate =  int.Parse(cbxCategory.SelectedValue.ToString());
-            
+            int cate = int.Parse(cbxCategory.SelectedValue.ToString());
 
 
-            if(cate > 0)
+
+            if (cate > 0)
             {
-               list=  list.Where(x => x.Typeid == cate).ToList();
+                list = list.Where(x => x.Typeid == cate).ToList();
             }
 
             //MessageBox.Show($"{cate}");

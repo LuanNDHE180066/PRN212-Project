@@ -1,0 +1,36 @@
+﻿<Window x:Class="FinalProject.Cashier.CashierScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject.Cashier"
+        mc:Ignorable="d"
+        Title="CashierScreen" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <StackPanel.Background>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        /Admin/avatars-000699683875-m5pnre-t500x500.jpg
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </StackPanel.Background>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="
+                    0">
+            <Button Margin="0,50,0,0" Content="Invoice" Width="90"
+                    Height="30" x:Name="btnInvoice"
+                    Click="btnInvoice_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

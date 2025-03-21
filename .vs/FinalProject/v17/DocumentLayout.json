@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\admin\\goodtypesreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\goodtypesreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\cashier\\invoicedetailscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\cashier\\invoicedetailscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\admin\\goodsmanagescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\goodsmanagescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\cashier\\invoicedetailscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\cashier\\invoicedetailscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\cashier\\invoicemanagescreen.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\cashier\\invoicemanagescreen.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\repositories\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\repositories\\models\\historybuygood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\models\\historybuygood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\repositories\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\repositories\\goodtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\goodtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +50,92 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HistoryBuyGood.cs",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\Models\\HistoryBuyGood.cs",
+              "RelativeDocumentMoniker": "Repositories\\Models\\HistoryBuyGood.cs",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\Models\\HistoryBuyGood.cs",
+              "RelativeToolTip": "Repositories\\Models\\HistoryBuyGood.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:24:20.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GoodTypeRepository.cs",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\GoodTypeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\GoodTypeRepository.cs",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\GoodTypeRepository.cs",
+              "RelativeToolTip": "Repositories\\GoodTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:15:11.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InvoiceRepository.cs",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\InvoiceRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\InvoiceRepository.cs",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\InvoiceRepository.cs",
+              "RelativeToolTip": "Repositories\\InvoiceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:15:09.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GoodTypeSreen.xaml",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\GoodTypeSreen.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\Admin\\GoodTypeSreen.xaml",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\GoodTypeSreen.xaml",
-              "RelativeToolTip": "FinalProject\\Admin\\GoodTypeSreen.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-14T11:40:30.18Z",
+              "Title": "InvoiceDetailScreen.xaml.cs",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\InvoiceDetailScreen.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Cashier\\InvoiceDetailScreen.xaml.cs",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\InvoiceDetailScreen.xaml.cs",
+              "RelativeToolTip": "FinalProject\\Cashier\\InvoiceDetailScreen.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAArwDwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:54:49.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GoodsManageScreen.xaml",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\GoodsManageScreen.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\Admin\\GoodsManageScreen.xaml",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\GoodsManageScreen.xaml",
-              "RelativeToolTip": "FinalProject\\Admin\\GoodsManageScreen.xaml",
+              "Title": "InvoiceDetailScreen.xaml",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\InvoiceDetailScreen.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Cashier\\InvoiceDetailScreen.xaml",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\InvoiceDetailScreen.xaml",
+              "RelativeToolTip": "FinalProject\\Cashier\\InvoiceDetailScreen.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-14T11:40:08.023Z",
+              "WhenOpened": "2025-03-20T16:54:47.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\Models\\Invoice.cs",
+              "RelativeDocumentMoniker": "Repositories\\Models\\Invoice.cs",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\Models\\Invoice.cs",
+              "RelativeToolTip": "Repositories\\Models\\Invoice.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:52:59.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InvoiceManageScreen.xaml.cs",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\InvoiceManageScreen.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Cashier\\InvoiceManageScreen.xaml.cs",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\InvoiceManageScreen.xaml.cs",
+              "RelativeToolTip": "FinalProject\\Cashier\\InvoiceManageScreen.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:53:05.475Z",
               "EditorCaption": ""
             }
           ]

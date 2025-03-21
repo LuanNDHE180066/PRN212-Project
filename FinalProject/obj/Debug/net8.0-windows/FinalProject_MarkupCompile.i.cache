@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\FPT_HocTap\Semester 5\PRN212\FN_Project\PRN212-Project\FinalProject\App.xaml
-10439054735
+141011899334
 
-15292022267
+19-329992810
 235685995621
-Admin\AddStaff.xaml;Admin\AdminScreen.xaml;Admin\GoodsManageScreen.xaml;Admin\GoodTypeSreen.xaml;Admin\UpdateGoodScreen.xaml;Admin\UpdateStaff.xaml;Admin\WorkingHistoryDetailScreen.xaml;LoginScreen_Admin.xaml;MainWindow.xaml;WorkingHistoryScreen.xaml;
+Admin\AddStaff.xaml;Admin\AdminScreen.xaml;Admin\GoodManageScreen.xaml;Admin\GoodsTypeScreen.xaml;Admin\UpdateGoodsScreen.xaml;Admin\UpdateGoodType.xaml;Admin\UpdateStaff.xaml;Admin\WorkingHistoryDetailScreen.xaml;Cashier\CashierScreen.xaml;Cashier\InvoiceDetailScreen.xaml;Cashier\InvoiceManageScreen.xaml;LoginScreen_Admin.xaml;MainWindow.xaml;WorkingHistoryScreen.xaml;
 
-True
+False
 
