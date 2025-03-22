@@ -30,4 +30,6 @@ public partial class Staff
     public virtual ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
 
     public virtual Role? Role { get; set; }
+
+    public virtual ICollection<WorkingHistory> WorkingHistories { get; set; } = new List<WorkingHistory>();
 }

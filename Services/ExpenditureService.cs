@@ -32,5 +32,9 @@ namespace Services
         {
             expenditureRepository.updateExpenditure(expenditure);
         }
+        public void AddExpenditure(Expenditure expenditure)
+        {
+            expenditureRepository.AddExpenditure(expenditure);
+        }
     }
 }

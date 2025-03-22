@@ -26,7 +26,7 @@
                 <TextBox x:Name="txtId" IsEnabled="False" Width="150" Height="25"></TextBox>
             </StackPanel>
             <StackPanel>
-                <Label>ads</Label>
+                <Label>Date</Label>
                 <DatePicker Name="dpkDate" Width="150" Height="25"></DatePicker>
             </StackPanel>
         </StackPanel>

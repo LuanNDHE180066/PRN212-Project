@@ -23,7 +23,7 @@
             </StackPanel>
             <StackPanel Grid.Row="1" Orientation="Vertical">
                 <Button Height="50" Content="Nhân viên" Background="#FFD674D0"></Button>
-                <Button Background="#FFD674D0" Height="50" Content="Chấm công"></Button>
+                <Button Background="#FFD674D0" Height="50" Content="Chấm công" Click="Button_Click_5"></Button>
                 <Button Background="#FFD674D0" Height="50" Content="Phiếu chi"></Button>
                 <Button Background="#FFD674D0" Height="50" Content="Chức vụ"></Button>
             </StackPanel>
@@ -33,18 +33,21 @@
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="4*"></RowDefinition>
             </Grid.RowDefinitions>
-            <StackPanel HorizontalAlignment="Center" Margin="0 0 30 0" Height="30" Grid.Row="0" Orientation="Horizontal">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 30 0" Grid.Row="0" Orientation="Horizontal">
                 <StackPanel Orientation="Horizontal">
                     <Label Width="40">From:</Label>
-                    <DatePicker x:Name="dpkFrom" Width="100"></DatePicker>
+                    <DatePicker Height="30" x:Name="dpkFrom" Width="100"></DatePicker>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Width="30">To:</Label>
-                    <DatePicker Name="dpkTo" Width="100"></DatePicker>
+                    <DatePicker Height="30" Name="dpkTo" Width="100"></DatePicker>
                 </StackPanel>
-                <Button Margin="30 0 0 0" Click="Button_Click">Search</Button>
+                <Button Height="30" Margin="30 0 0 0" Click="Button_Click">Search</Button>
                 <Button Margin="30 0 30 0" Height="30" Content="Order by Total" Click="Button_Click_1"></Button>
-                <Button Content="Add new Expenditure"/>
+                <StackPanel Height="60" VerticalAlignment="Center">
+                    <Button Height="30" Content="Add new Expenditure" Click="Button_Click_4"/>
+                    <Button Height="30" Content="Refresh" Click="Button_Click_3"/>
+                </StackPanel>
             </StackPanel>
             <DataGrid x:Name="dtgExp" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalGridLinesBrush="#FF3A1111" Background="#FF91BEBE">
                 <DataGrid.Columns>
