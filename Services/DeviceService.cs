@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,5 +27,12 @@ namespace Services
         {
             return repositories.GetDeviceByID(id);
         }
+        private DeviceRepository _repo = new();
+        public List<Device> GetAllDevice()
+        {
+            return _repo.GetAllDevice();
+        }
+
+
     }
 }
