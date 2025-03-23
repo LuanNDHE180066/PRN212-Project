@@ -16,5 +16,17 @@ namespace Services
         {
             return repo.GetByInvoiceId(invoiceId);
         }
+
+        public void Add(HistoryBuyGood hbg)
+        {
+            repo.Add(hbg);
+        }
+
+        public void Update(HistoryBuyGood hbg)
+        {
+            repo.Update(hbg);
+        }
+
+       
     }
 }

@@ -22,5 +22,17 @@ namespace Services
         {
             return repo.AddNewInvoice(i);
         }
+
+
+        public Invoice GetById(int id)
+        {
+            return repo.GetById(id);
+        }
+
+        public void Update(Invoice invoice)
+        {
+            repo.Update(invoice);
+        }
+
     }
 }

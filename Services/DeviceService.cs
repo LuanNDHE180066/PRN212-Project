@@ -16,6 +16,16 @@ namespace Services
             return _repo.GetAllDevice();
         }
 
+        public Device GetDeviceById(int id)
+        {
+            return _repo.GetDeviceById(id);
+        }
+
+        public void UpdateDevice(Device device)
+        {
+            _repo.UpdateDevice(device); 
+        }
+
 
     }
 }

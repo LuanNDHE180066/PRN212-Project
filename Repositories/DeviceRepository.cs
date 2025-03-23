@@ -17,6 +17,19 @@ namespace Repositories
             return _context.Devices.Include(x => x.Type).ToList();
         }
 
+        public Device GetDeviceById(int id)
+        {
+            _context = new();
+            return _context.Devices.Include(x => x.Type).FirstOrDefault(x => x.Did == id);
+        }
+
+        public void UpdateDevice(Device device)
+        {
+            _context = new();
+             _context.Devices.Update(device);
+            _context.SaveChanges();
+        }
+
 
     }
 }
