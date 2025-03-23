@@ -92,5 +92,19 @@ namespace FinalProject
                 }
             }
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            AdminScreen adminScreen = new AdminScreen();
+            this.Close();
+            adminScreen.Show();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            ExpenditureGenaral expenditureGenaral = new ExpenditureGenaral();
+            this.Close();
+            expenditureGenaral.ShowDialog();
+        }
     }
 }
