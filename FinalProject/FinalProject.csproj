@@ -15,6 +15,7 @@
     <None Remove="Admin\avatars-000699683875-m5pnre-t500x500.jpg" />
     <None Remove="Images\1315629.png" />
     <None Remove="Images\316538658_3315492182103932_3345412238196994957_n.jpg" />
+    <None Remove="Images\pc-game.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,10 +31,13 @@
     <Resource Include="Admin\316538658_3315492182103932_3345412238196994957_n.jpg" />
     <Resource Include="Admin\avatars-000699683875-m5pnre-t500x500.jpg" />
     <Resource Include="Images\1315629.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory></CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\316538658_3315492182103932_3345412238196994957_n.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\pc-game.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
