@@ -7,37 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Admin\AddCustomer.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Admin\AddDevice.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Admin\AddDeviceType.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Admin\AddStaff.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Admin\AdminScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\DeviceManageScreen.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Admin\DeviceTypeManage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Admin\ManageCustomerScreen.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Admin\UpdateCustomer.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Admin\UpdateDevice.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Admin\UpdateDeviceType.xaml.cs">
+    <Compile Update="Admin\ExpenditureGenaral.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Admin\UpdateStaff.xaml.cs">
@@ -46,13 +22,10 @@
     <Compile Update="Admin\WorkingHistoryDetailScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="CustomerLoginedScreen.xaml.cs">
+    <Compile Update="ExpenditureDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginScreen_Admin.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="LoginScreen_Customer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WorkingHistoryScreen.xaml.cs">
@@ -60,37 +33,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Admin\AddCustomer.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Admin\AddDevice.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Admin\AddDeviceType.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Admin\AddStaff.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\AdminScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\DeviceManageScreen.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Admin\DeviceTypeManage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Admin\ManageCustomerScreen.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Admin\UpdateCustomer.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Admin\UpdateDevice.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Admin\UpdateDeviceType.xaml">
+    <Page Update="Admin\ExpenditureGenaral.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\UpdateStaff.xaml">
@@ -99,13 +48,10 @@
     <Page Update="Admin\WorkingHistoryDetailScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="CustomerLoginedScreen.xaml">
+    <Page Update="ExpenditureDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LoginScreen_Admin.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="LoginScreen_Customer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

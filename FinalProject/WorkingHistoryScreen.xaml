@@ -35,11 +35,12 @@
             </Grid.RowDefinitions>
             <StackPanel HorizontalAlignment="Center" Margin="0 0 30 0" Height="30" Grid.Row="0" Orientation="Horizontal">
                 <StackPanel Orientation="Horizontal">
-                    <TextBox x:Name="txtName" Width="100"></TextBox>
+                    <TextBox x:Name="txtName" Width="100" TextChanged="txtName_TextChanged"></TextBox>
                     <Button Margin="0 0 30 0" Height="30" Content="Search"></Button>
                 </StackPanel>
-                <Button Margin="0 0 30 0" Height="30" Content="Order by Name"></Button>
-                <Button Margin="0 0 30 0" Height="30" Content="Order by Name"></Button>
+                <Button Margin="0 0 30 0" Height="30" Content="Order by Name" Click="Button_Click_1"></Button>
+                <Button Margin="0 0 30 0" Height="30" Content="Order by Total Hour" Click="Button_Click_2"></Button>
+                <Button x:Name="btnStart" Margin="0 0 30 0" Height="30" Content="Bắt đầu ca làm" Click="Button_Click_3"></Button>
             </StackPanel>
             <DataGrid x:Name="dtgHistory" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalGridLinesBrush="#FF3A1111" Background="#FF91BEBE">
                 <DataGrid.Columns>
