@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject.Admin"
         mc:Ignorable="d"
-        Title="GoodsManageScreen" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="GoodsManageScreen" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -45,7 +45,7 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Border MouseDown="Border_MouseDown" BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
+                        <Border  BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
                             <StackPanel Width="135" Height="150">
                                 <!-- Đảm bảo Image Binding đúng -->
                                 <Image Source="{Binding Img}" Height="110" Width="Auto" Stretch="UniformToFill"/>
@@ -66,12 +66,12 @@
         </ScrollViewer>
 
         <StackPanel Background="#91BEBE" Grid.Row="1" Grid.Column="0">
-            <Button Content="Add" Name="btnAdd" Click="btnAdd_Click" Width="110" Height="40" Margin="0,150,0,0"/>
+            <Button Content="Add" Name="btnAdd"  Width="110" Height="40" Margin="0,150,0,0"/>
             
             <Button Content="Good Type" Name="btnGoodType"  
                     Width="110"
                     Height="40"
-                    Click="btnGoodType_Click"
+                   
                     Margin="0,20,0,0"/> 
 
         </StackPanel>
@@ -102,7 +102,7 @@
           SelectedValuePath="Gtid" FontSize="15" />
             </StackPanel>
 
-            <Button Width="50" Height="23" Margin="10,0,0,0" Content="Filter" Name="btnFilter" Click="btnFilter_Click"/>
+            <Button Width="50" Height="23" Margin="10,0,0,0" Content="Filter" Name="btnFilter" />
         </StackPanel>
     </Grid>
 </Window>

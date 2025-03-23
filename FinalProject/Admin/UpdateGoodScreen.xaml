@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject.Admin"
         mc:Ignorable="d"
-        Title="UpdateGoodScreen" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="UpdateGoodScreen" Height="450" Width="800" >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -68,7 +68,7 @@
                 <StackPanel Orientation="Horizontal" Width="400" Margin="0,20,0,0">
                     <TextBlock Width="50" FontSize="15" Text="Img:"/>
                     <TextBox x:Name="txbImg" Width="245" IsReadOnly="True"/>
-                    <Button Name="btnBrowse" Click="btnBrowse_Click" Width="80" Content="Browse" />
+                    <Button Name="btnBrowse"  Width="80" Content="Browse" />
                 </StackPanel>
 
 
@@ -89,8 +89,8 @@
 
 
         <StackPanel Grid.Row="1">
-            <Button x:Name="btnSave" Click="btnSave_Click" Width="100" Height="30" Margin="0,130,0,0" Content="Save"/>
-            <Button Click="btnBack_Click" Width="100" x:Name="btnBack" Height="30" Margin="0,30,0,0" Content="Back"/>
+            <Button x:Name="btnSave"  Width="100" Height="30" Margin="0,130,0,0" Content="Save"/>
+            <Button  Width="100" x:Name="btnBack" Height="30" Margin="0,30,0,0" Content="Back"/>
         </StackPanel>
     </Grid>
 </Window>
