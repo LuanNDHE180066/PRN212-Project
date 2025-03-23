@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject.Admin"
         mc:Ignorable="d"
-        Title="GoodsManageScreen" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="GoodsManageScreen" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -45,7 +45,7 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Border MouseDown="Border_MouseDown" BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
+                        <Border  BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
                             <StackPanel Width="135" Height="150">
                                 <!-- Đảm bảo Image Binding đúng -->
                                 <Image Source="{Binding Img}" Height="110" Width="Auto" Stretch="UniformToFill"/>
@@ -102,7 +102,7 @@
           SelectedValuePath="Gtid" FontSize="15" />
             </StackPanel>
 
-            <Button Width="50" Height="23" Margin="10,0,0,0" Content="Filter" Name="btnFilter" Click="btnFilter_Click"/>
+            <Button Width="50" Height="23" Margin="10,0,0,0" Content="Filter" Name="btnFilter" />
         </StackPanel>
     </Grid>
 </Window>
