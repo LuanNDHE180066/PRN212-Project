@@ -15,5 +15,9 @@ namespace Services
         {
             return goodsRepository.GetAll();
         }
+        public Good GetById(int id)
+        {
+            return goodsRepository.Get(id);
+        }
     }
 }

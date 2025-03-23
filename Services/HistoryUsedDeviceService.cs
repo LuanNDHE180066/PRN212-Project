@@ -16,5 +16,13 @@ namespace Services
         {
             return repo.GetByInvoiceId(invoiceId);
         }
+        public void AddHistoryUsedDevice(HistoryUsedDevice historyUsedDevice)
+        {
+            repo.AddHistoryUsedDevice(historyUsedDevice);
+        }
+        public void Update(HistoryUsedDevice historyUsedDevice)
+        {
+            repo.Update(historyUsedDevice);
+        }
     }
 }

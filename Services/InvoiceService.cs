@@ -12,7 +12,8 @@ namespace Services
     public class InvoiceService
     {
         private InvoiceRepository repo = new();
-
+        private HistoryUsedDeviceRepositoryt hisDeviceRepo= new HistoryUsedDeviceRepositoryt();
+        private HistoryBuyGoodRepository goodBuyRepo= new HistoryBuyGoodRepository();
         public List<Invoice> GetAll()
         {
             return repo.GetAll();
@@ -21,6 +22,18 @@ namespace Services
         public bool AddNewInvoice(Invoice i)
         {
             return repo.AddNewInvoice(i);
+        }
+        public Invoice GetById(int id)
+        {
+            return repo.GetById(id);
+        }
+        public void UpdateTotal(int id)
+        {
+            HistoryUsedDevice device = hisDeviceRepo.GetByInvoiceId(id);
+            List<HistoryBuyGood> goods = goodBuyRepo.GetByInvoiceId(id).ToList();
+            Invoice invoice = this.GetById(id);
+            invoice.Total = device.Amount + goods.Sum(s=>s.Amount);
+            repo.Update(invoice);
         }
     }
 }

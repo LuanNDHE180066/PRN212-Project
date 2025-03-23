@@ -19,5 +19,11 @@ namespace Repositories
             _context = new PrnFinalProjectContext();
             return _context.HistoryBuyGoods.Include(x=> x.Goods).Where(x => x.InvoiceId == invoiceId).ToList();
         }
+        public void Add(HistoryBuyGood good)
+        {
+            _context = new PrnFinalProjectContext();
+            _context.HistoryBuyGoods.Add(good);
+            _context.SaveChanges();
+        }
     }
 }

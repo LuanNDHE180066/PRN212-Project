@@ -13,5 +13,9 @@ namespace Repositories
         {
             return PrnFinalProjectContext.Ins.Goods.ToList();
         }
+        public Good Get(int id)
+        {
+            return PrnFinalProjectContext.Ins.Goods.Find(id);
+        }
     }
 }

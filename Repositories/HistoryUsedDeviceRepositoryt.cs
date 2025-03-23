@@ -17,5 +17,17 @@ namespace Repositories
             _context = new PrnFinalProjectContext();
             return _context.HistoryUsedDevices.FirstOrDefault(x => x.InvoiceId == invoiceId);
         }
+        public void AddHistoryUsedDevice(HistoryUsedDevice device)
+        {
+            _context = new PrnFinalProjectContext();
+            _context.HistoryUsedDevices.Add(device);
+            _context.SaveChanges();
+        }
+        public void Update(HistoryUsedDevice device)
+        {
+            _context = new PrnFinalProjectContext();
+            _context.HistoryUsedDevices.Update(device);
+            _context.SaveChanges();
+        }
     }
 }

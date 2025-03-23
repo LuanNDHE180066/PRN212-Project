@@ -23,5 +23,16 @@ namespace Repositories
             _context.Invoices.Add(i);
            return _context.SaveChanges() > 0;
         }
+        public Invoice GetById(int id)
+        {
+            _context = new PrnFinalProjectContext();
+            return _context.Invoices.Find(id);
+        }
+        public void Update(Invoice i)
+        {
+            _context = new PrnFinalProjectContext();
+            _context.Invoices.Update(i);
+            _context.SaveChanges(); 
+        }
     }
 }
