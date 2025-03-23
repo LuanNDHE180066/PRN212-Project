@@ -3055,6 +3055,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "Repositories >= 1.0.0",
       "Services >= 1.0.0"
     ]
   },
@@ -3090,6 +3091,9 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
+            "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\Repositories.csproj"
+            },
             "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Services\\Services.csproj": {
               "projectPath": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Services\\Services.csproj"
             }

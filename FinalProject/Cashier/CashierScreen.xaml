@@ -1,0 +1,72 @@
+﻿<Window x:Class="FinalProject.Cashier.CashierScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject.Cashier"
+        mc:Ignorable="d"
+        Title="CashierScreen" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <StackPanel.Background>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        /Admin/avatars-000699683875-m5pnre-t500x500.jpg
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </StackPanel.Background>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="
+                    0">
+            <Button Margin="0,50,0,0" Content="Invoice" Width="90"
+                    Height="30" x:Name="btnInvoice"
+                    Click="btnInvoice_Click"/>
+        </StackPanel>
+
+
+        <ScrollViewer Grid.Row="1" Grid.Column="1">
+            <ItemsControl x:Name="itcListDevice" Background="AliceBlue">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border  BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
+                            <StackPanel Width="135" Height="200">
+                                <!-- Đảm bảo Image Binding đúng -->
+                                <Image Source="/Images/pc-game.png" Height="110" Width="Auto" Stretch="UniformToFill"/>
+                                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                                    <TextBlock HorizontalAlignment="Center" Text="{Binding Type.DtName}" FontWeight="Bold"/>
+                                    <TextBlock Text=" - Status: " FontSize="10"/>
+                                    <TextBlock HorizontalAlignment="Center" Text="{Binding StatusOfDevice}" FontSize="10" />
+                                </StackPanel>
+                                <TextBlock HorizontalAlignment="Center" Text="{Binding StatusRunning}"></TextBlock>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="{Binding Hours}"/>
+                                    <Label Content="Hours"/>
+                                </StackPanel>
+
+                                <Button Width="65" Background="#75BA75">
+                                    <TextBlock FontSize="10" Text="{Binding PricePerHour}"/>
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>

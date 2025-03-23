@@ -13,9 +13,13 @@
     <None Remove="Admin\30_j2wuIM71WDtHm.jpg" />
     <None Remove="Admin\316538658_3315492182103932_3345412238196994957_n.jpg" />
     <None Remove="Admin\avatars-000699683875-m5pnre-t500x500.jpg" />
+    <None Remove="Images\1315629.png" />
+    <None Remove="Images\316538658_3315492182103932_3345412238196994957_n.jpg" />
+    <None Remove="Images\pc-game.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
     <ProjectReference Include="..\Services\Services.csproj">
       <Private>True</Private>
     </ProjectReference>
@@ -26,6 +30,15 @@
     <Resource Include="Admin\30_j2wuIM71WDtHm.jpg" />
     <Resource Include="Admin\316538658_3315492182103932_3345412238196994957_n.jpg" />
     <Resource Include="Admin\avatars-000699683875-m5pnre-t500x500.jpg" />
+    <Resource Include="Images\1315629.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\316538658_3315492182103932_3345412238196994957_n.jpg">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\pc-game.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
