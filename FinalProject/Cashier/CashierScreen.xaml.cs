@@ -21,6 +21,7 @@ namespace FinalProject.Cashier
     /// </summary>
     public partial class CashierScreen : Window
     {
+        private DeviceService deviceService = new();
         private InvoiceService invoiceService = new();
         public CashierScreen()
         {
@@ -37,6 +38,11 @@ namespace FinalProject.Cashier
             {
 
             }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            itcListDevice.ItemsSource = deviceService.GetAllDevice();
         }
     }
 }
