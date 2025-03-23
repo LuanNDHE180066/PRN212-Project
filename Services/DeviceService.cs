@@ -27,11 +27,7 @@ namespace Services
         {
             return repositories.GetDeviceByID(id);
         }
-        private DeviceRepository _repo = new();
-        public List<Device> GetAllDevice()
-        {
-            return _repo.GetAllDevice();
-        }
+        
 
 
     }
