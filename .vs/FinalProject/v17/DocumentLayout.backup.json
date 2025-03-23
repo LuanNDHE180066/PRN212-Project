@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\",
+  "WorkspaceRootPath": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\repositories\\workinghistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\workinghistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +26,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\workinghistoryscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\workinghistoryscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+=======
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\admin\\goodtypesreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\goodtypesreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\admin\\goodsmanagescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\goodsmanagescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+>>>>>>> main
     }
   ],
   "DocumentGroupContainers": [
@@ -34,6 +43,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 8,
           "Children": [
             {
@@ -50,10 +60,17 @@
             },
             {
               "$type": "Bookmark",
+=======
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+>>>>>>> main
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
@@ -131,6 +148,32 @@
               "RelativeToolTip": "FinalProject\\WorkingHistoryScreen.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-20T06:54:24.374Z",
+=======
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GoodTypeSreen.xaml",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\GoodTypeSreen.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\GoodTypeSreen.xaml",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\GoodTypeSreen.xaml*",
+              "RelativeToolTip": "FinalProject\\Admin\\GoodTypeSreen.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T11:40:30.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GoodsManageScreen.xaml",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\GoodsManageScreen.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\GoodsManageScreen.xaml",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\GoodsManageScreen.xaml",
+              "RelativeToolTip": "FinalProject\\Admin\\GoodsManageScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T11:40:08.023Z",
+>>>>>>> main
               "EditorCaption": ""
             }
           ]

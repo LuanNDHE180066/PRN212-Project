@@ -13,7 +13,17 @@
     <Compile Update="Admin\AdminScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Admin\ExpenditureGenaral.xaml.cs">
+=======
+    <Compile Update="Admin\GoodsManageScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\GoodTypeSreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\UpdateGoodScreen.xaml.cs">
+>>>>>>> main
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Admin\UpdateStaff.xaml.cs">
@@ -39,7 +49,17 @@
     <Page Update="Admin\AdminScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
     <Page Update="Admin\ExpenditureGenaral.xaml">
+=======
+    <Page Update="Admin\GoodsManageScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\GoodTypeSreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\UpdateGoodScreen.xaml">
+>>>>>>> main
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\UpdateStaff.xaml">
