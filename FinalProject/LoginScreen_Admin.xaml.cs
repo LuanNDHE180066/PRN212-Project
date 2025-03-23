@@ -49,7 +49,7 @@ namespace FinalProject
                 if(staff != null)
                 {
                     Admin.AdminScreen adminScreen = new Admin.AdminScreen();
-                    Application.Current.Properties["StaffId"]= staff.Sid.ToString();
+                    Application.Current.Properties["StaffId"]= staff.Sid;
                     adminScreen.ShowDialog();
                 }
                 else

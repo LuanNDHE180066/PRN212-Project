@@ -13,7 +13,5 @@ public partial class WorkingHistory
 
     public TimeOnly? EndTime { get; set; }
 
-    public int Id { get; set; }
-
     public virtual Staff? Staff { get; set; }
 }

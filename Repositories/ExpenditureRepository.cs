@@ -23,10 +23,5 @@ namespace Repositories
             PrnFinalProjectContext.Ins.Expenditures.Update(expenditure);
             PrnFinalProjectContext.Ins.SaveChanges();
         }
-        public void AddExpenditure(Expenditure expenditure)
-        {
-            PrnFinalProjectContext.Ins.Expenditures.Add(expenditure);
-            PrnFinalProjectContext.Ins.SaveChanges();
-        }
     }
 }

@@ -36,13 +36,6 @@ namespace FinalProject
                 FillExpenditureDetail();
             }
         }
-        public ExpenditureDetail()
-        {
-            InitializeComponent();
-            FillComboBoxGoods();
-            int newID = expenditureService.GetAll().Last().ExId+1;
-            txtId.Text = newID.ToString();
-        }
         public void FillComboBoxGoods()
         {
             List<Good> list = goodsService.GetAll();
@@ -60,58 +53,28 @@ namespace FinalProject
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (expenditure != null)
+            int id = int.Parse(txtId.Text);
+            int quantity = int.Parse(txtQuantity.Text);
+            string supplier = txtSupplier.Text;
+            
+            bool isNotValid = txtId.Text.IsNullOrEmpty() || txtQuantity.Text.IsNullOrEmpty()
+                ||txtSupplier.Text.IsNullOrEmpty() || txtTotal.Text.IsNullOrEmpty()
+                || dpkDate.SelectedDate==null || cbGood.SelectedValue==null;
+            if (isNotValid)
             {
-                int id = int.Parse(txtId.Text);
-                int quantity = int.Parse(txtQuantity.Text);
-                string supplier = txtSupplier.Text;
-
-                bool isNotValid = txtId.Text.IsNullOrEmpty() || txtQuantity.Text.IsNullOrEmpty()
-                    || txtSupplier.Text.IsNullOrEmpty() || txtTotal.Text.IsNullOrEmpty()
-                    || dpkDate.SelectedDate == null || cbGood.SelectedValue == null;
-                if (isNotValid)
-                {
-                    MessageBox.Show("Input follow format please");
-                    return;
-                }
-                decimal total = decimal.Parse(txtTotal.Text);
-                DateTime date = dpkDate.SelectedDate.Value;
-                int goodsId = int.Parse(cbGood.SelectedValue.ToString());
-                Expenditure exp = expenditureService.GetById(id);
-                exp.Quantity = quantity;
-                exp.Supplier = supplier;
-                exp.GoodsId = goodsId;
-                exp.Total = total;
-                exp.ExDate = DateOnly.FromDateTime(date);
-                expenditureService.UpdateExpenditure(exp);
+                MessageBox.Show("Input follow format please");
+                return;
             }
-            else
-            {
-                int id = int.Parse(txtId.Text);
-                int quantity = int.Parse(txtQuantity.Text);
-                string supplier = txtSupplier.Text;
-
-                bool isNotValid = txtId.Text.IsNullOrEmpty() || txtQuantity.Text.IsNullOrEmpty()
-                    || txtSupplier.Text.IsNullOrEmpty() || txtTotal.Text.IsNullOrEmpty()
-                    || dpkDate.SelectedDate == null || cbGood.SelectedValue == null;
-                if (isNotValid)
-                {
-                    MessageBox.Show("Input follow format please");
-                    return;
-                }
-                decimal total = decimal.Parse(txtTotal.Text);
-                DateTime date = dpkDate.SelectedDate.Value;
-                int goodsId = int.Parse(cbGood.SelectedValue.ToString());
-                Expenditure exp = new Expenditure();
-                exp.Quantity = quantity;
-                exp.Supplier = supplier;
-                exp.GoodsId = goodsId;
-                exp.Total = total;
-                exp.StaffId = int.Parse(Application.Current.Properties["StaffId"] as string);
-                exp.ExDate = DateOnly.FromDateTime(date);
-                expenditureService.AddExpenditure(exp);
-            }
-            this.Close();
+            decimal total = decimal.Parse(txtTotal.Text);
+            DateTime date = dpkDate.SelectedDate.Value;
+            int goodsId = int.Parse(cbGood.SelectedValue.ToString());
+            Expenditure exp = expenditureService.GetById(id);
+            exp.Quantity = quantity;
+            exp.Supplier = supplier;
+            exp.GoodsId = goodsId;
+            exp.Total = total;
+            exp.ExDate = DateOnly.FromDateTime(date);
+            expenditureService.UpdateExpenditure(exp);
         }
     }
 }

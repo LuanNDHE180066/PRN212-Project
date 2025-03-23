@@ -1,5 +1,4 @@
 ﻿using FinalProject.Admin;
-using Repositories.Models;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -23,7 +22,6 @@ namespace FinalProject
     public partial class WorkingHistoryScreen : Window
     {
         private StaffService staffService = new StaffService();
-        private WorkingHistoryService WorkingHistoryService = new WorkingHistoryService();
         public WorkingHistoryScreen()
         {
             InitializeComponent();
@@ -38,14 +36,14 @@ namespace FinalProject
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var selected = dtgHistory.SelectedItem as WorkingHistoryDTO;
-            WorkingHistoryDetailScreen workingHistoryDetailScreen = new WorkingHistoryDetailScreen(selected);
+            WorkingHistoryDetailScreen workingHistoryDetailScreen  = new WorkingHistoryDetailScreen(selected);
             workingHistoryDetailScreen.ShowDialog();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             var list = dtgHistory.ItemsSource as List<WorkingHistoryDTO>;
-            LoadDataGrid(list.OrderBy(s => s.Name).ToList());
+            LoadDataGrid(list.OrderBy(s=> s.Name).ToList());
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -58,39 +56,7 @@ namespace FinalProject
         {
             string searchName = txtName.Text;
             var list = staffService.WorkingHistoryDTOs();
-            LoadDataGrid(list.Where(s => s.Name.Contains(searchName, StringComparison.OrdinalIgnoreCase)).ToList());
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            if (Application.Current.Properties["startTime"] == null)
-            {
-                Application.Current.Properties["startTime"] = DateTime.Now.TimeOfDay.ToString();
-                btnStart.Content = "Kết thúc ca làm";
-            }
-            else
-            {
-                var confirm = MessageBox.Show("Bạn có chắc kết thúc ca làm?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                if (confirm == MessageBoxResult.Yes)
-                {
-                    string startTime = Application.Current.Properties["startTime"] as string;
-                    var start = TimeOnly.FromTimeSpan(TimeSpan.Parse(startTime));
-
-                    var end = TimeOnly.FromTimeSpan(DateTime.Now.TimeOfDay);
-                    DateOnly date = DateOnly.FromDateTime(DateTime.Now);
-                    WorkingHistory workingHistory = new WorkingHistory();
-                    workingHistory.StaffId = int.Parse(Application.Current.Properties["StaffId"] as string);
-                    workingHistory.Date = date;
-                    workingHistory.StartTime = start;
-                    workingHistory.EndTime = end;
-                    WorkingHistoryService.AddWorkingHistory(workingHistory);
-                    Application.Current.Shutdown();
-                }
-                else
-                {
-                    return;
-                }
-            }
+            LoadDataGrid(list.Where(s=>s.Name.Contains(searchName,StringComparison.OrdinalIgnoreCase)).ToList());
         }
     }
 }

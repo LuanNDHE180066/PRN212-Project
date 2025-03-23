@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace Repositories.Models;
 
 public partial class PrnFinalProjectContext : DbContext
 {
-    public static PrnFinalProjectContext Ins  = new PrnFinalProjectContext();
-    public PrnFinalProjectContext()
-    {
-        if(Ins == null)
+    public static PrnFinalProjectContext Ins = new PrnFinalProjectContext();
+    public PrnFinalProjectContext(){
+    
+        if(Ins== null)
         {
             Ins = this;
         }
@@ -45,8 +46,14 @@ public partial class PrnFinalProjectContext : DbContext
     public virtual DbSet<WorkingHistory> WorkingHistories { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=PRN_FinalProject; Trusted_Connection=SSPI;Encrypt=false;TrustServerCertificate=true");
+    {
+        var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+        if (!optionsBuilder.IsConfigured)
+        {
+            optionsBuilder.UseSqlServer(config.GetConnectionString("MyCnn"));
+        }
+
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -249,13 +256,13 @@ public partial class PrnFinalProjectContext : DbContext
 
         modelBuilder.Entity<WorkingHistory>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__WorkingH__3214EC0728DB1646");
-
-            entity.ToTable("WorkingHistory");
+            entity
+                .HasNoKey()
+                .ToTable("WorkingHistory");
 
             entity.Property(e => e.StaffId).HasColumnName("StaffID");
 
-            entity.HasOne(d => d.Staff).WithMany(p => p.WorkingHistories)
+            entity.HasOne(d => d.Staff).WithMany()
                 .HasForeignKey(d => d.StaffId)
                 .HasConstraintName("FK__WorkingHi__Staff__5BE2A6F2");
         });

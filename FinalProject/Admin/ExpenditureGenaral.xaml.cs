@@ -51,21 +51,6 @@ namespace FinalProject.Admin
             ExpenditureDetail expenditureDetail = new ExpenditureDetail(expenditure);
             expenditureDetail.ShowDialog();
         }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            LoadDataGrid(expenditureService.GetAll());
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            ExpenditureDetail expenditureDetail  = new ExpenditureDetail();
-            expenditureDetail.ShowDialog();
-        }
-
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            WorkingHistoryScreen workingHistoryScreen = new WorkingHistoryScreen();
-        }
+        
     }
 }

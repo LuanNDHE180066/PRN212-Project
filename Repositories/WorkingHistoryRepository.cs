@@ -22,10 +22,5 @@ namespace Repositories
         {
             return PrnFinalProjectContext.Ins.WorkingHistories.Where(s => s.Staff.Sid == id && s.Date.Equals(date)).ToList();
         }
-        public void AddWorkingHistory(WorkingHistory history)
-        {
-            PrnFinalProjectContext.Ins.WorkingHistories.Add(history);
-            PrnFinalProjectContext.Ins.SaveChanges();
-        }
     }
 }
