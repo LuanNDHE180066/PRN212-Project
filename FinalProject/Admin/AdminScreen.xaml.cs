@@ -110,5 +110,19 @@ namespace FinalProject.Admin
             this.Close();
             cashierScreen.ShowDialog();
         }
+
+        private void btnCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            ManageCustomerScreen manageCustomerScreen   = new ManageCustomerScreen();
+            manageCustomerScreen.ShowDialog();
+            this.Close();
+        }
+
+        private void btnDevice_Click(object sender, RoutedEventArgs e)
+        {
+            DeviceManageScreen deviceManageScreen = new DeviceManageScreen();
+            deviceManageScreen.ShowDialog();    
+            this.Close();
+        }
     }
 }

@@ -28,7 +28,7 @@ namespace FinalProject.Admin
         }
         public void loadDeviceType()
         {
-            var types = typeService.getAllDTO();
+            var types = typeService.GetAllDeviceType();
             dgvDisplay.ItemsSource = types;
         }
 

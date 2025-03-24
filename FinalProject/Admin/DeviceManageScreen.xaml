@@ -56,10 +56,10 @@
                                 </Button>
                                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                                     <TextBlock HorizontalAlignment="Center" Text="{Binding Type.DtName}" FontWeight="Bold"/>
-                                <TextBlock Text=" - Status: " FontSize="10"/>
-                                    <TextBlock HorizontalAlignment="Center" Text="{Binding StatusOfDevice}" FontSize="10" />
+                                
+                                   
                             </StackPanel>
-                                <TextBlock HorizontalAlignment="Center" Text="{Binding RunningStatus}"></TextBlock>
+                                
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                     <TextBlock Text="{Binding Hours}"/>
                                     <Label Content="Hours"/>

@@ -45,7 +45,7 @@
                 <DataGridTextColumn Header="Email" Width="*" Binding="{Binding Path= Email}"/>
                 <DataGridTextColumn Header="UserName" Width="*" Binding="{Binding Path= Username}"/>
                 <DataGridTextColumn Header="Password" Width="*" Binding="{Binding Path= Password}"/>
-                <DataGridTextColumn Header="Status" Width="*" Binding="{Binding Path= StatusCustomer}"/>
+                
             </DataGrid.Columns>
         </DataGrid>
 

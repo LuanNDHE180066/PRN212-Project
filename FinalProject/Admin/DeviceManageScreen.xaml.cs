@@ -42,7 +42,7 @@ namespace FinalProject.Admin
         
         public void loadDevice()
             {
-            var devices = devviceService.GetAllDeviceDTO();
+            var devices = devviceService.GetAllDevice();
             listDevice.ItemsSource = devices;   
             }
         public void loadDeviceType()

@@ -27,7 +27,9 @@
                 <Button x:Name="btnExp" Background="#FFD674D0" Height="50" Content="Phiếu chi" Click="Button_Click_5"></Button>
                 <Button x:Name="btnGood" Background="#FFD674D0" Height="50" Content="Goods" Click="btnExp_Click"></Button>
                 <Button x:Name="btnInvoice" Background="#FFD674D0" Height="50" Content="Hóa Đơn" Click="btnGood_Click"></Button>
-                
+                <Button x:Name="btnDevice" Background="#FFD674D0" Height="50" Content="Device" Click="btnDevice_Click"></Button>
+                <Button x:Name="btnCustomer" Background="#FFD674D0" Height="50" Content="Customer" Click="btnCustomer_Click"></Button>
+
             </StackPanel>
         </Grid>
         <Grid Grid.Row="0" Grid.Column="1">
