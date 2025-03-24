@@ -114,8 +114,7 @@ namespace FinalProject.Cashier
                 }
             }
             else
-            {
-                MessageBox.Show("cc");
+            {        
                     o.invoice = invoiceService.GetAll().FirstOrDefault(x => x.IId == _invoice.IId);
                     if (o.ShowDialog() == false)
                     {
@@ -192,7 +191,7 @@ namespace FinalProject.Cashier
                     if (!timeInput.Text.Contains("_") && timeOuput.Text.Contains("_") && device != null && _invoice == null && _invoiceId == -1)
                     {
                         MessageBox.Show("Create invoice !");
-                        Device d = deviceService.GetDeviceById(device.Did);
+                        Device d = deviceService.GetAllDevice().FirstOrDefault(dev => dev.Did == device.Did);
                         d.Status = 2;
                         deviceService.UpdateDevice(d);
 
@@ -205,7 +204,7 @@ namespace FinalProject.Cashier
                         HistoryUsedDevice historyUsed = new HistoryUsedDevice() { Date = date, InvoiceId = invoice.IId, Start = inputTime, DeviceId = device.Did };
                         historyUsedDeviceService.Add(historyUsed);
                         btnSetFromt.IsEnabled = false;
-                        btnAddGood.IsEnabled = false;
+                        
                     }
                     else if (!timeInput.Text.Contains("_") && !timeOuput.Text.Contains("_"))
                     {
@@ -268,9 +267,13 @@ namespace FinalProject.Cashier
                             invoice = invoiceService.GetById(_invoice.IId);
                             invoice.Total = totalUse + totalGood;
                         }
+                        Customer customer = customerService.GetById(int.Parse(txbCustomer.Text));
+                        customer.Hours += (int?)duration;
+                        customerService.UpdateCustomer(customer);
                         invoiceService.Update(invoice);
                         tbxTotal.IsEnabled=false;
                         btnSave.IsEnabled = false;
+                        btnAddGood.IsEnabled = false;
                     } else if((_invoice != null && timeOuput.Text.Contains("_") || (_invoiceId != null && timeOuput.Text.Contains("_"))))
                     {
                         MessageBox.Show("Please set end time to generate invoice", "", MessageBoxButton.OK);

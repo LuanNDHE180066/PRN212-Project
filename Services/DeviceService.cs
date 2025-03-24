@@ -11,6 +11,7 @@ namespace Services
     public class DeviceService
     {
         private DeviceRepositories repositories = new DeviceRepositories();
+        private DeviceRepository _repo = new();
         public List<Device> GetAllDevice()
         {
             return repositories.GetALlDevice();
@@ -27,17 +28,14 @@ namespace Services
         {
             return repositories.GetDeviceByID(id);
         }
-        
+
 
         public Device GetDeviceById(int id)
         {
             return _repo.GetDeviceById(id);
         }
 
-        public void UpdateDevice(Device device)
-        {
-            _repo.UpdateDevice(device); 
-        }
+        
 
 
     }

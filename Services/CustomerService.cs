@@ -11,6 +11,7 @@ namespace Services
     public class CustomerService
     {
         private CustomerRepository repository =new();
+        private CustomerRepositories repositories = new();
         public Customer GetById(int id)
         {
             return repository.GetById(id);

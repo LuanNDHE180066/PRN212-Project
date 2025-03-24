@@ -13,19 +13,15 @@
     <Compile Update="Admin\AdminScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\ExpenditureGenaral.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Admin\UpdateStaff.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Admin\WorkingHistoryDetailScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Cashier\CalculateInvoiceScreem.xaml.cs">
+    <Compile Update="Cashier\CashierScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Cashier\CashierScreen.xaml.cs">
     <Compile Update="CustomerManager\OrderFood.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -49,19 +45,15 @@
     <Page Update="Admin\AdminScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\ExpenditureGenaral.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Admin\UpdateStaff.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\WorkingHistoryDetailScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Cashier\CalculateInvoiceScreem.xaml">
+    <Page Update="Cashier\CashierScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Cashier\CashierScreen.xaml">
     <Page Update="CustomerManager\OrderFood.xaml">
       <SubType>Designer</SubType>
     </Page>
