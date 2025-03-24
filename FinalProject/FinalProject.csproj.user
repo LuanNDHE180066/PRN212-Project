@@ -13,9 +13,6 @@
     <Compile Update="Admin\AdminScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\ExpenditureGenaral.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Admin\UpdateStaff.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -29,6 +26,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ExpenditureDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cashier\OrderGoodScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginScreen_Admin.xaml.cs">
@@ -45,9 +45,6 @@
     <Page Update="Admin\AdminScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\ExpenditureGenaral.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Admin\UpdateStaff.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -61,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ExpenditureDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Cashier\OrderGoodScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LoginScreen_Admin.xaml">

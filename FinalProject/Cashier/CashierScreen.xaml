@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:FinalProject.Cashier"
         mc:Ignorable="d"
         Title="CashierScreen" Height="450" Width="800" Loaded="Window_Loaded">
+
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="4*"/>
@@ -43,23 +45,39 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Border  BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
+                        <Border  BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5" MouseDown="Border_MouseDown">
                             <StackPanel Width="135" Height="200">
                                 <!-- Đảm bảo Image Binding đúng -->
                                 <Image Source="/Images/pc-game.png" Height="110" Width="Auto" Stretch="UniformToFill"/>
                                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                                     <TextBlock HorizontalAlignment="Center" Text="{Binding Type.DtName}" FontWeight="Bold"/>
-                                    <TextBlock Text=" - Status: " FontSize="10"/>
-                                    <TextBlock HorizontalAlignment="Center" Text="{Binding StatusOfDevice}" FontSize="10" />
+
+
                                 </StackPanel>
                                 <TextBlock HorizontalAlignment="Center" Text="{Binding StatusRunning}"></TextBlock>
-                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                    <TextBlock Text="{Binding Hours}"/>
-                                    <Label Content="Hours"/>
-                                </StackPanel>
 
-                                <Button Width="65" Background="#75BA75">
-                                    <TextBlock FontSize="10" Text="{Binding PricePerHour}"/>
+
+                                <Button Width="70" Height="20">
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Background" Value="Gray"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Status}" Value="0">
+                                                    <Setter Property="Background" Value="Red"/>
+                                                    <!-- Broken -->
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Status}" Value="1">
+                                                    <Setter Property="Background" Value="Green"/>
+                                                    <!-- Available -->
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Status}" Value="2">
+                                                    <Setter Property="Background" Value="Orange"/>
+                                                    <!-- Unavailable -->
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                    <TextBlock FontSize="10" Text="{Binding Status, Converter={StaticResource StatusConverter}}"/>
                                 </Button>
                             </StackPanel>
                         </Border>

@@ -23,16 +23,26 @@ namespace Repositories
             _context.Invoices.Add(i);
            return _context.SaveChanges() > 0;
         }
+
+        public Invoice GetByNull()
+        {
+            _context = new();
+            return _context.Invoices.FirstOrDefault(x => x.Total == 0);
+        }
+
         public Invoice GetById(int id)
         {
             _context = new PrnFinalProjectContext();
-            return _context.Invoices.Find(id);
+            return _context.Invoices.Include(x=> x.Customer).FirstOrDefault(x => x.IId == id);
         }
-        public void Update(Invoice i)
+
+        public void Update(Invoice invoice)
         {
             _context = new PrnFinalProjectContext();
-            _context.Invoices.Update(i);
-            _context.SaveChanges(); 
+            _context.Update(invoice);
+            _context.SaveChanges();
         }
+        
+       
     }
 }

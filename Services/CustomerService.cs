@@ -10,8 +10,14 @@ namespace Services
 {
     public class CustomerService
     {
-        private CustomerRepositories repositories = new CustomerRepositories();
-        public List<Customer> getAllCustomer()
+        private CustomerRepository repository =new();
+        private CustomerRepositories repositories = new();
+        public Customer GetById(int id)
+        {
+            return repository.GetById(id);
+        }
+
+   public List<Customer> getAllCustomer()
         {
             return repositories.getAllCustomer();
         }
@@ -30,7 +36,9 @@ namespace Services
         public Customer GetCustomerLogin(string user,string pass)
         {
             return repositories.getAllCustomer().Where(s=>s.Username.Equals(user) && s.Password.Equals(pass)).First();
-        }
+        } 
+    
+        
         public List<CustomerDTO> getAllDTO()
         {
             return repositories.getAllCustomer().Select(x => new CustomerDTO

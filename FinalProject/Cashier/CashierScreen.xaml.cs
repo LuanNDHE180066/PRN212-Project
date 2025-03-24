@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using FinalProject.Admin;
 using Repositories.Models;
 using Services;
 
@@ -23,26 +24,81 @@ namespace FinalProject.Cashier
     {
         private DeviceService deviceService = new();
         private InvoiceService invoiceService = new();
+        private HistoryUsedDeviceService historyUsedDeviceService = new();
+        private HistoryBuyGoodService historyBuyGoodService = new();
+
         public CashierScreen()
         {
             InitializeComponent();
         }
 
-    
-        
+
+
 
         private void btnInvoice_Click(object sender, RoutedEventArgs e)
         {
             InvoiceManageScreen im = new();
-            if(im.ShowDialog() == false)
+            if (im.ShowDialog() == false)
             {
 
             }
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        public void FillItcList()
         {
             itcListDevice.ItemsSource = deviceService.GetAllDevice();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            FillItcList();
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+            var border = sender as Border;
+
+            if (border != null && border.DataContext is Device device)
+            {
+                CalculateInvoiceScreem ci = new();
+                ci.device = device;
+                HistoryUsedDevice hud = historyUsedDeviceService.GetDeviceRunning(device.Did);
+                Invoice invoice = null;
+                if(hud != null)
+                {
+                     invoice = invoiceService.GetById((int)hud.InvoiceId);
+
+                }
+                if(invoice != null)
+                {
+                    
+                    ci._invoice = invoice;
+                    ci.tbxInvoiceId.Text = invoice.IId.ToString();
+                    ci.txbDevice.Text = device.Did.ToString();
+                    ci.dpkDate.Text = invoice.InvoiceDate.ToString();
+                    ci.txbCustomer.Text = invoice.CustomerId.ToString();
+                    ci.txbStaff.Text = invoice.StaffId.ToString();
+                    ci.dgvGood.ItemsSource = historyBuyGoodService.GetByInvoiceId(invoice.IId);
+                    ci.timeInput.Text = hud.Start.ToString();
+                    ci.tbxInvoiceId.IsReadOnly = true;
+                    ci.txbDevice.IsReadOnly = true;
+                    ci.dpkDate.IsEnabled = false;
+                    ci.txbCustomer.IsReadOnly = true;
+                    ci.txbStaff.IsReadOnly = true;
+                    ci.btnSetFromt.IsEnabled = false;
+                    
+                }
+                ci.dpkDate.Text = DateTime.Now.ToString("dd-MM-yyyy");
+                ci.dpkDate.IsEnabled = false;
+                //Invoice invoice = invoiceService.GetById();
+                ci.txbDevice.Text = device.Did.ToString();
+                if (ci.ShowDialog() == false)
+                {
+                    FillItcList();
+                }
+            }
+
         }
     }
 }

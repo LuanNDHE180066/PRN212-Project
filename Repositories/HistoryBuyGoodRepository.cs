@@ -26,9 +26,18 @@ namespace Repositories
         }
         public void Add(HistoryBuyGood good)
         {
-            _context = new PrnFinalProjectContext();
-            _context.HistoryBuyGoods.Add(good);
+            _context = new();
+            _context.HistoryBuyGoods.Add(hbg);
             _context.SaveChanges();
         }
+
+        public void Update(HistoryBuyGood hbg)
+        {
+            _context = new();
+            _context.HistoryBuyGoods.Update(hbg);
+            _context.SaveChanges();
+        }
+
+       
     }
 }
