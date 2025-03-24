@@ -312,7 +312,9 @@ VALUES
 
 select * from WorkingHistory
 
-
+select * from HistoryBuyGoods
+select * from Invoice
+select * from Role
 
 
 

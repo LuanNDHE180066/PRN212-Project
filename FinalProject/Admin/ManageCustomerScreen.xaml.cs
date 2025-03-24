@@ -28,7 +28,7 @@ namespace FinalProject.Admin
         }
         public void loadCustomer()
         {
-            var customers = customerService.getAllCustomer();
+            var customers = customerService.getAllDTO();
             dgvDisplay.ItemsSource = customers;
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)

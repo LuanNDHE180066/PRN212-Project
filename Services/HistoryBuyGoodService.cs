@@ -17,7 +17,12 @@ namespace Services
             return repo.GetByInvoiceId(invoiceId);
         }
 
-        public void Add(HistoryBuyGood hbg)
+        
+        public List<HistoryBuyGood> GetByCustomerId(int customerID)
+        {
+            return repo.GetByCustomerId(customerID);
+        }
+        public void Add(HistoryBuyGood his)
         {
             repo.Add(hbg);
         }
@@ -27,6 +32,5 @@ namespace Services
             repo.Update(hbg);
         }
 
-       
     }
 }

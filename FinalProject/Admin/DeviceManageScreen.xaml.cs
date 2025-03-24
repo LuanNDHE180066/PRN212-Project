@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,9 +38,11 @@ namespace FinalProject.Admin
            
             
         }
-            public void loadDevice()
+        
+        
+        public void loadDevice()
             {
-            var devices = devviceService.GetAllDevice();
+            var devices = devviceService.GetAllDeviceDTO();
             listDevice.ItemsSource = devices;   
             }
         public void loadDeviceType()

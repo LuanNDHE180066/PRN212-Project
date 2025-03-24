@@ -1,4 +1,5 @@
-﻿using Repositories.Models;
+﻿using FinalProject.Cashier;
+using Repositories.Models;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -26,12 +27,28 @@ namespace FinalProject.Admin
         {
             InitializeComponent();
             LoadDataGrid(staffService.GetAll());
+            filterRole();
         }
         public void LoadDataGrid(List<Staff> staffs) 
         {
             dtgStaff.ItemsSource = staffs;
         }
-
+        public void filterRole()
+        {
+            string sid_raw = Application.Current.Properties["StaffId"] as string;
+            int.TryParse(sid_raw, out int sid);
+            if (sid != 0)
+            {
+                Staff staff = staffService.GetById(sid);
+                MessageBox.Show(staff.SName);
+                if (staff.Roleid != 1)
+                {
+                    btnStaff.IsEnabled = false;
+                    btnExp.IsEnabled = false;
+                    btnGood.IsEnabled = false;
+                }
+            }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Admin.AddStaff addStaff = new AddStaff() {AdminScreen =this };
@@ -51,7 +68,6 @@ namespace FinalProject.Admin
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             WorkingHistoryScreen history = new WorkingHistoryScreen();
-            this.Close();
             history.ShowDialog();
         }
 
@@ -79,6 +95,20 @@ namespace FinalProject.Admin
             ExpenditureGenaral expenditureGenaral = new ExpenditureGenaral();
             this.Close();
             expenditureGenaral.ShowDialog();
+        }
+
+        private void btnExp_Click(object sender, RoutedEventArgs e)
+        {
+            GoodManageScreen goodManageScreen = new GoodManageScreen();
+            this.Close();
+            goodManageScreen.ShowDialog();
+        }
+
+        private void btnGood_Click(object sender, RoutedEventArgs e)
+        {
+            CashierScreen cashierScreen = new CashierScreen();
+            this.Close();
+            cashierScreen.ShowDialog();
         }
     }
 }

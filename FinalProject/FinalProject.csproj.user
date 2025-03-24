@@ -19,7 +19,7 @@
     <Compile Update="Admin\WorkingHistoryDetailScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Cashier\CashierScreen.xaml.cs">
+    <Compile Update="CustomerManager\HistoryOrder.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="CustomerManager\OrderFood.xaml.cs">
@@ -51,7 +51,7 @@
     <Page Update="Admin\WorkingHistoryDetailScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Cashier\CashierScreen.xaml">
+    <Page Update="CustomerManager\HistoryOrder.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CustomerManager\OrderFood.xaml">

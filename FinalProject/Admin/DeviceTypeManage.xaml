@@ -41,7 +41,7 @@
                 <DataGridTextColumn Header="DeviceType Id" Width="*" Binding="{Binding Path= DtId}"/>
                 <DataGridTextColumn Header="DeviceType Name" Width="*" Binding="{Binding Path= DtName}"/>
                 <DataGridTextColumn Header="Detail" Width="2*" Binding="{Binding Path= Detail}"/>
-                <DataGridTextColumn Header="Status" Width="*" Binding="{Binding Path= Status}"/>
+                <DataGridTextColumn Header="Status" Width="*" Binding="{Binding Path= StatusOfType}"/>
             </DataGrid.Columns>
         </DataGrid>
 
