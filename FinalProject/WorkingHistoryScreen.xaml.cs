@@ -28,7 +28,7 @@ namespace FinalProject
         {
             InitializeComponent();
             LoadDataGrid(staffService.WorkingHistoryDTOs());
-
+            buttonAlter();
         }
         public void LoadDataGrid(List<WorkingHistoryDTO> list)
         {
