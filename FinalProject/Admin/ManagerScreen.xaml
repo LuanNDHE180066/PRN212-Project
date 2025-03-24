@@ -1,11 +1,11 @@
-﻿<Window x:Class="FinalProject.Admin.AdminScreen"
+﻿<Window x:Class="FinalProject.Admin.ManagerScreen"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject.Admin"
         mc:Ignorable="d"
-        Title="AdminScreen" Height="550" Width="800">
+        Title="ManagerScreen" Height="450" Width="800">
     <Grid Background="#FF7DC9CC">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -22,10 +22,9 @@
                 </StackPanel.Background>
             </StackPanel>
             <StackPanel Grid.Row="1" Orientation="Vertical">
-                <Button x:Name="btnStaff" Height="50" Content="Nhân viên" Background="#FFD674D0"></Button>
-                <Button x:Name="btnWorking" Background="#FFD674D0" Height="50" Content="Chấm công" Click="Button_Click_2"></Button>
-                <Button x:Name="btnExp" Background="#FFD674D0" Height="50" Content="Phiếu chi" Click="Button_Click_5"></Button>
-                <Button x:Name="btnInvoice" Background="#FFD674D0" Height="50" Content="Hóa Đơn" Click="btnGood_Click"></Button>
+                <Button x:Name="btnGood" Background="#FFD674D0" Height="50" Content="Goods"></Button>
+                <Button x:Name="btnDevice" Background="#FFD674D0" Height="50" Content="Device"></Button>
+                <Button x:Name="btnCustomer" Background="#FFD674D0" Height="50" Content="Customer"></Button>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="0" Grid.Column="1">
@@ -35,12 +34,12 @@
             </Grid.RowDefinitions>
             <StackPanel HorizontalAlignment="Center" Margin="0 0 30 0" Height="30" Grid.Row="0" Orientation="Horizontal">
                 <StackPanel Orientation="Horizontal">
-                    <TextBox x:Name="txtName" Width="100" TextChanged="txtName_TextChanged"></TextBox>
+                    <TextBox x:Name="txtName" Width="100"></TextBox>
                     <Button Margin="0 0 30 0" Height="30" Content="Search"></Button>
                 </StackPanel>
-                <Button Margin="0 0 30 0" Height="30" Content="Order by Name" Click="Button_Click_3"></Button>
-                <Button Margin="0 0 30 0" Height="30" Content="Order by Date" Click="Button_Click_4"></Button>
-                <Button Content="Add new Staff" Click="Button_Click"/>
+                <Button Margin="0 0 30 0" Height="30" Content="Order by Name"></Button>
+                <Button Margin="0 0 30 0" Height="30" Content="Order by Date"></Button>
+                <Button Content="Add new Staff"/>
             </StackPanel>
             <DataGrid x:Name="dtgStaff" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalGridLinesBrush="#FF3A1111" Background="#FF91BEBE">
                 <DataGrid.Columns>
@@ -69,7 +68,7 @@
                         </DataGridTemplateColumn.Header>
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Content="Change" Click="Button_Click_1"></Button>
+                                <Button Content="Change"></Button>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

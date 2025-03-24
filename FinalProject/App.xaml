@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:FinalProject"
-             StartupUri="LoginScreen_Customer.xaml"
+             StartupUri="LoginScreen_Admin.xaml"
              xmlns:conv="clr-namespace:Repositories.Converter;assembly=Repositories"
              >
     <Application.Resources>
