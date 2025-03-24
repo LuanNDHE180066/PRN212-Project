@@ -60,7 +60,13 @@ namespace FinalProject
             var list = staffService.WorkingHistoryDTOs();
             LoadDataGrid(list.Where(s => s.Name.Contains(searchName, StringComparison.OrdinalIgnoreCase)).ToList());
         }
-
+        public void buttonAlter()
+        {
+            if (Application.Current.Properties["startTime"] != null)
+            {
+                btnStart.Content = "Kết thúc ca làm";
+            }
+        }
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             if (Application.Current.Properties["startTime"] == null)

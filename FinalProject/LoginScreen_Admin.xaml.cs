@@ -35,7 +35,6 @@ namespace FinalProject
             cbRole.ItemsSource = list;
             cbRole.SelectedValuePath = "Rid";
             cbRole.DisplayMemberPath = "RName";
-            cbRole.SelectedIndex = 0;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -48,8 +47,9 @@ namespace FinalProject
                 Staff staff = staffService.GetByRoleUsernamePassword(username, password, roleId.Value);
                 if(staff != null)
                 {
+                    Application.Current.Properties["StaffId"] = staff.Sid.ToString();
                     Admin.AdminScreen adminScreen = new Admin.AdminScreen();
-                    Application.Current.Properties["StaffId"]= staff.Sid.ToString();
+                    this.Close();
                     adminScreen.ShowDialog();
                 }
                 else
