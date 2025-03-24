@@ -27,5 +27,26 @@ namespace Services
         {
             return typeRepositories.getDeviceTypeByName(DtName);
         }
+        public List<DeviceTypeDTP> getAllDTO()
+        {
+            return typeRepositories.GetAllDeviceType().Select(x => new DeviceTypeDTP
+            {
+                DtId = x.DtId,
+                DtName = x.DtName,
+                Detail = x.Detail,
+                StatusOfType = x.Status == 1 ? "Active" : "Inactive" 
+            }).ToList();
+        }
+
+        public class DeviceTypeDTP()
+        {
+            public int DtId { get; set; }
+
+            public string? DtName { get; set; }
+
+            public string? Detail { get; set; }
+
+            public string StatusOfType { get; set; }
+        }
     }
 }

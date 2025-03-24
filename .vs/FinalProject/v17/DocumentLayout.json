@@ -1,30 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\",
+  "WorkspaceRootPath": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\orderfood.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\orderfood.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\orderfood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\orderfood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\loginscreen_customer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_customer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\loginscreen_customer.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_customer.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|solutionrelative:services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\managecustomerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\managecustomerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\managecustomerscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\managecustomerscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|solutionrelative:services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\repositories\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\devicetypemanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\devicetypemanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\devicetypemanage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\devicetypemanage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\repositories\\models\\devicetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\models\\devicetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\services\\devicetypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|solutionrelative:services\\devicetypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|solutionrelative:services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\repositories\\devicetyperepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\devicetyperepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\devicemanagescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\devicemanagescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\devicemanagescreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\devicemanagescreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,77 +86,167 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InvoiceService.cs",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Services\\InvoiceService.cs",
-              "RelativeDocumentMoniker": "Services\\InvoiceService.cs",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Services\\InvoiceService.cs",
-              "RelativeToolTip": "Services\\InvoiceService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T16:56:30.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderFood.xaml",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\OrderFood.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\OrderFood.xaml",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\OrderFood.xaml",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\OrderFood.xaml",
+              "Title": "ManageCustomerScreen.xaml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\ManageCustomerScreen.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\ManageCustomerScreen.xaml",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\ManageCustomerScreen.xaml*",
+              "RelativeToolTip": "FinalProject\\Admin\\ManageCustomerScreen.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-23T15:50:09.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderFood.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAEwIAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T15:48:54.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\App.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\App.xaml",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\App.xaml",
-              "RelativeToolTip": "FinalProject\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-23T15:46:54.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginScreen_Customer.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Customer.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Customer.xaml.cs",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Customer.xaml.cs",
-              "RelativeToolTip": "FinalProject\\LoginScreen_Customer.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAcwCoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T15:40:27.112Z",
+              "WhenOpened": "2025-03-24T04:50:34.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginScreen_Customer.xaml",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Customer.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Customer.xaml",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Customer.xaml",
-              "RelativeToolTip": "FinalProject\\LoginScreen_Customer.xaml",
+              "Title": "ManageCustomerScreen.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\ManageCustomerScreen.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\ManageCustomerScreen.xaml.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\ManageCustomerScreen.xaml.cs*",
+              "RelativeToolTip": "FinalProject\\Admin\\ManageCustomerScreen.xaml.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwB4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:50:19.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\CustomerService.cs*",
+              "RelativeToolTip": "Services\\CustomerService.cs*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwCwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:47:51.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Repositories\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Models\\Customer.cs",
+              "RelativeToolTip": "Repositories\\Models\\Customer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:47:30.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\App.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\App.xaml",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\App.xaml*",
+              "RelativeToolTip": "FinalProject\\App.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-23T15:39:49.233Z",
+              "WhenOpened": "2025-03-24T04:46:15.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeviceType.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Models\\DeviceType.cs",
+              "RelativeDocumentMoniker": "Repositories\\Models\\DeviceType.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Models\\DeviceType.cs",
+              "RelativeToolTip": "Repositories\\Models\\DeviceType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:37:25.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeviceTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\DeviceTypeService.cs",
+              "RelativeDocumentMoniker": "Services\\DeviceTypeService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\DeviceTypeService.cs",
+              "RelativeToolTip": "Services\\DeviceTypeService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:36:34.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeviceTypeRepositories.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\DeviceTypeRepositories.cs",
+              "RelativeDocumentMoniker": "Repositories\\DeviceTypeRepositories.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\DeviceTypeRepositories.cs",
+              "RelativeToolTip": "Repositories\\DeviceTypeRepositories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:36:28.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeviceTypeManage.xaml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DeviceTypeManage.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\DeviceTypeManage.xaml",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DeviceTypeManage.xaml",
+              "RelativeToolTip": "FinalProject\\Admin\\DeviceTypeManage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-24T04:36:06.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeviceTypeManage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DeviceTypeManage.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\DeviceTypeManage.xaml.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DeviceTypeManage.xaml.cs",
+              "RelativeToolTip": "FinalProject\\Admin\\DeviceTypeManage.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:36:01.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DeviceManageScreen.xaml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DeviceManageScreen.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\DeviceManageScreen.xaml",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DeviceManageScreen.xaml",
+              "RelativeToolTip": "FinalProject\\Admin\\DeviceManageScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-24T04:34:14.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DeviceManageScreen.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DeviceManageScreen.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\DeviceManageScreen.xaml.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DeviceManageScreen.xaml.cs",
+              "RelativeToolTip": "FinalProject\\Admin\\DeviceManageScreen.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:31:32.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\DeviceService.cs",
+              "RelativeDocumentMoniker": "Services\\DeviceService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\DeviceService.cs",
+              "RelativeToolTip": "Services\\DeviceService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T00:43:12.308Z",
               "EditorCaption": ""
             }
           ]

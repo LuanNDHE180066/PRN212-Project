@@ -53,7 +53,7 @@ namespace FinalProject.CustomerManager
                 // Anh
                 Image image = new Image();
                 image.Height = 100;
-                image.Source = new BitmapImage(new System.Uri(good.Img, System.UriKind.Absolute));
+                //image.Source = new BitmapImage(new System.Uri(good.Img, System.UriKind.Absolute));
                 image.Margin = new Thickness(5);
 
                 // Ten
@@ -127,6 +127,13 @@ namespace FinalProject.CustomerManager
                 InvoiceService.UpdateTotal(invoiceId);
                 this.Close();
             }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            HistoryOrder historyOrder = new HistoryOrder();
+            historyOrder.Show();
+            this.Close();
         }
     }
 }

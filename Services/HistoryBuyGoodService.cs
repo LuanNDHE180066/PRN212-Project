@@ -16,6 +16,10 @@ namespace Services
         {
             return repo.GetByInvoiceId(invoiceId);
         }
+        public List<HistoryBuyGood> GetByCustomerId(int customerID)
+        {
+            return repo.GetByCustomerId(customerID);
+        }
         public void Add(HistoryBuyGood his)
         {
             repo.Add(his);

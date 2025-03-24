@@ -31,5 +31,37 @@ namespace Services
         {
             return repositories.getAllCustomer().Where(s=>s.Username.Equals(user) && s.Password.Equals(pass)).First();
         }
+        public List<CustomerDTO> getAllDTO()
+        {
+            return repositories.getAllCustomer().Select(x => new CustomerDTO
+            {
+                Cid = x.Cid,
+                CName = x.CName,
+                Hours = x.Hours,
+                Phone = x.Phone,
+                Email = x.Email,
+                Username = x.Username,
+                Password = x.Password,
+                StatusCustomer = x.Status == 1 ? "Active" : "Inactive" // Chuyển đổi Status
+            }).ToList();
+        }
+        public class CustomerDTO()
+        {
+            public int Cid { get; set; }
+
+            public string? CName { get; set; }
+
+            public int? Hours { get; set; }
+
+            public string? Phone { get; set; }
+
+            public string? Email { get; set; }
+
+            public string? Username { get; set; }
+
+            public string? Password { get; set; }
+
+            public string StatusCustomer { get; set; }
+        }
     } 
 }
