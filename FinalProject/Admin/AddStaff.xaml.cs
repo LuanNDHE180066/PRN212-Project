@@ -62,7 +62,7 @@ namespace FinalProject.Admin
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            AdminScreen.LoadDataGrid();
+            AdminScreen.LoadDataGrid(staffService.GetAll());
         }
     }
 }

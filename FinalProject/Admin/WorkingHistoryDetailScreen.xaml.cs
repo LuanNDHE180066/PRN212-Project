@@ -1,4 +1,5 @@
-﻿using Services;
+﻿using Repositories.Models;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,6 +46,12 @@ namespace FinalProject.Admin
             DatePicker datePicker = sender as DatePicker;
             var selected = datePicker.SelectedDate;
             dtgWorkDetail.ItemsSource = workingHistoryService.GetByStaffIdAndDate(workingHistoryDTO.Id, selected.Value);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            List<WorkingHistory> workingHistories = dtgWorkDetail.ItemsSource as List<WorkingHistory>;
+            dtgWorkDetail.ItemsSource = workingHistories.OrderByDescending(s => s.Date).ToList();
         }
     }
 }

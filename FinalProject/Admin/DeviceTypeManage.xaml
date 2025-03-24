@@ -1,0 +1,76 @@
+﻿<Window x:Class="FinalProject.Admin.DeviceTypeManage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject.Admin"
+        mc:Ignorable="d"
+        Title="DeviceTypeManage" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/Admin/avatars-000699683875-m5pnre-t500x500.jpg"/>
+            </StackPanel.Background>
+        </StackPanel>
+
+        <!-- <WrapPanel Grid.Row="1" Grid.Column="1" Margin="20,10,10,10">
+    <WrapPanel Orientation="Horizontal">
+        <Button Width="100" Height="100" Content="Sản phẩm 1" Margin="10"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 2"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 3"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 4"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 5"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 6"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 5"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 6"/>
+    </WrapPanel>
+</WrapPanel>
+-->
+        <DataGrid Grid.Column="1" Grid.Row="1" Name="dgvDisplay" AutoGenerateColumns="False" CanUserAddRows="False"  Margin="20">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="DeviceType Id" Width="*" Binding="{Binding Path= DtId}"/>
+                <DataGridTextColumn Header="DeviceType Name" Width="*" Binding="{Binding Path= DtName}"/>
+                <DataGridTextColumn Header="Detail" Width="2*" Binding="{Binding Path= Detail}"/>
+                <DataGridTextColumn Header="Status" Width="*" Binding="{Binding Path= Status}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Background="#91BEBE" Grid.Row="1" Grid.Column="0">
+
+            <Button Content="Back to list Device" Name="btnBack"  
+           Width="110" 
+           Height="40" 
+           Margin="0,100,0,0" 
+                    Click="btnBack_Click"
+            />
+                <Button Content="Add Type" Name="btnAdd"  
+            Width="110" 
+            Height="40" 
+            Margin="0,20,0,0"
+                        Click="btnAdd_Click"
+            />
+            <Button Content="Update Type" Name="btnUpdate"  
+            Width="110" 
+            Height="40" 
+            Margin="0,20,0,0" 
+                    Click="btnUpdate_Click"
+             />
+
+        </StackPanel>
+
+        <Grid Background="#91BEBE" Grid.Row="0" Grid.Column="1">
+            <Label Content="Device Type" FontSize="40" FontWeight="Bold" 
+          HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>

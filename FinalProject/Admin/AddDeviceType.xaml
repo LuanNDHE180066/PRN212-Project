@@ -1,0 +1,85 @@
+﻿<Window x:Class="FinalProject.Admin.AddDeviceType"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject.Admin"
+        mc:Ignorable="d"
+        Title="AddDeviceType" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/Admin/avatars-000699683875-m5pnre-t500x500.jpg"/>
+            </StackPanel.Background>
+        </StackPanel>
+
+        <!-- <WrapPanel Grid.Row="1" Grid.Column="1" Margin="20,10,10,10">
+    <WrapPanel Orientation="Horizontal">
+        <Button Width="100" Height="100" Content="Sản phẩm 1" Margin="10"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 2"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 3"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 4"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 5"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 6"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 5"/>
+        <Button Width="100" Height="100" Content="Sản phẩm 6"/>
+    </WrapPanel>
+</WrapPanel>
+-->
+        <ScrollViewer Grid.Row="1" Grid.Column="1">
+            <StackPanel Background="AliceBlue" Margin="10">
+                <TextBlock Text="Add New Device" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10"/>
+
+
+
+                
+                <TextBlock Text="Device Type:"/>
+                <TextBox x:Name="txtDtName" Width="200"/>
+
+                
+                <TextBlock Text="Detail:"/>
+                <TextBox x:Name="txtDetail" Width="200" Height="70"/>
+
+                
+
+                <!-- Status -->
+                <TextBlock Text="Status:"/>
+                <ComboBox x:Name="cbStatus" Width="200">
+                    <ComboBoxItem Content="Active"/>
+                    <ComboBoxItem Content="Not active"/>
+                </ComboBox>
+
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <Button x:Name="btnAdd" Content="Add" Width="80" Background="LightGreen" Click="btnAdd_Click"/>
+
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Background="#91BEBE" Grid.Row="1" Grid.Column="0">
+
+            <Button Content="Back to list Device" Name="btnBack"  
+           Width="110" 
+           Height="40" 
+           Margin="0,100,0,0" 
+            Click="btnBack_Click"/>
+            
+
+        </StackPanel>
+
+        <Grid Background="#91BEBE" Grid.Row="0" Grid.Column="1">
+            
+        </Grid>
+    </Grid>
+</Window>

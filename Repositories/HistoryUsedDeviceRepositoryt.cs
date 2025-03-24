@@ -45,5 +45,12 @@ namespace Repositories
         }
 
        
+        public void AddHistoryUsedDevice(HistoryUsedDevice device)
+        {
+            _context = new PrnFinalProjectContext();
+            _context.HistoryUsedDevices.Add(device);
+            _context.SaveChanges();
+        }
+     
     }
 }

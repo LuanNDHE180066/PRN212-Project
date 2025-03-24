@@ -36,5 +36,10 @@ namespace Services
         {
             return repo.GetDeviceRunning(deviceId);
         }
+        public void AddHistoryUsedDevice(HistoryUsedDevice historyUsedDevice)
+        {
+            repo.AddHistoryUsedDevice(historyUsedDevice);
+        }
+       
     }
 }

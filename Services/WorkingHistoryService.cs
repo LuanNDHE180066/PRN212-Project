@@ -25,5 +25,9 @@ namespace Services
             DateOnly convert = DateOnly.FromDateTime(date);
             return workingHistoryRepository.GetByStaffIdAndDate(id, convert);
         }
+        public void AddWorkingHistory(WorkingHistory newWorkingHistory)
+        {
+            workingHistoryRepository.AddWorkingHistory(newWorkingHistory);
+        }
     }
 }
