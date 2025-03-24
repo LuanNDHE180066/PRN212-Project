@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject.Admin"
         mc:Ignorable="d"
-        Title="AdminScreen" Height="450" Width="800">
+        Title="AdminScreen" Height="550" Width="800">
     <Grid Background="#FF7DC9CC">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>

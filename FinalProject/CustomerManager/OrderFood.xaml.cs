@@ -53,7 +53,7 @@ namespace FinalProject.CustomerManager
                 // Anh
                 Image image = new Image();
                 image.Height = 100;
-                //image.Source = new BitmapImage(new System.Uri(good.Img, System.UriKind.Absolute));
+                image.Source = new BitmapImage(new System.Uri(good.Img, System.UriKind.Absolute));
                 image.Margin = new Thickness(5);
 
                 // Ten
@@ -66,9 +66,10 @@ namespace FinalProject.CustomerManager
 
                 // Gia
                 TextBlock priceTextBlock = new TextBlock();
-                priceTextBlock.Text = "Giá: " + good.UnitPrice;
+                priceTextBlock.Text = "Giá: " + good.UnitPrice +"| SL: "+good.Quantity;
                 priceTextBlock.TextAlignment = TextAlignment.Center;
                 priceTextBlock.Margin = new Thickness(5);
+             
 
                 // Button
                 Button button = new Button();
@@ -77,6 +78,10 @@ namespace FinalProject.CustomerManager
                 button.Margin = new Thickness(5);
                 button.Tag = good.Gid;
                 button.HorizontalAlignment = HorizontalAlignment.Center;
+                if(good.Quantity == 0)
+                {
+                    button.IsEnabled = false;
+                }
                 button.Click += Button_Click;
 
                 // Thêm các thành phần vào StackPanel
@@ -100,12 +105,17 @@ namespace FinalProject.CustomerManager
             DateOnly date = DateOnly.FromDateTime(DateTime.Now);
             int quantity = 1;
             Good good = goodService.GetById(gId);
+            good.Quantity = good.Quantity-1;
+            GoodService gsv = new GoodService();
+            gsv.UpdateGood(good);
             decimal amount = good.UnitPrice.Value * quantity;
             HistoryBuyGood buyGood = new HistoryBuyGood() {InvoiceId= invoiceId, GoodsId= gId,Date =date,Quantity= quantity,Amount
             =amount};
 
             historyBuyGoodService.Add(buyGood);
             MessageBox.Show("Order thành công"+button.Tag.ToString());
+            panelFood.Children.Clear();
+            showFood();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

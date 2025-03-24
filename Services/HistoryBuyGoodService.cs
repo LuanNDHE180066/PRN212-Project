@@ -24,7 +24,7 @@ namespace Services
         }
         public void Add(HistoryBuyGood his)
         {
-            repo.Add(hbg);
+            repo.Add(his);
         }
 
         public void Update(HistoryBuyGood hbg)
