@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -68,7 +68,7 @@
               "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
               "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\OrderFood.xaml.cs",
               "RelativeToolTip": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAgwEQAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwDcAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T07:29:55.101Z",
               "EditorCaption": ""
