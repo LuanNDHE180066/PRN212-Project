@@ -57,6 +57,37 @@ namespace FinalProject
                     MessageBox.Show($"Sai password or username");
                 }
             }
+            else if(customer != null){
+                Application.Current.Properties["customerId"] = customer.Cid.ToString();
+                int invoiceId = createInvoice(customer.Cid);
+                Application.Current.Properties["invoiceId"] = invoiceId.ToString();
+                createUsedDevice(invoiceId);
+                OrderFood orderFood = new OrderFood();
+                this.Hide();
+                orderFood.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show($"Sai password or username");
+            }
+        }
+        private int createInvoice(int cId)
+        {
+            DateOnly date = DateOnly.FromDateTime(DateTime.Now);
+            Invoice invoice = new Invoice() { InvoiceDate = date, CustomerId = cId, StaffId = 1 };
+            invoiceService.AddNewInvoice(invoice);
+            return invoiceService.GetAll().Last().IId;
+        }
+        private static int deviceId = 5;
+        public void createUsedDevice(int invoiceId)
+        {
+            Device device = deviceService.getDeviceByID(deviceId);
+            device.Status = 2;
+            deviceService.UpdateDevice(device);
+            DateOnly date = DateOnly.FromDateTime(DateTime.Now);
+            TimeOnly start = TimeOnly.FromDateTime(DateTime.Now);
+            HistoryUsedDevice history = new HistoryUsedDevice() { InvoiceId = invoiceId, DeviceId = deviceId, Date = date, Start = start };
+            historyUsedDeviceService.AddHistoryUsedDevice(history);
         }
     }
 }

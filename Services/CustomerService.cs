@@ -37,6 +37,11 @@ namespace Services
         {
             return repositories.getAllCustomer().Where(s=>s.Username.Equals(user) && s.Password.Equals(pass)).First();
         } 
+
+        public void Update(Customer customer)
+        {
+            repository.Update(customer);
+        }
     
         
         public List<CustomerDTO> getAllDTO()

@@ -13,7 +13,6 @@ public partial class PrnFinalProjectContext : DbContext
         if (Ins == null) Ins = this;
 
     }
-
     public PrnFinalProjectContext(DbContextOptions<PrnFinalProjectContext> options)
         : base(options)
     {
@@ -196,6 +195,9 @@ public partial class PrnFinalProjectContext : DbContext
 
             entity.Property(e => e.IId).HasColumnName("iID");
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
+            entity.Property(e => e.IsEnd)
+                .HasDefaultValue(true)
+                .HasColumnName("isEnd");
             entity.Property(e => e.StaffId).HasColumnName("StaffID");
             entity.Property(e => e.Total).HasColumnType("decimal(18, 0)");
 

@@ -99,7 +99,7 @@ namespace FinalProject.Cashier
         private void btnAddGood_Click(object sender, RoutedEventArgs e)
         {
             OrderGoodScreen o = new();
-          if(_invoice == null)
+            if (_invoice == null)
             {
                 if (_invoiceId != -1)
                 {
@@ -115,20 +115,24 @@ namespace FinalProject.Cashier
                 }
             }
             else
-            {        
-                    o.invoice = invoiceService.GetAll().FirstOrDefault(x => x.IId == _invoice.IId);
-                    if (o.ShowDialog() == false)
-                    {
-                        dgvGood.ItemsSource = historyBuyGoodService.GetByInvoiceId(_invoice.IId);
-                    }
+            {
+                o.invoice = invoiceService.GetAll().FirstOrDefault(x => x.IId == _invoice.IId);
+                if (o.ShowDialog() == false)
+                {
+                    dgvGood.ItemsSource = historyBuyGoodService.GetByInvoiceId(_invoice.IId);
+                }
             }
 
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+
+
             if (!timeInput.Text.Contains("_"))
             {
+
+                HistoryUsedDevice hub = historyUsedDeviceService.GetDeviceRunning(device.Did);
                 try
                 {
                     int staffId = -1;
@@ -147,8 +151,8 @@ namespace FinalProject.Cashier
                             return;
                         }
 
-                         staffId = int.Parse(txbStaff.Text);
-                         customerId = int.Parse(txbCustomer.Text);
+                        staffId = int.Parse(txbStaff.Text);
+                        customerId = int.Parse(txbCustomer.Text);
 
 
                         if (staffService.GetById(staffId) == null)
@@ -171,7 +175,7 @@ namespace FinalProject.Cashier
                             return;
                         }
 
-                     
+
                         if (!IsValidTime(timeInput.Text))
                         {
                             MessageBox.Show($"{timeInput.Text}", "", MessageBoxButton.OK);
@@ -184,7 +188,7 @@ namespace FinalProject.Cashier
                         staffId = int.Parse(txbStaff.Text);
                         customerId = int.Parse(txbCustomer.Text);
                     }
-                   
+
                     DateOnly date = DateOnly.Parse(dpkDate.Text);
 
 
@@ -192,12 +196,13 @@ namespace FinalProject.Cashier
                     if (!timeInput.Text.Contains("_") && timeOuput.Text.Contains("_") && device != null && _invoice == null && _invoiceId == -1)
                     {
                         MessageBox.Show("Create invoice !");
+                        btnSetTo.IsEnabled = true;
                         Device d = deviceService.GetAllDevice().FirstOrDefault(dev => dev.Did == device.Did);
                         d.Status = 2;
                         deviceService.UpdateDevice(d);
 
                         decimal total = new decimal(0);
-                        Invoice invoice = new Invoice() { CustomerId = customerId, StaffId = staffId, InvoiceDate = date, Total = 0 };
+                        Invoice invoice = new Invoice() { CustomerId = customerId, StaffId = staffId, InvoiceDate = date, Total = 0, IsEnd = false };
                         invoiceService.AddNewInvoice(invoice);
                         invoice = invoiceService.GetAll().Last();
                         _invoiceId = invoice.IId;
@@ -205,18 +210,18 @@ namespace FinalProject.Cashier
                         HistoryUsedDevice historyUsed = new HistoryUsedDevice() { Date = date, InvoiceId = invoice.IId, Start = inputTime, DeviceId = device.Did };
                         historyUsedDeviceService.Add(historyUsed);
                         btnSetFrom.IsEnabled = false;
-                        
+
                     }
                     else if (!timeInput.Text.Contains("_") && !timeOuput.Text.Contains("_"))
                     {
                         TimeOnly outputTime = TimeOnly.Parse(timeOuput.Text);
-                        HistoryUsedDevice hub = historyUsedDeviceService.GetDeviceRunning(device.Did);
-                        hub.End = outputTime;
                         TimeSpan timeSpan = outputTime - hub.Start.Value;
                         decimal duration = Math.Round(((decimal)timeSpan.TotalHours), 2);
-                        if(duration < 1)
+                        hub.End = outputTime;
+
+                        if (duration < 1)
                         {
-                            hub.Amount =  device.PricePerHour;
+                            hub.Amount = device.PricePerHour;
                         }
                         else
                         {
@@ -224,10 +229,11 @@ namespace FinalProject.Cashier
                         }
                         historyUsedDeviceService.Update(hub);
                         txbTotalUseDevice.Text = hub.Amount.ToString();
+
                         txbTotalUseDevice.IsReadOnly = true;
                         btnSetFrom.IsEnabled = false;
                         btnSetTo.IsEnabled = false;
-                        
+
                         foreach (Device d in deviceService.GetAllDevice())
                         {
                             if (d.Did == device.Did)
@@ -239,32 +245,27 @@ namespace FinalProject.Cashier
 
                         decimal totalGood = 0;
                         List<HistoryBuyGood> hbg = new();
-                        if(_invoice != null)
+                        if (_invoice != null)
                         {
-                            hbg= historyBuyGoodService.GetByInvoiceId(_invoice.IId);
+                            hbg = historyBuyGoodService.GetByInvoiceId(_invoice.IId);
                         }
                         else
                         {
-                            hbg=historyBuyGoodService.GetByInvoiceId(_invoiceId);
+                            hbg = historyBuyGoodService.GetByInvoiceId(_invoiceId);
                         }
-                        if(hbg.Count > 0)
+                        if (hbg.Count > 0)
                         {
                             foreach (HistoryBuyGood good in hbg)
                             {
-                                totalGood+= (decimal)good.Amount;    
+                                totalGood += (decimal)good.Amount;
                             }
                         }
-                        foreach(HistoryBuyGood hgo in hbg)
-                        {
-                            Good good = goodService.GetById((int)hgo.GoodsId);
-                            good.Quantity = good.Quantity - hgo.Quantity;
-                            goodService.UpdateGood(good);
-                        }
-                        decimal totalUse= (decimal) hub.Amount;
+
+                        decimal totalUse = (decimal)hub.Amount;
                         txbGoodTotal.Text = totalGood.ToString();
                         tbxTotal.Text = (totalGood + hub.Amount).ToString();
                         Invoice invoice = null;
-                        if(_invoice == null)
+                        if (_invoice == null)
                         {
                             invoice = invoiceService.GetById(_invoiceId);
                             invoice.Total = totalUse + totalGood;
@@ -276,12 +277,14 @@ namespace FinalProject.Cashier
                         }
                         Customer customer = customerService.GetById(int.Parse(txbCustomer.Text));
                         customer.Hours += (int?)duration;
-                        customerService.UpdateCustomer(customer);
+                        customerService.Update(customer);
+                        invoice.IsEnd = true;
                         invoiceService.Update(invoice);
-                        tbxTotal.IsEnabled=false;
+                        tbxTotal.IsEnabled = false;
                         btnSave.IsEnabled = false;
                         btnAddGood.IsEnabled = false;
-                    } else if((_invoice != null && timeOuput.Text.Contains("_") || (_invoiceId != null && timeOuput.Text.Contains("_"))))
+                    }
+                    else if ((_invoice != null && timeOuput.Text.Contains("_") || (_invoiceId != null && timeOuput.Text.Contains("_"))))
                     {
                         MessageBox.Show("Please set end time to generate invoice", "", MessageBoxButton.OK);
                         return;

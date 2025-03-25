@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Models;
 
 namespace Repositories
@@ -11,6 +12,7 @@ namespace Repositories
     {
 
         private PrnFinalProjectContext _context;
+
 
         public HistoryUsedDevice GetByInvoiceId(int invoiceId)
         {
@@ -41,16 +43,20 @@ namespace Repositories
         public HistoryUsedDevice GetDeviceRunning(int deviceId)
         {
             _context = new();
-            return _context.HistoryUsedDevices.FirstOrDefault(x => x.DeviceId == deviceId && x.End == null);
+            List<int?> listIdByInvoiceId = _context.HistoryUsedDevices.Where(x => x.DeviceId == deviceId).Select(x => x.InvoiceId).ToList();
+
+            Device statuseDevice = _context.Devices.FirstOrDefault(x => x.Did == deviceId && x.Status == 2);
+
+            return _context.HistoryUsedDevices.Include(x => x.Device).FirstOrDefault(x => x.DeviceId == deviceId && x.InvoiceId == listIdByInvoiceId.Max() && statuseDevice != null);
         }
 
-       
+
         public void AddHistoryUsedDevice(HistoryUsedDevice device)
         {
             _context = new PrnFinalProjectContext();
             _context.HistoryUsedDevices.Add(device);
             _context.SaveChanges();
         }
-     
+
     }
 }
