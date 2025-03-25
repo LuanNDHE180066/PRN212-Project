@@ -51,6 +51,7 @@ namespace FinalProject.Admin
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             WorkingHistoryScreen history = new WorkingHistoryScreen();
+            this.Close();
             history.ShowDialog();
         }
 
@@ -89,23 +90,17 @@ namespace FinalProject.Admin
 
         private void btnGood_Click(object sender, RoutedEventArgs e)
         {
-            CashierScreen cashierScreen = new CashierScreen();
-            this.Close();
-            cashierScreen.ShowDialog();
+
         }
 
-        private void btnCustomer_Click(object sender, RoutedEventArgs e)
+        private void btnStaff_Click(object sender, RoutedEventArgs e)
         {
-            ManageCustomerScreen manageCustomerScreen   = new ManageCustomerScreen();
-            manageCustomerScreen.ShowDialog();
-            this.Close();
+
         }
 
-        private void btnDevice_Click(object sender, RoutedEventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
-            DeviceManageScreen deviceManageScreen = new DeviceManageScreen();
-            deviceManageScreen.ShowDialog();    
-            this.Close();
+            Application.Current.Shutdown();
         }
     }
 }

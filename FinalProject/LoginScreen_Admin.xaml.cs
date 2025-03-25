@@ -90,7 +90,7 @@ namespace FinalProject
         {
             DateOnly date = DateOnly.FromDateTime(DateTime.Now);
             TimeOnly start = TimeOnly.FromDateTime(DateTime.Now);
-            HistoryUsedDevice history = new HistoryUsedDevice() { InvoiceId = invoiceId, DeviceId = deviceId, Date = date, Start = start };
+            HistoryUsedDevice history = new HistoryUsedDevice() { InvoiceId = invoiceId, DeviceId = 1, Date = date, Start = start };
             historyUsedDeviceService.AddHistoryUsedDevice(history);
         }
     }
