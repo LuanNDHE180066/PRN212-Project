@@ -32,6 +32,12 @@ namespace Repositories
             return _context.SaveChanges() > 0;
         }
 
+        public Good GetById(int id)
+        {
+            _context = new();
+            return _context.Goods.FirstOrDefault(x => x.Gid == id);
+        }
+
 
 
     }

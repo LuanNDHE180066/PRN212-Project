@@ -3,10 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:FinalProject.Cashier"
         mc:Ignorable="d"
-        Title="CashierScreen" Height="450" Width="800" Loaded="Window_Loaded">
+        xmlns:a="clr-namespace:Repositories.Converter;assembly=Repositories"
 
+        Title="CashierScreen" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <a:StatusConverter x:Key="StatusConverter"/>
+    </Window.Resources>
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -62,7 +67,7 @@
                                         <Style TargetType="Button">
                                             <Setter Property="Background" Value="Gray"/>
                                             <Style.Triggers>
-                                                <DataTrigger Binding="{Binding Status}" Value="0">
+                                                <DataTrigger Binding="{Binding Status, Converter={StaticResource StatusConverter}}" Value="0">
                                                     <Setter Property="Background" Value="Red"/>
                                                     <!-- Broken -->
                                                 </DataTrigger>

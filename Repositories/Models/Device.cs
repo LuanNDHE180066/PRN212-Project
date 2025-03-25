@@ -20,5 +20,4 @@ public partial class Device
     public virtual ICollection<HistoryUsedDevice> HistoryUsedDevices { get; set; } = new List<HistoryUsedDevice>();
 
     public virtual DeviceType? Type { get; set; }
-
 }

@@ -25,6 +25,9 @@
     <Compile Update="CustomerManager\OrderFood.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CustomerManager\test.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ExpenditureDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CustomerManager\OrderFood.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomerManager\test.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ExpenditureDetail.xaml">

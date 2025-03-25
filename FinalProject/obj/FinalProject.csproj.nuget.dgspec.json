@@ -57,11 +57,23 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "ControlzEx": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Extended.Wpf.Toolkit": {
               "target": "Package",
               "version": "[4.7.25104.5739, )"
             },
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
             "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "MaterialDesignThemes.MahApps": {
               "target": "Package",
               "version": "[5.2.1, )"
             }

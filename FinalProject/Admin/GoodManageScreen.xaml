@@ -45,7 +45,7 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Border  BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
+                        <Border MouseDown="Border_MouseDown"  BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
                             <StackPanel Width="135" Height="150">
                                 <!-- Đảm bảo Image Binding đúng -->
                                 <Image Source="{Binding Img}" Height="110" Width="Auto" Stretch="UniformToFill"/>
@@ -102,7 +102,7 @@
           SelectedValuePath="Gtid" FontSize="15" />
             </StackPanel>
 
-            <Button Width="50" Height="23" Margin="10,0,0,0" Content="Filter" Name="btnFilter" />
+            <Button Width="50" Click="btnFilter_Click" Height="23" Margin="10,0,0,0" Content="Filter" Name="btnFilter" />
         </StackPanel>
     </Grid>
 </Window>

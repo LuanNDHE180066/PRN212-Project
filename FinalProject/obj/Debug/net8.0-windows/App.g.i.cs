@@ -10,6 +10,10 @@
 //------------------------------------------------------------------------------
 
 using FinalProject;
+using MaterialDesignThemes.MahApps;
+using MaterialDesignThemes.Wpf;
+using MaterialDesignThemes.Wpf.Converters;
+using MaterialDesignThemes.Wpf.Transitions;
 using Repositories.Converter;
 using System;
 using System.Diagnostics;

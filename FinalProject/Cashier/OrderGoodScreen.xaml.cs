@@ -64,9 +64,11 @@ namespace FinalProject.Cashier
             if(invoice != null)
             {
                 var border = sender as Border;
+                
 
                 if (border != null && border.DataContext is Good selectedGood)
                 {
+                   
                     if(historyBuyGoodService.GetByInvoiceId(invoice.IId) == null)
                     {
                         HistoryBuyGood hbg = new HistoryBuyGood() { Date = invoice.InvoiceDate, InvoiceId = invoice.IId, GoodsId = selectedGood.Gid,
@@ -77,6 +79,16 @@ namespace FinalProject.Cashier
                     else
                     {
                         List<int?> goodIds = historyBuyGoodService.GetByInvoiceId(invoice.IId).Select(x => x.GoodsId).ToList();
+                        List<HistoryBuyGood> listHbg = historyBuyGoodService.GetByInvoiceId(invoice.IId);
+                        foreach (var hbgs in listHbg)
+                        {
+                            if(hbgs.Quantity > goodService.GetById((int)hbgs.GoodsId).Quantity)
+                            {
+                                MessageBox.Show("Out of stock", "", MessageBoxButton.OK);
+                                return;
+                            }
+                        }
+
                         if (!goodIds.Contains(selectedGood.Gid))
                         {
                             HistoryBuyGood hbg = new HistoryBuyGood()

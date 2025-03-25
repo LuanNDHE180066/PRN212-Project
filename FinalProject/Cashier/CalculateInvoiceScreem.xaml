@@ -9,6 +9,7 @@
         xmlns:xe="http://schemas.xceed.com/wpf/xaml/toolkit"
         Title="CalculateInvoiceScreem" Height="450" Width="1100">
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="4*"/>
@@ -19,86 +20,96 @@
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel>
+        <!-- Left Panel with Background Image -->
+        <StackPanel Grid.Row="0" Grid.Column="0">
             <StackPanel.Background>
                 <ImageBrush ImageSource="/Admin/avatars-000699683875-m5pnre-t500x500.jpg"/>
             </StackPanel.Background>
         </StackPanel>
-        <WrapPanel Margin="0,49,0,0" Grid.Row="0" Grid.Column="1">
-            <StackPanel Margin="0,0,10,0" Orientation="Horizontal" Width="100">
-                <TextBlock Text="InvoiceID:" Width="50"/>
-                <TextBox Width="50" IsReadOnly="True" Name="tbxInvoiceId"/>
-                
-            </StackPanel>
-            <StackPanel Margin="0,0,10,0" Orientation="Horizontal" Width="120">
-                <TextBlock Text="DeviceID:" Width="50"/>
-                <TextBox Width="80" IsReadOnly="True" Name="txbDevice"/>
 
+        <!-- Right Panel for Invoice Details -->
+        <WrapPanel Margin="10" Grid.Row="0" Grid.Column="1">
+            <StackPanel Margin="0,0,10,0" Orientation="Horizontal" Width="100">
+                <TextBlock Text="InvoiceID:" Width="80" FontWeight="Bold"/>
+                <TextBox Width="50" IsReadOnly="True" Name="tbxInvoiceId" Margin="5,0" />
+            </StackPanel>
+
+            <StackPanel Margin="0,0,10,0" Orientation="Horizontal" Width="120">
+                <TextBlock Text="DeviceID:" Width="80" FontWeight="Bold"/>
+                <TextBox Width="80" IsReadOnly="True" Name="txbDevice" Margin="5,0" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Width="180" Margin="0,0,10,0">
-                <TextBlock Text="Date:" Width="30"/>
+                <TextBlock Text="Date:" Width="40" FontWeight="Bold"/>
                 <DatePicker Width="120" Name="dpkDate"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Width="100" Margin="0,0,10,0">
-                <TextBlock Text="Total:" Width="30"/>
-                <TextBox IsReadOnly="True" Width="70" Name="tbxTotal"/>
+                <TextBlock Text="Total:" Width="40" FontWeight="Bold"/>
+                <TextBox IsReadOnly="True" Width="70" Name="tbxTotal" Margin="5,0" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Width="160">
-                <TextBlock Text="Customer:" Width="55"/>
-                <TextBox Width="100" Name="txbCustomer"/>
+                <TextBlock Text="Customer:" Width="80" FontWeight="Bold"/>
+                <TextBox Width="100" Name="txbCustomer" Margin="5,0" />
             </StackPanel>
+
             <StackPanel Orientation="Horizontal" Width="130">
-                <TextBlock Text="Staff:" Width="30"/>
-                <TextBox Width="100" Name="txbStaff"/>
+                <TextBlock Text="Staff:" Width="40" FontWeight="Bold"/>
+                <TextBox Width="100" Name="txbStaff" Margin="5,0" />
             </StackPanel>
         </WrapPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
-            <WrapPanel>
-                <StackPanel Width="270" HorizontalAlignment="Left" Name="spnGoodList" Margin="0,10,20,0">
-                    <TextBlock FontWeight="Bold" Text="GOOD DETAIL" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <DataGrid Width="192" Name="dgvGood" CanUserAddRows="False" IsReadOnly="True" AutoGenerateColumns="False">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Header="Good Name" Binding="{Binding Path=Goods.GName}"/>
-                            <DataGridTextColumn Header="Quantity" Binding="{Binding Path=Quantity}"/>
-                            <DataGridTextColumn Header="Amount" Binding="{Binding Path=Amount}"/>
-                        </DataGrid.Columns>
-                    </DataGrid>
-                    <Border Width="192" BorderBrush="Black" BorderThickness="0.25" Margin="0,10,0,10"/>
-                    <StackPanel Orientation="Horizontal" Width="300">
-                        <TextBlock Text="Total" Margin="15,0,125,0"/>
-                        <TextBox x:Name="txbGoodTotal" Width="60" IsReadOnly="True"/>
-                    </StackPanel>
-                    <Button Width="70" Click="btnAddGood_Click" x:Name="btnAddGood" Margin="0,39,0,0" Content="Add Good"/>
+        <!-- Good Details and Time Used Device Sections -->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Good Details Section -->
+            <StackPanel Grid.Column="0" Margin="10">
+                <TextBlock FontWeight="Bold" Text="GOOD DETAIL" HorizontalAlignment="Center" Margin="0,5"/>
+                <DataGrid Width="192" Name="dgvGood" CanUserAddRows="False" IsReadOnly="True" AutoGenerateColumns="False" Margin="0,5">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Good Name" Binding="{Binding Path=Goods.GName}"/>
+                        <DataGridTextColumn Header="Quantity" Binding="{Binding Path=Quantity}"/>
+                        <DataGridTextColumn Header="Amount" Binding="{Binding Path=Amount}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Border Width="192" BorderBrush="Black" BorderThickness="0.25" Margin="0,10,0,10"/>
+                <StackPanel Orientation="Horizontal" Width="300">
+                    <TextBlock Text="Total:" Margin="15,0,10,0"/>
+                    <TextBox x:Name="txbGoodTotal" Width="60" IsReadOnly="True" Margin="5,0"/>
+                </StackPanel>
+                <Button Width="70" Click="btnAddGood_Click" x:Name="btnAddGood" Margin="0,10,0,0" Content="Add Good"/>
+            </StackPanel>
+
+            <!-- Time Used Device Section -->
+            <StackPanel Grid.Column="1" Margin="10">
+                <TextBlock FontWeight="Bold" Text="Time Used Device" HorizontalAlignment="Center" Margin="0,5"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="30" Text="From:" FontWeight="Bold"/>
+                    <xe:MaskedTextBox Name="timeInput" Mask="00:00" ValueDataType="{x:Type sys:String}" Width="100" HorizontalAlignment="Center" LostFocus="timeInput_LostFocus" Margin="5,0"/>
+                    <Button x:Name="btnSetFrom" Content="Set From" Width="70" Click="SetFrom_Click"/>
+                    <TextBlock Name="errorText" Foreground="Red" Visibility="Collapsed" Margin="5,0"/>
                 </StackPanel>
 
-                <StackPanel Margin="0,10,0,0" Width="300" HorizontalAlignment="Left" Name="spnTime">
-                    <TextBlock FontWeight="Bold" Text="Time Used Device" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Width="30" Text="From"/>
-                        <xe:MaskedTextBox Name="timeInput" Mask="00:00" ValueDataType="{x:Type sys:String}" Width="100" HorizontalAlignment="Center" LostFocus="timeInput_LostFocus"/>
-                        <Button x:Name="btnSetFromt" Content="Set From" Width="70" Click="SetFrom_Click"/>
-                        <TextBlock Name="errorText" Foreground="Red" Visibility="Collapsed"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                        <TextBlock Width="30" Text="To"/>
-                        <xe:MaskedTextBox Name="timeOuput" Mask="00:00" ValueDataType="{x:Type sys:String}" Width="100" HorizontalAlignment="Center" LostFocus="timeOuput_LostFocus"/>
-                        <Button x:Name="btnSetTo" Content="Set To" Width="70" Click="SetTo_Click"/>
-                        <TextBlock Name="errorText2" Foreground="Red" Visibility="Collapsed"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                        <TextBlock Width="30" Text="Total"/>
-                        <TextBox Width="300" x:Name="txbTotalUseDevice"/>
-                    </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <TextBlock Width="30" Text="To:" FontWeight="Bold"/>
+                    <xe:MaskedTextBox Name="timeOuput" Mask="00:00" ValueDataType="{x:Type sys:String}" Width="100" HorizontalAlignment="Center" LostFocus="timeOuput_LostFocus" Margin="5,0"/>
+                    <Button x:Name="btnSetTo" Content="Set To" Width="70" Click="SetTo_Click"/>
+                    <TextBlock Name="errorText2" Foreground="Red" Visibility="Collapsed" Margin="5,0"/>
                 </StackPanel>
-            </WrapPanel>
-        </StackPanel>
-        <Button Grid.Column="0" Grid.Row="1" Margin="0,70,50,0" Name="btnSave" Click="btnSave_Click" Content="Save" Height="30" Width="100"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <TextBlock Width="30" Text="Total:" FontWeight="Bold"/>
+                    <TextBox Width="300" x:Name="txbTotalUseDevice" Margin="5,0"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <!-- Save Button -->
+        <Button Grid.Column="0" Grid.Row="1" Margin="0,70,50,0" Name="btnSave" Click="btnSave_Click" Content="Save" Height="30" Width="100" Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
     </Grid>
 </Window>

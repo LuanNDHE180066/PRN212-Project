@@ -43,7 +43,7 @@ namespace FinalProject
             if(roleId != null)
             {
                 string username = txtUsername.Text;
-                string password = txtPassword.Text;
+                string password = txtPassword.Password;
                 Staff staff = staffService.GetByRoleUsernamePassword(username, password, roleId.Value);
                 if(staff != null)
                 {

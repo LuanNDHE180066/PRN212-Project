@@ -29,10 +29,6 @@ namespace FinalProject.Admin
         public GoodManageScreen()
         {
             InitializeComponent();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
             itcGoods.ItemsSource = goodService.GetAllActiveGood();
             List<GoodType> listGoodType = new List<GoodType>();
             GoodType gt = new GoodType() { Gtid = 0, GtName = "All" };
@@ -43,6 +39,20 @@ namespace FinalProject.Admin
             }
             cbxCategory.ItemsSource = listGoodType;
             cbxCategory.SelectedIndex = 0;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //itcGoods.ItemsSource = goodService.GetAllActiveGood();
+            //List<GoodType> listGoodType = new List<GoodType>();
+            //GoodType gt = new GoodType() { Gtid = 0, GtName = "All" };
+            //listGoodType.Add(gt);
+            //foreach (GoodType item in goodTypeService.GetGoodTypes())
+            //{
+            //    listGoodType.Add(item);
+            //}
+            //cbxCategory.ItemsSource = listGoodType;
+            //cbxCategory.SelectedIndex = 0;
 
         }
 
@@ -52,7 +62,7 @@ namespace FinalProject.Admin
 
             if (border != null && border.DataContext is Good selectedGood)
             {
-                UpdateGoodsScreen u = new UpdateGoodsScreen();
+                UpdateGoodsScreen u = new UpdateGoodsScreen(selectedGood);
                 u._selectedBook = selectedGood;
                 if (u.ShowDialog() == false)
                 {
@@ -77,7 +87,7 @@ namespace FinalProject.Admin
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            UpdateGoodsScreen u = new UpdateGoodsScreen();
+            UpdateGoodsScreen u = new UpdateGoodsScreen(null);
             u.tblHeader.Text = "Add new Good";
             u.spnGoodId.Visibility = Visibility.Hidden;
             u.cbxType.SelectedIndex = 0;
@@ -119,8 +129,6 @@ namespace FinalProject.Admin
             }
 
             int cate = int.Parse(cbxCategory.SelectedValue.ToString());
-
-
 
             if (cate > 0)
             {
