@@ -40,7 +40,7 @@ namespace FinalProject
         {
 
             string username = txtUsername.Text;
-            string password = txtPassword.Text;
+            string password = txtPassword.Password;
             Staff staff = staffService.GetByRoleUsernamePassword(username, password);
             Customer customer = customerService.GetCustomerLogin(username, password);
             if (staff != null)
