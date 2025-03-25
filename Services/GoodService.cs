@@ -28,5 +28,10 @@ namespace Services
             return _repo.AddGood(g);
         }
 
+        public Good GetById(int id)
+        {
+            return _repo.GetById(id);   
+        }
+
     }
 }

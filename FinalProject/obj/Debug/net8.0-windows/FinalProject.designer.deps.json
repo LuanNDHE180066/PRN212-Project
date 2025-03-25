@@ -14,7 +14,7 @@
           "System.Memory.Data": "1.0.2",
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Encodings.Web": "6.0.0",
-          "System.Text.Json": "4.7.2",
+          "System.Text.Json": "8.0.5",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
@@ -31,13 +31,25 @@
           "Microsoft.Identity.Client.Extensions.Msal": "4.61.3",
           "System.Memory": "4.5.4",
           "System.Security.Cryptography.ProtectedData": "6.0.0",
-          "System.Text.Json": "4.7.2",
+          "System.Text.Json": "8.0.5",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.11.4.0",
             "fileVersion": "1.1100.424.31005"
+          }
+        }
+      },
+      "ControlzEx/7.0.0": {
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.77",
+          "System.Text.Json": "8.0.5"
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/ControlzEx.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
           }
         }
       },
@@ -103,6 +115,17 @@
           }
         }
       },
+      "MahApps.Metro/2.0.0": {
+        "dependencies": {
+          "ControlzEx": "7.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MahApps.Metro.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.894"
+          }
+        }
+      },
       "MaterialDesignColors/5.2.1": {
         "runtime": {
           "lib/net8.0/MaterialDesignColors.dll": {
@@ -114,10 +137,23 @@
       "MaterialDesignThemes/5.2.1": {
         "dependencies": {
           "MaterialDesignColors": "5.2.1",
-          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39"
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.77"
         },
         "runtime": {
           "lib/net8.0/MaterialDesignThemes.Wpf.dll": {
+            "assemblyVersion": "5.2.1.0",
+            "fileVersion": "5.2.1.0"
+          }
+        }
+      },
+      "MaterialDesignThemes.MahApps/5.2.1": {
+        "dependencies": {
+          "MahApps.Metro": "2.0.0",
+          "MaterialDesignColors": "5.2.1",
+          "MaterialDesignThemes": "5.2.1"
+        },
+        "runtime": {
+          "lib/net8.0/MaterialDesignThemes.MahApps.dll": {
             "assemblyVersion": "5.2.1.0",
             "fileVersion": "5.2.1.0"
           }
@@ -451,7 +487,7 @@
           "Microsoft.IdentityModel.Tokens": "6.35.0",
           "System.Text.Encoding": "4.3.0",
           "System.Text.Encodings.Web": "6.0.0",
-          "System.Text.Json": "4.7.2"
+          "System.Text.Json": "8.0.5"
         },
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
@@ -534,18 +570,18 @@
           }
         }
       },
-      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.77": {
         "runtime": {
-          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+          "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
             "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.39.4716"
+            "fileVersion": "1.1.77.27830"
           }
         }
       },
       "System.ClientModel/1.0.0": {
         "dependencies": {
           "System.Memory.Data": "1.0.2",
-          "System.Text.Json": "4.7.2"
+          "System.Text.Json": "8.0.5"
         },
         "runtime": {
           "lib/net6.0/System.ClientModel.dll": {
@@ -626,7 +662,7 @@
       "System.Memory.Data/1.0.2": {
         "dependencies": {
           "System.Text.Encodings.Web": "6.0.0",
-          "System.Text.Json": "4.7.2"
+          "System.Text.Json": "8.0.5"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.Data.dll": {
@@ -799,11 +835,11 @@
           }
         }
       },
-      "System.Text.Json/4.7.2": {
+      "System.Text.Json/8.0.5": {
         "runtime": {
-          "lib/netcoreapp3.0/System.Text.Json.dll": {
-            "assemblyVersion": "4.0.1.2",
-            "fileVersion": "4.700.20.21406"
+          "lib/net8.0/System.Text.Json.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
           }
         }
       },
@@ -844,12 +880,26 @@
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
     },
+    "ControlzEx/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v0z1RF7sLSCS87AtHSdiq6TGGNJGujSDL/u8Hhx8GcpQsXAwkxUHIspCBl7DyaIcmwiyM2xtu2V942aqhZYwdA==",
+      "path": "controlzex/7.0.0",
+      "hashPath": "controlzex.7.0.0.nupkg.sha512"
+    },
     "Extended.Wpf.Toolkit/4.7.25104.5739": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-x6fCMLeExVZjyPl6f9/NRITW4uzT3xBZA40CBWA9YlH4/w6rKzsIeTDwYvavdmJLrl43p0LIFSQChISCnTSR6Q==",
       "path": "extended.wpf.toolkit/4.7.25104.5739",
       "hashPath": "extended.wpf.toolkit.4.7.25104.5739.nupkg.sha512"
+    },
+    "MahApps.Metro/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-btjlE3Q8iebJB+4TBJZLcJBQZshKYqfkcATj9AS8veq4a506uE71NOTE1OSoavOJ70xasBjcdc+VuN17l+kIqw==",
+      "path": "mahapps.metro/2.0.0",
+      "hashPath": "mahapps.metro.2.0.0.nupkg.sha512"
     },
     "MaterialDesignColors/5.2.1": {
       "type": "package",
@@ -864,6 +914,13 @@
       "sha512": "sha512-x8JDqNHJcTLLxIoVts3w7AbSq5Zo0FXTw89XqPN7+n0EKqLXFwWsywiUn08HDyTGAmZVJqbQsWKxKWCI8qfWsQ==",
       "path": "materialdesignthemes/5.2.1",
       "hashPath": "materialdesignthemes.5.2.1.nupkg.sha512"
+    },
+    "MaterialDesignThemes.MahApps/5.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8lbnJKQjn3Ri6irNSl797AK3AqgtlYs7NjDsCXPYRhrua2ULb5qX2AY7F7vwpHDPRj8II+auW6trTxS0Im9iEw==",
+      "path": "materialdesignthemes.mahapps/5.2.1",
+      "hashPath": "materialdesignthemes.mahapps.5.2.1.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
@@ -1117,12 +1174,12 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.77": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
-      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
-      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+      "sha512": "sha512-MCu674ZETgU18EbxfwIlRpUPJ02YbZenLsMCXTkpeA7KUBpXfFaOUDlEO+7UWu5AFnUoydg+aQENJkuaZPheMQ==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.77",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
     },
     "System.ClientModel/1.0.0": {
       "type": "package",
@@ -1264,12 +1321,12 @@
       "path": "system.text.encodings.web/6.0.0",
       "hashPath": "system.text.encodings.web.6.0.0.nupkg.sha512"
     },
-    "System.Text.Json/4.7.2": {
+    "System.Text.Json/8.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
-      "path": "system.text.json/4.7.2",
-      "hashPath": "system.text.json.4.7.2.nupkg.sha512"
+      "sha512": "sha512-0f1B50Ss7rqxXiaBJyzUu9bWFOO2/zSlifZ/UNMdiIpDYe4cY4LQQicP4nirK1OS31I43rn062UIJ1Q9bpmHpg==",
+      "path": "system.text.json/8.0.5",
+      "hashPath": "system.text.json.8.0.5.nupkg.sha512"
     },
     "System.Threading.Tasks.Extensions/4.5.4": {
       "type": "package",

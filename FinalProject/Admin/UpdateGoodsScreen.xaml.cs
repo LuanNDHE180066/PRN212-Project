@@ -30,13 +30,19 @@ namespace FinalProject.Admin
         private GoodTypeService goodTypeService = new GoodTypeService();
         private GoodService goodService = new();
 
-        public UpdateGoodsScreen()
+        public UpdateGoodsScreen(Good g)
         {
             InitializeComponent();
-
+            _selectedBook = g;
+            LoadDb();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void LoadDb()
         {
             if (_selectedBook != null)
             {

@@ -29,7 +29,7 @@ namespace FinalProject.Admin
             LoadDataGrid(staffService.GetAll());
             filterRole();
         }
-        public void LoadDataGrid(List<Staff> staffs) 
+        public void LoadDataGrid(List<Staff> staffs)
         {
             dtgStaff.ItemsSource = staffs;
         }
@@ -51,16 +51,16 @@ namespace FinalProject.Admin
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Admin.AddStaff addStaff = new AddStaff() {AdminScreen =this };
+            Admin.AddStaff addStaff = new AddStaff() { AdminScreen = this };
             addStaff.ShowDialog();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Staff staff = dtgStaff.SelectedItem as Staff;
-            if(staff != null)
+            if (staff != null)
             {
-                Admin.UpdateStaff updateStaff = new UpdateStaff(staff) { AdminScreen = this};
+                Admin.UpdateStaff updateStaff = new UpdateStaff(staff) { AdminScreen = this };
                 updateStaff.ShowDialog();
             }
         }
@@ -73,7 +73,7 @@ namespace FinalProject.Admin
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            List<Staff> currentStaffs  = dtgStaff.ItemsSource as List<Staff>;
+            List<Staff> currentStaffs = dtgStaff.ItemsSource as List<Staff>;
             LoadDataGrid(currentStaffs.OrderBy(s => s.SName).ToList());
         }
 
@@ -87,7 +87,7 @@ namespace FinalProject.Admin
         {
             string searchText = txtName.Text;
             List<Staff> staffs = staffService.GetAll();
-            LoadDataGrid(staffs.Where(s=> s.SName.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList());
+            LoadDataGrid(staffs.Where(s => s.SName.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList());
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
@@ -100,15 +100,21 @@ namespace FinalProject.Admin
         private void btnExp_Click(object sender, RoutedEventArgs e)
         {
             GoodManageScreen goodManageScreen = new GoodManageScreen();
-            this.Close();
-            goodManageScreen.ShowDialog();
+            this.Hide();
+            if (goodManageScreen.ShowDialog() == false)
+            {
+                this.Show();
+            }
         }
 
         private void btnGood_Click(object sender, RoutedEventArgs e)
         {
             CashierScreen cashierScreen = new CashierScreen();
-            this.Close();
-            cashierScreen.ShowDialog();
+            this.Hide();
+            if (cashierScreen.ShowDialog() == false)
+            {
+                this.Show();
+            }
         }
     }
 }

@@ -29,11 +29,11 @@
                FontWeight="Bold"></Label>
         <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
             <Label Width="100" Height="30">Username</Label>
-            <TextBox Name="txtUsername" Width="300" Height="30"></TextBox>
+            <TextBox FontSize="20" Name="txtUsername" Width="300" Height="30"></TextBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
             <Label Width="100" Height="30">Password</Label>
-            <TextBox Name="txtPassword" Width="300" Height="30"></TextBox>
+            <PasswordBox FontSize="20" Name="txtPassword" Width="300" Height="30"></PasswordBox>
         </StackPanel>
         <ComboBox 
             Grid.Column="1" Grid.Row="3"

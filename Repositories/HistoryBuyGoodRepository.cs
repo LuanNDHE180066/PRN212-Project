@@ -27,7 +27,7 @@ namespace Repositories
         public void Add(HistoryBuyGood good)
         {
             _context = new();
-            _context.HistoryBuyGoods.Add(hbg);
+            _context.HistoryBuyGoods.Add(good);
             _context.SaveChanges();
         }
 

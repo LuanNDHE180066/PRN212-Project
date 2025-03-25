@@ -32,6 +32,7 @@ namespace FinalProject.Cashier
         public DeviceService deviceService = new();
         public Invoice _invoice = null;
         private int _invoiceId = -1;
+        private GoodService goodService = new();
         public CalculateInvoiceScreem()
         {
             InitializeComponent();
@@ -203,7 +204,7 @@ namespace FinalProject.Cashier
                         tbxInvoiceId.Text = invoice.IId.ToString();
                         HistoryUsedDevice historyUsed = new HistoryUsedDevice() { Date = date, InvoiceId = invoice.IId, Start = inputTime, DeviceId = device.Did };
                         historyUsedDeviceService.Add(historyUsed);
-                        btnSetFromt.IsEnabled = false;
+                        btnSetFrom.IsEnabled = false;
                         
                     }
                     else if (!timeInput.Text.Contains("_") && !timeOuput.Text.Contains("_"))
@@ -224,7 +225,7 @@ namespace FinalProject.Cashier
                         historyUsedDeviceService.Update(hub);
                         txbTotalUseDevice.Text = hub.Amount.ToString();
                         txbTotalUseDevice.IsReadOnly = true;
-                        btnSetFromt.IsEnabled = false;
+                        btnSetFrom.IsEnabled = false;
                         btnSetTo.IsEnabled = false;
                         
                         foreach (Device d in deviceService.GetAllDevice())
@@ -252,6 +253,12 @@ namespace FinalProject.Cashier
                             {
                                 totalGood+= (decimal)good.Amount;    
                             }
+                        }
+                        foreach(HistoryBuyGood hgo in hbg)
+                        {
+                            Good good = goodService.GetById((int)hgo.GoodsId);
+                            good.Quantity = good.Quantity - hgo.Quantity;
+                            goodService.UpdateGood(good);
                         }
                         decimal totalUse= (decimal) hub.Amount;
                         txbGoodTotal.Text = totalGood.ToString();

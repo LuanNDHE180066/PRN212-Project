@@ -58,11 +58,14 @@ namespace FinalProject.Cashier
         {
 
             var border = sender as Border;
-
+            string sid = Application.Current.Properties["StaffId"] as string;
+            
             if (border != null && border.DataContext is Device device)
             {
                 CalculateInvoiceScreem ci = new();
                 ci.device = device;
+                ci.txbStaff.Text = sid;
+                ci.txbStaff.IsEnabled = false;
                 HistoryUsedDevice hud = historyUsedDeviceService.GetDeviceRunning(device.Did);
                 Invoice invoice = null;
                 if(hud != null)
@@ -86,7 +89,7 @@ namespace FinalProject.Cashier
                     ci.dpkDate.IsEnabled = false;
                     ci.txbCustomer.IsReadOnly = true;
                     ci.txbStaff.IsReadOnly = true;
-                    ci.btnSetFromt.IsEnabled = false;
+                    ci.btnSetFrom.IsEnabled = false;
                     
                 }
                 ci.dpkDate.Text = DateTime.Now.ToString("dd-MM-yyyy");
