@@ -26,10 +26,12 @@ namespace FinalProject.Cashier
         private InvoiceService invoiceService = new();
         private HistoryUsedDeviceService historyUsedDeviceService = new();
         private HistoryBuyGoodService historyBuyGoodService = new();
+        private WorkingHistoryService WorkingHistoryService = new();
 
         public CashierScreen()
         {
             InitializeComponent();
+            buttonAlter();
         }
 
 
@@ -75,7 +77,6 @@ namespace FinalProject.Cashier
                 }
                 if(invoice != null)
                 {
-                    
                     ci._invoice = invoice;
                     ci.tbxInvoiceId.Text = invoice.IId.ToString();
                     ci.txbDevice.Text = device.Did.ToString();
@@ -101,6 +102,52 @@ namespace FinalProject.Cashier
                     FillItcList();
                 }
             }
+
+
+        }
+        public void buttonAlter()
+        {
+            if (Application.Current.Properties["startTime"] != null)
+            {
+                btnStart.Content = "Kết thúc ca làm";
+            }
+        }
+
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.Properties["startTime"] == null)
+            {
+                Application.Current.Properties["startTime"] = DateTime.Now.TimeOfDay.ToString();
+                btnStart.Content = "Kết thúc ca làm";
+            }
+            else
+            {
+                var confirm = MessageBox.Show("Bạn có chắc kết thúc ca làm?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (confirm == MessageBoxResult.Yes)
+                {
+                    string startTime = Application.Current.Properties["startTime"] as string;
+                    var start = TimeOnly.FromTimeSpan(TimeSpan.Parse(startTime));
+
+                    var end = TimeOnly.FromTimeSpan(DateTime.Now.TimeOfDay);
+                    DateOnly date = DateOnly.FromDateTime(DateTime.Now);
+                    WorkingHistory workingHistory = new WorkingHistory();
+                    workingHistory.StaffId = int.Parse(Application.Current.Properties["StaffId"] as string);
+                    workingHistory.Date = date;
+                    workingHistory.StartTime = start;
+                    workingHistory.EndTime = end;
+                    WorkingHistoryService.AddWorkingHistory(workingHistory);
+                    Application.Current.Shutdown();
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
+
+        private void btnReset_Click(object sender, RoutedEventArgs e)
+        {
+            FillItcList();  
 
         }
     }

@@ -51,7 +51,7 @@ namespace FinalProject.Admin
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             WorkingHistoryScreen history = new WorkingHistoryScreen();
-            this.Close();
+            this.Hide();
             history.ShowDialog();
         }
 
@@ -77,7 +77,7 @@ namespace FinalProject.Admin
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             ExpenditureGenaral expenditureGenaral = new ExpenditureGenaral();
-            this.Close();
+            this.Hide();
             expenditureGenaral.ShowDialog();
         }
 
@@ -93,16 +93,13 @@ namespace FinalProject.Admin
 
         private void btnGood_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
             CashierScreen cashierScreen = new CashierScreen();
             this.Hide();
             if (cashierScreen.ShowDialog() == false)
             {
                 this.Show();
             }
-=======
 
->>>>>>> kiki
         }
 
         private void btnStaff_Click(object sender, RoutedEventArgs e)

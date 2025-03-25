@@ -30,6 +30,7 @@ namespace FinalProject
         private CustomerService customerService = new CustomerService();
         private InvoiceService invoiceService = new InvoiceService();
         private  HistoryUsedDeviceService historyUsedDeviceService = new HistoryUsedDeviceService();
+        private DeviceService deviceService = new DeviceService();
         public LoginScreen_Admin()
         {
             InitializeComponent();
@@ -86,11 +87,15 @@ namespace FinalProject
             invoiceService.AddNewInvoice(invoice);
             return invoiceService.GetAll().Last().IId;
         }
+        private static int deviceId = 1;
         public void createUsedDevice(int invoiceId)
         {
+            Device device = deviceService.getDeviceByID(deviceId);
+            device.Status = 2;
+            deviceService.UpdateDevice(device);
             DateOnly date = DateOnly.FromDateTime(DateTime.Now);
             TimeOnly start = TimeOnly.FromDateTime(DateTime.Now);
-            HistoryUsedDevice history = new HistoryUsedDevice() { InvoiceId = invoiceId, DeviceId = 1, Date = date, Start = start };
+            HistoryUsedDevice history = new HistoryUsedDevice() { InvoiceId = invoiceId, DeviceId = deviceId, Date = date, Start = start };
             historyUsedDeviceService.AddHistoryUsedDevice(history);
         }
     }

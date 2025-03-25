@@ -66,14 +66,14 @@ namespace FinalProject.Admin
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             WorkingHistoryScreen workingHistoryScreen = new WorkingHistoryScreen();
-            this.Close();
+            this.Hide();
             workingHistoryScreen.ShowDialog();
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             AdminScreen adminScreen = new AdminScreen();
-            this.Close();
+            this.Hide();
             adminScreen.ShowDialog();
         }
 

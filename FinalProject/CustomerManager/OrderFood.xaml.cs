@@ -27,6 +27,7 @@ namespace FinalProject.CustomerManager
         private InvoiceService InvoiceService = new InvoiceService();
         HistoryBuyGoodService historyBuyGoodService = new HistoryBuyGoodService();
         private HistoryUsedDeviceService historyUsedDeviceService = new HistoryUsedDeviceService();
+        private DeviceService deviceService = new DeviceService();
         public OrderFood()
         {
             InitializeComponent();
@@ -53,7 +54,7 @@ namespace FinalProject.CustomerManager
                 // Anh
                 Image image = new Image();
                 image.Height = 100;
-                image.Source = new BitmapImage(new System.Uri(good.Img, System.UriKind.Absolute));
+                image.Source = new BitmapImage(new System.Uri(good.Img, System.UriKind.Relative));
                 image.Margin = new Thickness(5);
 
                 // Ten
@@ -135,6 +136,7 @@ namespace FinalProject.CustomerManager
                 historyUsedDevice.Amount = amount;
                 historyUsedDeviceService.Update(historyUsedDevice);
                 InvoiceService.UpdateTotal(invoiceId);
+
                 this.Close();
             }
         }
@@ -143,7 +145,6 @@ namespace FinalProject.CustomerManager
         {
             HistoryOrder historyOrder = new HistoryOrder();
             historyOrder.Show();
-            this.Close();
         }
     }
 }
