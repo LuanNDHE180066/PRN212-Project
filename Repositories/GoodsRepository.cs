@@ -17,5 +17,10 @@ namespace Repositories
         {
             return PrnFinalProjectContext.Ins.Goods.Find(id);
         }
+        public void Update(Good good)
+        {
+            PrnFinalProjectContext.Ins.Goods.Update(good);  
+            PrnFinalProjectContext.Ins.SaveChanges();
+        }
     }
 }

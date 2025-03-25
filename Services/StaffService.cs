@@ -17,9 +17,9 @@ namespace Services
         {
             return staffRepository.GetAll();
         }
-        public Staff GetByRoleUsernamePassword(string username, string password, int role)
+        public Staff GetByRoleUsernamePassword(string username, string password)
         {
-            return GetAll().Where(s => s.Username.Equals(username) && s.Password.Equals(password) && s.Roleid == role).FirstOrDefault();
+            return GetAll().Where(s => s.Username.Equals(username) && s.Password.Equals(password)).FirstOrDefault();
         }
         public bool isExistPhone(string phone)
         {

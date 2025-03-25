@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+﻿using FinalProject.Admin;
+using FinalProject.Cashier;
+using FinalProject.CustomerManager;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Repositories.Models;
 using Services;
 using System;
@@ -22,41 +25,73 @@ namespace FinalProject
     /// </summary>
     public partial class LoginScreen_Admin : Window
     {
-        private RoleService roleService= new RoleService();
-        private StaffService staffService= new StaffService();
+        private RoleService roleService = new RoleService();
+        private StaffService staffService = new StaffService();
+        private CustomerService customerService = new CustomerService();
+        private InvoiceService invoiceService = new InvoiceService();
+        private  HistoryUsedDeviceService historyUsedDeviceService = new HistoryUsedDeviceService();
         public LoginScreen_Admin()
         {
             InitializeComponent();
-            LoadRole();
         }
-        public void LoadRole()
-        {
-            List<Role> list = roleService.GetAll();
-            cbRole.ItemsSource = list;
-            cbRole.SelectedValuePath = "Rid";
-            cbRole.DisplayMemberPath = "RName";
-        }
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int? roleId = cbRole.SelectedValue as int?;
-            if(roleId != null)
+
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+            Staff staff = staffService.GetByRoleUsernamePassword(username, password);
+            Customer customer = customerService.GetCustomerLogin(username, password);
+            if (staff != null)
             {
-                string username = txtUsername.Text;
-                string password = txtPassword.Password;
-                Staff staff = staffService.GetByRoleUsernamePassword(username, password, roleId.Value);
-                if(staff != null)
+                Application.Current.Properties["StaffId"] = staff.Sid.ToString();
+                if(staff.Roleid == 1)
                 {
-                    Application.Current.Properties["StaffId"] = staff.Sid.ToString();
                     Admin.AdminScreen adminScreen = new Admin.AdminScreen();
-                    this.Close();
+                    this.Hide();
                     adminScreen.ShowDialog();
+                }
+                else if(staff.Roleid == 2)
+                {
+                    CashierScreen cashierScreen = new CashierScreen();
+                    this.Hide();
+                    cashierScreen.Show();
                 }
                 else
                 {
-                    MessageBox.Show($"Sai password or username");
+                    ManagerScreen managerScreen = new ManagerScreen();
+                    this.Hide();
+                    managerScreen.ShowDialog();
                 }
             }
+            else if(customer != null){
+                Application.Current.Properties["customerId"] = customer.Cid.ToString();
+                int invoiceId = createInvoice(customer.Cid);
+                Application.Current.Properties["invoiceId"] = invoiceId.ToString();
+                createUsedDevice(invoiceId);
+                OrderFood orderFood = new OrderFood();
+                this.Hide();
+                orderFood.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show($"Sai password or username");
+            }
+        }
+        private int createInvoice(int cId)
+        {
+            DateOnly date = DateOnly.FromDateTime(DateTime.Now);
+            Invoice invoice = new Invoice() { InvoiceDate = date, CustomerId = cId, StaffId = 1 };
+            invoiceService.AddNewInvoice(invoice);
+            return invoiceService.GetAll().Last().IId;
+        }
+        public void createUsedDevice(int invoiceId)
+        {
+            DateOnly date = DateOnly.FromDateTime(DateTime.Now);
+            TimeOnly start = TimeOnly.FromDateTime(DateTime.Now);
+            HistoryUsedDevice history = new HistoryUsedDevice() { InvoiceId = invoiceId, DeviceId = 1, Date = date, Start = start };
+            historyUsedDeviceService.AddHistoryUsedDevice(history);
         }
     }
 }

@@ -76,5 +76,15 @@ namespace FinalProject.Admin
             this.Close();
             adminScreen.ShowDialog();
         }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

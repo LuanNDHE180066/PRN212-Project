@@ -102,6 +102,9 @@ namespace FinalProject
                 decimal total = decimal.Parse(txtTotal.Text);
                 DateTime date = dpkDate.SelectedDate.Value;
                 int goodsId = int.Parse(cbGood.SelectedValue.ToString());
+                Good good = goodsService.GetById(goodsId);
+                good.Quantity = good.Quantity + quantity;
+                goodsService.Update(good);
                 Expenditure exp = new Expenditure();
                 exp.Quantity = quantity;
                 exp.Supplier = supplier;

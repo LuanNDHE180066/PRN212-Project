@@ -27,27 +27,10 @@ namespace FinalProject.Admin
         {
             InitializeComponent();
             LoadDataGrid(staffService.GetAll());
-            filterRole();
         }
         public void LoadDataGrid(List<Staff> staffs)
         {
             dtgStaff.ItemsSource = staffs;
-        }
-        public void filterRole()
-        {
-            string sid_raw = Application.Current.Properties["StaffId"] as string;
-            int.TryParse(sid_raw, out int sid);
-            if (sid != 0)
-            {
-                Staff staff = staffService.GetById(sid);
-                MessageBox.Show(staff.SName);
-                if (staff.Roleid != 1)
-                {
-                    btnStaff.IsEnabled = false;
-                    btnExp.IsEnabled = false;
-                    btnGood.IsEnabled = false;
-                }
-            }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -68,6 +51,7 @@ namespace FinalProject.Admin
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             WorkingHistoryScreen history = new WorkingHistoryScreen();
+            this.Close();
             history.ShowDialog();
         }
 
@@ -109,26 +93,26 @@ namespace FinalProject.Admin
 
         private void btnGood_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             CashierScreen cashierScreen = new CashierScreen();
             this.Hide();
             if (cashierScreen.ShowDialog() == false)
             {
                 this.Show();
             }
+=======
+
+>>>>>>> kiki
         }
 
-        private void btnCustomer_Click(object sender, RoutedEventArgs e)
+        private void btnStaff_Click(object sender, RoutedEventArgs e)
         {
-            ManageCustomerScreen manageCustomerScreen   = new ManageCustomerScreen();
-            manageCustomerScreen.ShowDialog();
-            this.Close();
+
         }
 
-        private void btnDevice_Click(object sender, RoutedEventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
-            DeviceManageScreen deviceManageScreen = new DeviceManageScreen();
-            deviceManageScreen.ShowDialog();    
-            this.Close();
+            Application.Current.Shutdown();
         }
     }
 }

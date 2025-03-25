@@ -19,5 +19,9 @@ namespace Services
         {
             return goodsRepository.Get(id);
         }
+        public void Update(Good good)
+        {
+            goodsRepository.Update(good);
+        }
     }
 }
