@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\repositories\\models\\prnfinalprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\models\\prnfinalprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\loginscreen_admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\registercustomer.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\registercustomer.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
@@ -38,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +74,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "PrnFinalProjectContext.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\Models\\PrnFinalProjectContext.cs",
+              "RelativeDocumentMoniker": "Repositories\\Models\\PrnFinalProjectContext.cs",
+              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\Models\\PrnFinalProjectContext.cs",
+              "RelativeToolTip": "Repositories\\Models\\PrnFinalProjectContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T14:54:52.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginScreen_Admin.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml.cs",
+              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml.cs",
+              "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAGgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T14:29:44.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginScreen_Admin.xaml",
+              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml",
+              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml",
+              "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-27T14:29:40.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TokenRepository.cs",
               "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\TokenRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\TokenRepository.cs",
@@ -75,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Services\\TokenService.cs",
@@ -88,20 +138,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Invoice.cs",
               "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\Models\\Invoice.cs",
               "RelativeDocumentMoniker": "Repositories\\Models\\Invoice.cs",
               "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\Models\\Invoice.cs",
               "RelativeToolTip": "Repositories\\Models\\Invoice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T13:36:49.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CalculateInvoiceScreem.xaml.cs",
               "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\Cashier\\CalculateInvoiceScreem.xaml.cs",
               "RelativeDocumentMoniker": "FinalProject\\Cashier\\CalculateInvoiceScreem.xaml.cs",
@@ -114,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "MailService.cs",
               "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Services\\MailService.cs",
               "RelativeDocumentMoniker": "Services\\MailService.cs",
@@ -127,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "RegisterCustomer.xaml.cs",
               "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
               "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
@@ -140,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "RegisterCustomer.xaml",
               "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\RegisterCustomer.xaml",
               "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\RegisterCustomer.xaml",

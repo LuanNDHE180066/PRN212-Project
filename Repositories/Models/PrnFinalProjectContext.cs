@@ -199,6 +199,7 @@ public partial class PrnFinalProjectContext : DbContext
 
             entity.Property(e => e.IId).HasColumnName("iID");
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
+            entity.Property(e => e.IsEnd).HasColumnName("isEnd");
             entity.Property(e => e.StaffId).HasColumnName("StaffID");
             entity.Property(e => e.Total).HasColumnType("decimal(18, 0)");
 
