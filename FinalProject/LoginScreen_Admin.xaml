@@ -5,42 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-        Title="LoginScreen" Height="450" Width="800">
+        Title="LoginScreen" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/468189237_3784890568443525_2634252900423939169_n.jpg"/>
+            <ImageBrush ImageSource="/468189237_3784890568443525_2634252900423939169_n.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition Height="70"></RowDefinition>
-            <RowDefinition Height="70"></RowDefinition>
-            <RowDefinition Height="70"></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-        <Label Grid.Column="1" Grid.Row="0" Content="Login"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Center"
-               FontSize="50"
-               FontWeight="Bold"></Label>
-        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
-            <Label Width="100" Height="30">Username</Label>
-            <TextBox FontSize="20" Name="txtUsername" Width="300" Height="30"></TextBox>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
-            <Label Width="100" Height="30">Password</Label>
-            <PasswordBox FontSize="20" Name="txtPassword" Width="300" Height="30"></PasswordBox>
-        </StackPanel>
-        <Button Grid.Row="3" Grid.Column="1" Width="200" Click="Button_Click_1">Đăng kí tài khoản</Button>
-        <Button Grid.Column="1" Grid.Row="4"
-                Content="Đăng nhập"
-                Width="200" Height="50" Click="Button_Click"
-                >
 
-        </Button>
+        <Border Background="White" Opacity="0.9" CornerRadius="15" Padding="20" Width="400" Height="380"
+                HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Login" FontSize="30" FontWeight="Bold" Foreground="#333"
+                           HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+                <StackPanel Grid.Row="1" Margin="10">
+                    <Label Content="Username" FontSize="14" FontWeight="SemiBold"/>
+                    <TextBox Name="txtUsername" FontSize="16" Height="30" Padding="5" BorderBrush="#888" BorderThickness="1"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Margin="10">
+                    <Label Content="Password" FontSize="14" FontWeight="SemiBold"/>
+                    <PasswordBox Name="txtPassword" FontSize="16" Height="30" Padding="5" BorderBrush="#888" BorderThickness="1"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <Button Content="Đăng ký" Width="120" Height="40" Click="Button_Click_1" Background="#8B0000" Foreground="White" FontSize="14" FontWeight="Bold" BorderThickness="0" Cursor="Hand" Margin="5"/>
+                    <Button Content="Đăng nhập" Width="120" Height="40" Click="Button_Click" Background="#000000" Foreground="White" FontSize="14" FontWeight="Bold" BorderThickness="0" Cursor="Hand" Margin="5"/>
+                </StackPanel>
+
+                <TextBlock Grid.Row="4" Text="Quên mật khẩu?" Foreground="#2196F3" FontSize="14" 
+Name="linkForgetPass"                           TextDecorations="Underline" Cursor="Hand"
+MouseLeftButtonDown="linkForgetPass_MouseLeftButtonDown"                           HorizontalAlignment="Center" Margin="10"/>
+            </Grid>
+        </Border>
     </Grid>
 </Window>

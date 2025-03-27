@@ -104,5 +104,13 @@ namespace FinalProject
             RegisterCustomer customer = new RegisterCustomer();
             customer.ShowDialog();
         }
+
+     
+
+        private void linkForgetPass_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            ResetPasswordScreen r = new();
+            r.ShowDialog();
+        }
     }
 }
