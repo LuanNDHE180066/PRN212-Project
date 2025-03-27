@@ -28,7 +28,6 @@ namespace FinalProject
         {
             InitializeComponent();
             LoadDataGrid(staffService.WorkingHistoryDTOs());
-            buttonAlter();
         }
         public void LoadDataGrid(List<WorkingHistoryDTO> list)
         {
@@ -60,57 +59,34 @@ namespace FinalProject
             var list = staffService.WorkingHistoryDTOs();
             LoadDataGrid(list.Where(s => s.Name.Contains(searchName, StringComparison.OrdinalIgnoreCase)).ToList());
         }
-        public void buttonAlter()
-        {
-            if (Application.Current.Properties["startTime"] != null)
-            {
-                btnStart.Content = "Kết thúc ca làm";
-            }
-        }
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            if (Application.Current.Properties["startTime"] == null)
-            {
-                Application.Current.Properties["startTime"] = DateTime.Now.TimeOfDay.ToString();
-                btnStart.Content = "Kết thúc ca làm";
-            }
-            else
-            {
-                var confirm = MessageBox.Show("Bạn có chắc kết thúc ca làm?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                if (confirm == MessageBoxResult.Yes)
-                {
-                    string startTime = Application.Current.Properties["startTime"] as string;
-                    var start = TimeOnly.FromTimeSpan(TimeSpan.Parse(startTime));
-
-                    var end = TimeOnly.FromTimeSpan(DateTime.Now.TimeOfDay);
-                    DateOnly date = DateOnly.FromDateTime(DateTime.Now);
-                    WorkingHistory workingHistory = new WorkingHistory();
-                    workingHistory.StaffId = int.Parse(Application.Current.Properties["StaffId"] as string);
-                    workingHistory.Date = date;
-                    workingHistory.StartTime = start;
-                    workingHistory.EndTime = end;
-                    WorkingHistoryService.AddWorkingHistory(workingHistory);
-                    Application.Current.Shutdown();
-                }
-                else
-                {
-                    return;
-                }
-            }
-        }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             AdminScreen adminScreen = new AdminScreen();
-            this.Close();
+            this.Hide();
             adminScreen.Show();
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             ExpenditureGenaral expenditureGenaral = new ExpenditureGenaral();
-            this.Close();
+            this.Hide();
             expenditureGenaral.ShowDialog();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Application.Current.Shutdown(); 
         }
     }
 }

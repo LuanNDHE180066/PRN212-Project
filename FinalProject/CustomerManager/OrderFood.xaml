@@ -15,7 +15,7 @@
             <Label VerticalAlignment="Center">Người dùng: </Label>
             <Label FontSize="20" FontWeight="Bold" Name="lbName"></Label>
             <Button HorizontalAlignment="Right" Width="150" Height="30" Margin="300 0 0 0" Click="Button_Click_2">Lịch sử Order</Button>
-            <Button HorizontalAlignment="Right" Width="60" Height="30" Margin="20 0 0 0" Click="Button_Click_1">Kết thúc</Button>
+            <Button HorizontalAlignment="Right" Width="160" Height="30" Margin="20 0 0 0" Click="Button_Click_1">Kết thúc</Button>
         </StackPanel>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
             <WrapPanel Name="panelFood">

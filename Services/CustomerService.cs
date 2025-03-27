@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Repositories;
 using Repositories.Models;
@@ -37,10 +38,18 @@ namespace Services
         {
             return repositories.getAllCustomer().Where(s => s.Username.Equals(user) && s.Password.Equals(pass)).FirstOrDefault();
         }
-
-        public void Update(Customer customer)
+        public bool isExistedUsername(string username)
         {
-            repository.Update(customer);
+            return this.getAllCustomer().Where(s => s.Username.Equals(username)).Any();
+        }
+        public bool isValidPassword(string password)
+        {
+            string pattern = @"^(?=.*\d).{6,}$";
+            return Regex.IsMatch(password, pattern);
+        }
+        public bool isValidUsername(string username)
+        {
+            return username.Length >= 6;
         }
 
 

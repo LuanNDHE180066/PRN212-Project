@@ -29,7 +29,7 @@ namespace FinalProject
         private StaffService staffService = new StaffService();
         private CustomerService customerService = new CustomerService();
         private InvoiceService invoiceService = new InvoiceService();
-        private HistoryUsedDeviceService historyUsedDeviceService = new HistoryUsedDeviceService();
+        private  HistoryUsedDeviceService historyUsedDeviceService = new HistoryUsedDeviceService();
         private DeviceService deviceService = new DeviceService();
         public LoginScreen_Admin()
         {
@@ -47,13 +47,13 @@ namespace FinalProject
             if (staff != null)
             {
                 Application.Current.Properties["StaffId"] = staff.Sid.ToString();
-                if (staff.Roleid == 1)
+                if(staff.Roleid == 1)
                 {
                     Admin.AdminScreen adminScreen = new Admin.AdminScreen();
                     this.Hide();
                     adminScreen.ShowDialog();
                 }
-                else if (staff.Roleid == 2)
+                else if(staff.Roleid == 2)
                 {
                     CashierScreen cashierScreen = new CashierScreen();
                     this.Hide();
@@ -66,8 +66,7 @@ namespace FinalProject
                     managerScreen.ShowDialog();
                 }
             }
-            else if (customer != null)
-            {
+            else if(customer != null){
                 Application.Current.Properties["customerId"] = customer.Cid.ToString();
                 int invoiceId = createInvoice(customer.Cid);
                 Application.Current.Properties["invoiceId"] = invoiceId.ToString();
@@ -88,7 +87,7 @@ namespace FinalProject
             invoiceService.AddNewInvoice(invoice);
             return invoiceService.GetAll().Last().IId;
         }
-        private static int deviceId = 5;
+        private static int deviceId = 1;
         public void createUsedDevice(int invoiceId)
         {
             Device device = deviceService.getDeviceByID(deviceId);
@@ -98,6 +97,13 @@ namespace FinalProject
             TimeOnly start = TimeOnly.FromDateTime(DateTime.Now);
             HistoryUsedDevice history = new HistoryUsedDevice() { InvoiceId = invoiceId, DeviceId = deviceId, Date = date, Start = start };
             historyUsedDeviceService.AddHistoryUsedDevice(history);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            RegisterCustomer customer = new RegisterCustomer();
+            this.Close();
+            customer.ShowDialog();
         }
     }
 }

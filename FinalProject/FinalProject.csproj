@@ -15,7 +15,13 @@
     <None Remove="Admin\avatars-000699683875-m5pnre-t500x500.jpg" />
     <None Remove="Images\1315629.png" />
     <None Remove="Images\316538658_3315492182103932_3345412238196994957_n.jpg" />
+    <None Remove="Images\coca.jpg" />
+    <None Remove="Images\lavie.png" />
+    <None Remove="Images\Messi.jpg" />
+    <None Remove="Images\numberone.png" />
     <None Remove="Images\pc-game.png" />
+    <None Remove="Images\redbull.jpg" />
+    <None Remove="Images\string.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,9 +50,15 @@
     <Resource Include="Images\316538658_3315492182103932_3345412238196994957_n.jpg">
       <CopyToOutputDirectory></CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\coca.jpg" />
+    <Resource Include="Images\lavie.png" />
+    <Resource Include="Images\Messi.jpg" />
+    <Resource Include="Images\numberone.png" />
     <Resource Include="Images\pc-game.png">
       <CopyToOutputDirectory></CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\redbull.jpg" />
+    <Resource Include="Images\string.jpg" />
   </ItemGroup>
 
   <ItemGroup>

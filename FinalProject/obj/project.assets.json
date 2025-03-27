@@ -1275,6 +1275,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Extended.Wpf.Toolkit": "4.7.25104.5739",
+          "MaterialDesignColors": "5.2.1",
+          "MaterialDesignThemes": "5.2.1",
+          "MaterialDesignThemes.MahApps": "5.2.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13",
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Json": "8.0.1"

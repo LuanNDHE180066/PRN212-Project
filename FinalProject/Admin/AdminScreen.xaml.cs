@@ -27,27 +27,10 @@ namespace FinalProject.Admin
         {
             InitializeComponent();
             LoadDataGrid(staffService.GetAll());
-            filterRole();
         }
         public void LoadDataGrid(List<Staff> staffs)
         {
             dtgStaff.ItemsSource = staffs;
-        }
-        public void filterRole()
-        {
-            string sid_raw = Application.Current.Properties["StaffId"] as string;
-            int.TryParse(sid_raw, out int sid);
-            if (sid != 0)
-            {
-                Staff staff = staffService.GetById(sid);
-                MessageBox.Show(staff.SName);
-                if (staff.Roleid != 1)
-                {
-                    btnStaff.IsEnabled = false;
-                    btnExp.IsEnabled = false;
-                    btnGood.IsEnabled = false;
-                }
-            }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -68,6 +51,7 @@ namespace FinalProject.Admin
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             WorkingHistoryScreen history = new WorkingHistoryScreen();
+            this.Hide();
             history.ShowDialog();
         }
 
@@ -90,13 +74,6 @@ namespace FinalProject.Admin
             LoadDataGrid(staffs.Where(s => s.SName.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList());
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            ExpenditureGenaral expenditureGenaral = new ExpenditureGenaral();
-            this.Close();
-            expenditureGenaral.ShowDialog();
-        }
-
         private void btnExp_Click(object sender, RoutedEventArgs e)
         {
             GoodManageScreen goodManageScreen = new GoodManageScreen();
@@ -115,6 +92,17 @@ namespace FinalProject.Admin
             {
                 this.Show();
             }
+
+        }
+
+        private void btnStaff_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

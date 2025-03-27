@@ -6,20 +6,27 @@
         xmlns:local="clr-namespace:FinalProject.CustomerManager"
         mc:Ignorable="d"
         Title="HistoryOrder" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFACDDF4" >
         
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
-            <RowDefinition/>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Grid.Row="0">
             <Label VerticalAlignment="Center">Người dùng:</Label>
             <Label FontSize="20" FontWeight="Bold" Name="lbName"></Label>
-            
         </StackPanel>
-        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
-            <WrapPanel Name="panelHistory" HorizontalAlignment="Center">
-            </WrapPanel>
-        </ScrollViewer>
+        <DataGrid AutoGenerateColumns="False" Name="dtgHistoryOrder" Grid.Row="1" Background="#FFE9C4B8">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="3*" Header="Name" Binding="{Binding Goods.GName}"></DataGridTextColumn>
+                <DataGridTextColumn Width="2*" Header="Date" Binding="{Binding Date}"></DataGridTextColumn>
+                <DataGridTextColumn Width="2*" Header="Quantity" Binding="{Binding Quantity}"></DataGridTextColumn>
+                <DataGridTextColumn Width="2*" Header="Amount" Binding="{Binding Amount}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Name="btnTotal"
+            HorizontalAlignment="Right"
+            Width="200" Height="50" Content="Total: " Grid.Row="2"></Button>
     </Grid>
 </Window>
