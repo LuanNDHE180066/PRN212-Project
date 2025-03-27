@@ -102,7 +102,6 @@ namespace FinalProject
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             RegisterCustomer customer = new RegisterCustomer();
-            this.Close();
             customer.ShowDialog();
         }
     }

@@ -52,6 +52,8 @@ namespace FinalProject.CustomerManager
             }
             Customer customer = new Customer() {CName = name, Email= email,Phone=phone,Hours=0,Username=username,Password=password,Status =2 };
             customerService.AddCustomer(customer);
+            Customer c = customerService.GetCustomerUsername(username);
+            MailService.SendEmailVerify(email, c.Cid);
             MessageBox.Show("Đã gửi email xác nhận, Kiểm tra hòm thư của bạn");
         }
     }
