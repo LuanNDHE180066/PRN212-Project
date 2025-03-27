@@ -182,6 +182,12 @@ namespace FinalProject.CustomerManager
                 TimeSpan timeSpan = end - historyUsedDevice.Start.Value;
                 decimal duration = Math.Round(((decimal)timeSpan.TotalHours), 2);
                 decimal amount = duration * 10000;
+                
+                int cId = int.Parse(Application.Current.Properties["customerId"] as string);
+                Customer customer = customerService.GetCustomerByID(cId);
+                customer.Hours = customer.Hours +(int) duration;
+                customerService.UpdateCustomer(customer);
+                
                 historyUsedDevice.Amount = amount;
                 historyUsedDeviceService.Update(historyUsedDevice);
                 InvoiceService.UpdateTotal(invoiceId);
