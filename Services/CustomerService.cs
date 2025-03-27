@@ -10,14 +10,14 @@ namespace Services
 {
     public class CustomerService
     {
-        private CustomerRepository repository =new();
+        private CustomerRepository repository = new();
         private CustomerRepositories repositories = new();
         public Customer GetById(int id)
         {
             return repository.GetById(id);
         }
 
-   public List<Customer> getAllCustomer()
+        public List<Customer> getAllCustomer()
         {
             return repositories.getAllCustomer();
         }
@@ -33,17 +33,17 @@ namespace Services
         {
             return repositories.GetCustomerByID(id);
         }
-        public Customer GetCustomerLogin(string user,string pass)
+        public Customer GetCustomerLogin(string user, string pass)
         {
-            return repositories.getAllCustomer().Where(s=>s.Username.Equals(user) && s.Password.Equals(pass)).First();
-        } 
+            return repositories.getAllCustomer().Where(s => s.Username.Equals(user) && s.Password.Equals(pass)).FirstOrDefault();
+        }
 
         public void Update(Customer customer)
         {
             repository.Update(customer);
         }
-    
-        
+
+
         public List<CustomerDTO> getAllDTO()
         {
             return repositories.getAllCustomer().Select(x => new CustomerDTO
@@ -76,5 +76,5 @@ namespace Services
 
             public string StatusCustomer { get; set; }
         }
-    } 
+    }
 }

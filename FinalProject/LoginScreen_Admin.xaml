@@ -35,17 +35,11 @@
             <Label Width="100" Height="30">Password</Label>
             <PasswordBox FontSize="20" Name="txtPassword" Width="300" Height="30"></PasswordBox>
         </StackPanel>
-        <ComboBox 
-            Grid.Column="1" Grid.Row="3"
-            Width="200" Height="30"
-            Name="cbRole">
-            
-        </ComboBox>
         <Button Grid.Column="1" Grid.Row="4"
                 Content="Đăng nhập"
                 Width="200" Height="50" Click="Button_Click"
                 >
-            
+
         </Button>
     </Grid>
 </Window>

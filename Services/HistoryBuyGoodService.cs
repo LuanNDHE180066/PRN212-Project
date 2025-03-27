@@ -32,5 +32,9 @@ namespace Services
             repo.Update(hbg);
         }
 
+        public void Delete(HistoryBuyGood his)
+        {
+            repo.Delete(his);
+        }
     }
 }

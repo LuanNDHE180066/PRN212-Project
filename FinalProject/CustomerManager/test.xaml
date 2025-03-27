@@ -15,5 +15,6 @@
  >
            
         </TextBox>
+        <Button Click="Button_Click" Content="Button" HorizontalAlignment="Center" Margin="0,295,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

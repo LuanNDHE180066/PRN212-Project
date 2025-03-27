@@ -35,9 +35,18 @@
 
         <StackPanel Grid.Row="1" Grid.Column="
                     0">
-            <Button Margin="0,50,0,0" Content="Invoice" Width="90"
+            <Button Margin="0,50,0,0" Content="Hóa đơn" Width="115"
                     Height="30" x:Name="btnInvoice"
                     Click="btnInvoice_Click"/>
+
+
+            <Button Margin="0,50,0,0" Content="Chấm công" Width="119"
+           Height="30" x:Name="btnStart"
+           Click="btnInvoice_Click"/>
+
+            <Button Margin="0,50,0,0" Content="Reset" Width="120"
+Height="30" x:Name="btnReset"
+Click="btnReset_Click"/>
         </StackPanel>
 
 

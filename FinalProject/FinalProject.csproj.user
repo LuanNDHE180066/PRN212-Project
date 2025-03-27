@@ -13,10 +13,16 @@
     <Compile Update="Admin\AdminScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Admin\ManagerScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Admin\UpdateStaff.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Admin\WorkingHistoryDetailScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cashier\GoodQuantityScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="CustomerManager\HistoryOrder.xaml.cs">
@@ -48,10 +54,16 @@
     <Page Update="Admin\AdminScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Admin\ManagerScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Admin\UpdateStaff.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\WorkingHistoryDetailScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Cashier\GoodQuantityScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CustomerManager\HistoryOrder.xaml">

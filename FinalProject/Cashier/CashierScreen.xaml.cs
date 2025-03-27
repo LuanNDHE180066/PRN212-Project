@@ -27,10 +27,12 @@ namespace FinalProject.Cashier
         private InvoiceService invoiceService = new();
         private HistoryUsedDeviceService historyUsedDeviceService = new();
         private HistoryBuyGoodService historyBuyGoodService = new();
+        private WorkingHistoryService WorkingHistoryService = new();
 
         public CashierScreen()
         {
             InitializeComponent();
+            buttonAlter();
         }
 
 
@@ -83,7 +85,6 @@ namespace FinalProject.Cashier
                 }
                 if (invoice != null)
                 {
-                    
                     ci._invoice = invoice;
                     ci.tbxInvoiceId.Text = invoice.IId.ToString();
                     ci.txbDevice.Text = device.Did.ToString();
@@ -108,7 +109,7 @@ namespace FinalProject.Cashier
                 }
                 else
                 {
-                    ci.btnSetTo.IsEnabled = false ;
+                    ci.btnSetTo.IsEnabled = false;
                 }
                 ci.dpkDate.Text = DateTime.Now.ToString("dd-MM-yyyy");
                 ci.dpkDate.IsEnabled = false;

@@ -307,5 +307,33 @@ namespace FinalProject.Cashier
                 return;
             }
         }
+
+        private void dgvGood_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
+        {
+            HistoryBuyGood hbg = dgvGood.SelectedItem as HistoryBuyGood;
+            if (hbg != null)
+            {
+                GoodQuantityScreen gqs = new();
+                gqs._hbg = hbg;
+                gqs._good = goodService.GetById((int)hbg.GoodsId);
+                gqs.txbInvoiceId.Text = _invoiceId != -1 ? _invoiceId.ToString() : _invoice.IId.ToString();
+                gqs.txbGoodName.Text = gqs._good.ToString();
+                gqs.txbQuantity.Text = hbg.Quantity.ToString();
+                var imagePath = goodService.GetById((int)hbg.GoodsId).Img; 
+
+                var bitmap = new BitmapImage(new Uri(imagePath, UriKind.RelativeOrAbsolute));
+
+                gqs.imgGoodImage.Source = bitmap;
+                if (gqs.ShowDialog() == false)
+                {
+                    FillHistoryBuyGood();
+                }
+            }
+        }
+
+        private void FillHistoryBuyGood()
+        {
+            dgvGood.ItemsSource = historyBuyGoodService.GetByInvoiceId(_invoiceId != -1 ? _invoiceId : _invoice.IId);
+        }
     }
 }
