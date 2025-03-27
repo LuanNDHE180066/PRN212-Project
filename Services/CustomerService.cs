@@ -52,6 +52,11 @@ namespace Services
             return username.Length >= 6;
         }
 
+        public void Update(Customer customer)
+        {
+            repository.Update(customer);
+        }
+
 
         public List<CustomerDTO> getAllDTO()
         {
