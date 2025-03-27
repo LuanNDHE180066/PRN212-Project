@@ -74,13 +74,6 @@ namespace FinalProject.Admin
             LoadDataGrid(staffs.Where(s => s.SName.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList());
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            ExpenditureGenaral expenditureGenaral = new ExpenditureGenaral();
-            this.Hide();
-            expenditureGenaral.ShowDialog();
-        }
-
         private void btnExp_Click(object sender, RoutedEventArgs e)
         {
             GoodManageScreen goodManageScreen = new GoodManageScreen();

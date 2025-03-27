@@ -1,4 +1,5 @@
-﻿using Repositories.Models;
+﻿using MahApps.Metro.Controls;
+using Repositories.Models;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -39,61 +40,104 @@ namespace FinalProject.CustomerManager
         public void showFood()
         {
             List<Good> list = GoodService.GetAllActiveGood();
+            panelFood.Children.Clear(); // Xóa dữ liệu cũ trước khi hiển thị mới
+
             foreach (Good good in list)
             {
-                Border border = new Border();
-                border.Height = 200;
-                border.Width = 200;
-                border.BorderBrush = Brushes.Black;
-                border.BorderThickness = new Thickness(1);
-                border.Margin = new Thickness(10);
-                border.CornerRadius = new CornerRadius(5);
-
-                StackPanel stackPanel = new StackPanel();
-
-                // Anh
-                Image image = new Image();
-                image.Height = 100;
-                image.Source = new BitmapImage(new System.Uri(good.Img, System.UriKind.Relative));
-                image.Margin = new Thickness(5);
-
-                // Ten
-                TextBlock nameTextBlock = new TextBlock();
-                nameTextBlock.Text = "Sản phẩm :" + good.GName;
-                nameTextBlock.FontSize = 16;
-                nameTextBlock.FontWeight = FontWeights.Bold;
-                nameTextBlock.TextAlignment = TextAlignment.Center;
-                nameTextBlock.Margin = new Thickness(5);
-
-                // Gia
-                TextBlock priceTextBlock = new TextBlock();
-                priceTextBlock.Text = "Giá: " + good.UnitPrice +"| SL: "+good.Quantity;
-                priceTextBlock.TextAlignment = TextAlignment.Center;
-                priceTextBlock.Margin = new Thickness(5);
-             
-
-                // Button
-                Button button = new Button();
-                button.Content = "Mua ngay";
-                button.Width = 100;
-                button.Margin = new Thickness(5);
-                button.Tag = good.Gid;
-                button.HorizontalAlignment = HorizontalAlignment.Center;
-                if(good.Quantity == 0)
+                // Tạo viền container đẹp
+                Border border = new Border
                 {
-                    button.IsEnabled = false;
-                }
+                    Width = 220,
+                    Padding = new Thickness(10),
+                    Margin = new Thickness(10),
+                    BorderBrush = Brushes.LightGray,
+                    BorderThickness = new Thickness(2),
+                    CornerRadius = new CornerRadius(10),
+                    Background = Brushes.White,
+                    Effect = new System.Windows.Media.Effects.DropShadowEffect
+                    {
+                        Color = Colors.Gray,
+                        BlurRadius = 8,
+                        ShadowDepth = 2
+                    }
+                };
+
+                // StackPanel chứa nội dung
+                StackPanel stackPanel = new StackPanel { Orientation = Orientation.Vertical };
+
+                // Ảnh sản phẩm
+                Image image = new Image
+                {
+                    Height = 120,
+                    Width = 120,
+                    Source = new BitmapImage(new Uri(good.Img, UriKind.RelativeOrAbsolute)),
+                    Stretch = Stretch.UniformToFill,
+                    HorizontalAlignment = HorizontalAlignment.Center,
+                    Margin = new Thickness(5)
+                };
+
+                // Tên sản phẩm
+                TextBlock nameTextBlock = new TextBlock
+                {
+                    Text = good.GName.ToUpper(),
+                    FontSize = 16,
+                    FontWeight = FontWeights.Bold,
+                    Foreground = Brushes.DarkBlue,
+                    TextAlignment = TextAlignment.Center,
+                    Margin = new Thickness(5)
+                };
+
+                // Giá và số lượng
+                TextBlock priceTextBlock = new TextBlock
+                {
+                    Text = $"💰 {good.UnitPrice} VNĐ | 📦 SL: {good.Quantity}",
+                    FontSize = 14,
+                    Foreground = Brushes.DarkRed,
+                    FontWeight = FontWeights.SemiBold,
+                    TextAlignment = TextAlignment.Center,
+                    Margin = new Thickness(5)
+                };
+
+                // NumericUpDown (Chọn số lượng)
+                NumericUpDown numericUpDown = new NumericUpDown
+                {
+                    Width = 100,
+                    Height = 30,
+                    Minimum = 1,
+                    Maximum = good.Quantity > 0 ? (double)good.Quantity : 1, // Không cho chọn số lớn hơn tồn kho
+                    Value = 1,
+                    Foreground = Brushes.Black,
+                    Margin = new Thickness(5),
+                };
+
+                // Button "Mua ngay"
+                Button button = new Button
+                {
+                    Content = "🛒 Mua ngay",
+                    Width = 120,
+                    Height = 35,
+                    Background = good.Quantity > 0 ? Brushes.DarkOrange : Brushes.Gray,
+                    Foreground = Brushes.White,
+                    FontWeight = FontWeights.Bold,
+                    Cursor = Cursors.Hand,
+                    IsEnabled = good.Quantity > 0,
+                    Margin = new Thickness(5),
+                    Tag = good.Gid,
+                    DataContext = numericUpDown
+                };
                 button.Click += Button_Click;
 
-                // Thêm các thành phần vào StackPanel
+                // Thêm vào StackPanel
                 stackPanel.Children.Add(image);
                 stackPanel.Children.Add(nameTextBlock);
                 stackPanel.Children.Add(priceTextBlock);
+                stackPanel.Children.Add(numericUpDown);
                 stackPanel.Children.Add(button);
 
-               
+                // Gán vào Border
                 border.Child = stackPanel;
 
+                // Thêm vào giao diện chính
                 panelFood.Children.Add(border);
             }
         }
@@ -104,9 +148,14 @@ namespace FinalProject.CustomerManager
             int gId = int.Parse(button.Tag.ToString());
             int invoiceId = int.Parse(Application.Current.Properties["invoiceId"] as string);
             DateOnly date = DateOnly.FromDateTime(DateTime.Now);
-            int quantity = 1;
+            NumericUpDown numUpDown = button.DataContext as NumericUpDown;
+            int quantity=1;
+            if (numUpDown != null)
+            {
+                quantity = (int)numUpDown.Value;  // Lấy giá trị số lượng
+            }
             Good good = goodService.GetById(gId);
-            good.Quantity = good.Quantity-1;
+            good.Quantity = good.Quantity-quantity;
             GoodService gsv = new GoodService();
             gsv.UpdateGood(good);
             decimal amount = good.UnitPrice.Value * quantity;

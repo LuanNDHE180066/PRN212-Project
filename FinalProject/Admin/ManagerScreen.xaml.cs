@@ -23,5 +23,10 @@ namespace FinalProject.Admin
         {
             InitializeComponent();
         }
+
+        private void btnExpenditure_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -63,19 +63,9 @@ namespace FinalProject.Admin
             expenditureDetail.ShowDialog();
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            WorkingHistoryScreen workingHistoryScreen = new WorkingHistoryScreen();
-            this.Hide();
-            workingHistoryScreen.ShowDialog();
-        }
+      
 
-        private void Button_Click_6(object sender, RoutedEventArgs e)
-        {
-            AdminScreen adminScreen = new AdminScreen();
-            this.Hide();
-            adminScreen.ShowDialog();
-        }
+        
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
@@ -86,5 +76,7 @@ namespace FinalProject.Admin
         {
             Application.Current.Shutdown();
         }
+
+        
     }
 }

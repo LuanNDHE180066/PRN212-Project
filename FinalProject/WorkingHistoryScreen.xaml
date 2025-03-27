@@ -24,7 +24,6 @@
             <StackPanel Grid.Row="1" Orientation="Vertical">
                 <Button Height="50" Content="Nhân viên" Background="#FFD674D0" Click="Button_Click_4"></Button>
                 <Button Background="#FFD674D0" Height="50" Content="Chấm công" Click="Button_Click_6"></Button>
-                <Button Background="#FFD674D0" Height="50" Content="Phiếu chi" Click="Button_Click_5"></Button>
                 <Button Background="#FFD674D0" Height="50" Content="Hóa đơn" Click="Button_Click_7"></Button>
             </StackPanel>
         </Grid>

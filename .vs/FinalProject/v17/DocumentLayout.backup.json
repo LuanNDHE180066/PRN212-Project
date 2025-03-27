@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\cashier\\cashierscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\cashier\\cashierscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\cashier\\cashierscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\cashier\\cashierscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\admin\\managerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\managerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\loginscreen_admin.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\orderfood.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\orderfood.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\orderfood.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\orderfood.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\orderfood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\orderfood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\loginscreen_admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\historyorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\historyorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\historyorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\historyorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\registercustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\registercustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|solutionrelative:services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\thanh\\downloads\\sp2025\\prn211\\finalproject\\finalproject\\finalproject\\customermanager\\registercustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\registercustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,126 +62,90 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ManagerScreen.xaml",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\Admin\\ManagerScreen.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\Admin\\ManagerScreen.xaml",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\Admin\\ManagerScreen.xaml",
-              "RelativeToolTip": "FinalProject\\Admin\\ManagerScreen.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-25T15:35:39.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CashierScreen.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\Cashier\\CashierScreen.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Cashier\\CashierScreen.xaml.cs",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\Cashier\\CashierScreen.xaml.cs",
-              "RelativeToolTip": "FinalProject\\Cashier\\CashierScreen.xaml.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAmwFYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T15:02:14.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CashierScreen.xaml",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\Cashier\\CashierScreen.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\Cashier\\CashierScreen.xaml",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\Cashier\\CashierScreen.xaml",
-              "RelativeToolTip": "FinalProject\\Cashier\\CashierScreen.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-25T15:01:44.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginScreen_Admin.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml.cs",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml.cs",
-              "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAxwGIAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T14:46:10.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginScreen_Admin.xaml",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml",
-              "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-25T14:46:06.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "OrderFood.xaml.cs",
               "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\OrderFood.xaml.cs",
               "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
               "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\OrderFood.xaml.cs",
               "RelativeToolTip": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAuwIsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAgwJYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T14:40:22.849Z",
+              "WhenOpened": "2025-03-27T07:01:19.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "OrderFood.xaml",
               "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\OrderFood.xaml",
               "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\OrderFood.xaml",
               "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\OrderFood.xaml",
               "RelativeToolTip": "FinalProject\\CustomerManager\\OrderFood.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-25T14:40:15.32Z",
+              "WhenOpened": "2025-03-27T07:01:05.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\App.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\App.xaml",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\App.xaml",
-              "RelativeToolTip": "FinalProject\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-25T14:38:25.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HistoryOrder.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\HistoryOrder.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\HistoryOrder.xaml.cs",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\HistoryOrder.xaml.cs",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\HistoryOrder.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAASwCwAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoginScreen_Admin.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml.cs",
+              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml.cs",
+              "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAIAzwGkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T14:27:52.7Z",
+              "WhenOpened": "2025-03-27T06:45:36.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HistoryOrder.xaml",
-              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\HistoryOrder.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\HistoryOrder.xaml",
-              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\HistoryOrder.xaml",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\HistoryOrder.xaml",
+              "DocumentIndex": 5,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Services\\CustomerService.cs",
+              "RelativeToolTip": "Services\\CustomerService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T06:29:21.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterCustomer.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
+              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
+              "RelativeToolTip": "FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwDYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T06:22:48.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterCustomer.xaml",
+              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\RegisterCustomer.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\RegisterCustomer.xaml",
+              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\CustomerManager\\RegisterCustomer.xaml",
+              "RelativeToolTip": "FinalProject\\CustomerManager\\RegisterCustomer.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-25T14:22:22.087Z",
+              "WhenOpened": "2025-03-27T06:16:24.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginScreen_Admin.xaml",
+              "DocumentMoniker": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml",
+              "ToolTip": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\FinalProject\\LoginScreen_Admin.xaml",
+              "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-27T06:09:31.026Z",
               "EditorCaption": ""
             }
           ]
