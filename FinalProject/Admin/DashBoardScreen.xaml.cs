@@ -37,6 +37,14 @@ namespace FinalProject.Admin
             tbxGoods.Text = GoodService.CountGoods().ToString();
             loadListGood();
             loadListDevice();
+            loadProfit();
+        }
+        public void loadProfit()
+        {
+            decimal? expense = expenditureService.GetTotal();
+            decimal? invoice = invoiceService.getAllTotal();
+            decimal? profit = invoice - expense;
+            tbxProfit.Text = profit.ToString();
         }
         public void loadListGood()
         {
@@ -65,7 +73,7 @@ namespace FinalProject.Admin
             if (selectedYear == null || selectedMonthIndex == 0)
             {
                 tbxInvoice.Text = invoiceService.getAllTotal()?.ToString() ?? "0";
-                tbxExpen.Text = expenditureService.GetTotal()?.ToString() ?? "0";
+                tbxExpen.Text = expenditureService.GetTotal()?.ToString() ?? "0"; loadProfit();
                 return;
             }
 
@@ -77,8 +85,10 @@ namespace FinalProject.Admin
                 
                 decimal? totalInvoice = invoiceService.GetTotalByMonthAndYear(year, month);
                 decimal? totalExpense = expenditureService.GetTotalByYearAndMonth(year, month);
+                decimal? profit = totalInvoice - totalExpense;
                 tbxInvoice.Text = totalInvoice.ToString();
                 tbxExpen.Text = totalExpense.ToString();
+                tbxProfit.Text = profit.ToString();
             }
             
         }

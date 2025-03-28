@@ -47,7 +47,7 @@
 
 
                 <TextBlock Text="Hours:"/>
-                <TextBox x:Name="txtHours" Width="200"/>
+                <TextBox x:Name="txtHours" Width="200" IsReadOnly="True"/>
 
 
                 <TextBlock Text="Phone:"/>

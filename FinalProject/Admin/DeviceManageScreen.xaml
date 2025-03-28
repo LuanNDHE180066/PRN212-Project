@@ -103,8 +103,8 @@
 
             
 
-            <StackPanel Margin="0,0,0,0" Orientation="Horizontal" Width="150" Height="30">
-                <Label Content="Ctg" FontSize="15" />
+            <StackPanel Margin="0,0,0,0" Orientation="Horizontal" Width="200" Height="30">
+                <Label Content="Categories" FontSize="15" />
                 <ComboBox Name="cbxCategory" Width="150" Height="23"
             ItemsSource="{Binding DtName}" 
             DisplayMemberPath="DtName" 

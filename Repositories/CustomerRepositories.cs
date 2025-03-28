@@ -26,6 +26,10 @@ namespace Repositories
         public Customer GetCustomerByID(int id)
         {
             return PrnFinalProjectContext.Ins.Customers.Find(id);
-        } 
+        }
+        public Customer GetCustomerByUsername(string username)
+        {
+            return PrnFinalProjectContext.Ins.Customers.FirstOrDefault(d => d.Username == username);
+        }
     }
 }

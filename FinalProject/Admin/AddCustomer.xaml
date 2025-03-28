@@ -39,17 +39,10 @@
         <ScrollViewer Grid.Row="1" Grid.Column="1">
             <StackPanel Background="AliceBlue" Margin="10, 10, 0,0">
 
-                <TextBlock Text="Customer ID:"/>
-                <TextBox x:Name="txtcid" Width="200"/>
-
                 <TextBlock Text="Customer Name:"/>
                 <TextBox x:Name="txtcName" Width="200"/>
 
-                
-                <TextBlock Text="Hours:"/>
-                <TextBox x:Name="txtHours" Width="200"/>
 
-                
                 <TextBlock Text="Phone:"/>
                 <TextBox x:Name="txtPhone" Width="200"/>
                

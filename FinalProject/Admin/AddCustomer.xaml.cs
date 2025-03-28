@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -31,7 +32,6 @@ namespace FinalProject.Admin
             try
             {
                 if (
-                    string.IsNullOrWhiteSpace(txtHours.Text) ||
                     string.IsNullOrWhiteSpace(txtcName.Text) ||
                     string.IsNullOrWhiteSpace(txtEmail.Text) ||
                     string.IsNullOrWhiteSpace(txtPasword.Text) ||
@@ -43,7 +43,7 @@ namespace FinalProject.Admin
                     return null;
                 }
                 string? CName = txtcName.Text;
-                int? Hours = int.Parse(txtHours.Text);
+                int? Hours = 0;
                 string? Phone = txtPhone.Text;
                 string? Username = txtUsername.Text;
                 string? Email = txtEmail.Text;
@@ -70,7 +70,6 @@ namespace FinalProject.Admin
         {
 
             txtcName.Clear();
-            txtHours.Clear();
             txtPhone.Clear();
             txtUsername.Clear();
             txtEmail.Clear();
@@ -82,12 +81,25 @@ namespace FinalProject.Admin
             var cus = getCustomer();
             if (cus != null)
             {
-                int cid = int.Parse(txtcid.Text);
-                var x = customer.GetCustomerByID(cid);
+                
+                if (!IsValidPhoneNumber(txtPhone.Text))
+                {
+                    MessageBox.Show("Số điện thoại không hợp lệ. Vui lòng kiểm tra lại.");
+                    return;
+                }
+
+                if (!IsValidEmail(txtEmail.Text))
+                {
+                    MessageBox.Show("Email không hợp lệ. Vui lòng kiểm tra lại.");
+                    return;
+                }
+                
+                var x = customer.GetCustomerByUsername(txtUsername.Text);
                 if (x != null)
                 {
-                    clearForm();
+                   
                     MessageBox.Show("Khách hàng đã tồn tại");
+                    return;
                 }
                 else
                 {
@@ -108,6 +120,22 @@ namespace FinalProject.Admin
                     }
                 }
             }
+        }
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+            if (string.IsNullOrWhiteSpace(phoneNumber))
+                return false;
+
+            string pattern = @"^\d{10}$";
+            return Regex.IsMatch(phoneNumber, pattern);
+        }
+        private bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, pattern);
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)

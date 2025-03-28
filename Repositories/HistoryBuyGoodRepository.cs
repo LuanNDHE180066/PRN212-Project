@@ -60,11 +60,11 @@ namespace Repositories
                                    .FirstOrDefault(),
                     Img = PrnFinalProjectContext.Ins.Goods
                                    .Where(g => g.Gid == r.GoodsId)
-                                   .Select(g => g.Img) // Lấy đường dẫn ảnh
+                                   .Select(g => g.Img)
                                    .FirstOrDefault(),
                     TotalSold = r.TotalSold
                 })
-                .ToList<object>();  // Ép kiểu sang List<object>
+                .ToList<object>();  
 
             return topGoods;
         }

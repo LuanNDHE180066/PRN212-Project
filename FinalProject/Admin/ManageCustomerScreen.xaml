@@ -74,7 +74,7 @@
         </StackPanel>
 
         <StackPanel Background="#91BEBE" Grid.Row="0" Grid.Column="1" Orientation="Horizontal" MinWidth="400">
-            <Label Content="Ctg" FontSize="15" VerticalAlignment="Center" Margin="5"/>
+            <Label Content="Search" FontSize="15" VerticalAlignment="Center" Margin="5"/>
             <TextBox x:Name="tbxfilter" Width="150" Height="25" VerticalAlignment="Center" Margin="5"/>
             <Button Width="60" Height="25" Margin="5,0,0,0" Content="Filter" Name="btnFilter" Click="btnFilter_Click"/>
             <Button Width="120" Height="25" Margin="5,0,0,0" Content="Order by Username" 

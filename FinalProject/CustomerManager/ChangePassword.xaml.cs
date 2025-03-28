@@ -57,11 +57,17 @@ namespace FinalProject.CustomerManager
                     MessageBox.Show("Current password is incorrectly", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
+                if(txtcurrentpass.Password == txtnewpass.Password)
+                {
+                    MessageBox.Show("Password don't change");
+                    return;
+                }
                 if(txtnewpass.Password != txtconfirmpassword.Password)
                 {
                     MessageBox.Show("Confirm password is incorrectly", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
+                
                 customer.Password = txtconfirmpassword.Password;
                 customerService.UpdateCustomer(customer);
                 MessageBox.Show("Update Successfully!", "Annouce", MessageBoxButton.OK, MessageBoxImage.Information);

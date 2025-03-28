@@ -50,7 +50,6 @@
                     <ColumnDefinition Width="200"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="Welcome, Admin" FontSize="18" FontWeight="Bold" Margin="20"/>
-
             </Grid>
 
             <!-- Main Content -->
@@ -149,6 +148,16 @@
                         <StackPanel>
                             <TextBlock Text="Goods" FontSize="16" FontWeight="Bold" Foreground="#34495E"/>
                             <TextBlock x:Name="tbxGoods" FontSize="22" FontWeight="Bold" Foreground="#E74C3C"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Background="White" Width="120" Height="80" Margin="10" CornerRadius="15"
+Padding="10" BorderBrush="Gray" BorderThickness="1">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Gray" BlurRadius="5" ShadowDepth="2"/>
+                        </Border.Effect>
+                        <StackPanel>
+                            <TextBlock Text="Profit" FontSize="16" FontWeight="Bold" Foreground="#34495E"/>
+                            <TextBlock x:Name="tbxProfit" FontSize="22" FontWeight="Bold" Foreground="#3498DB"/>
                         </StackPanel>
                     </Border>
                 </StackPanel>
