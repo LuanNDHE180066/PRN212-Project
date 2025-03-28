@@ -96,7 +96,7 @@ namespace FinalProject
         }
 
 
-        private static int deviceId = 8;
+        private static int deviceId = 1;
         public void createUsedDevice(int invoiceId)
         {
             Device device = deviceService.getDeviceByID(deviceId);
