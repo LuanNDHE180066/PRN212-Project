@@ -88,5 +88,12 @@ namespace FinalProject
         {
             Application.Current.Shutdown(); 
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            DashBoardScreen dashBoardScreen = new DashBoardScreen();
+            this.Close();   
+            dashBoardScreen.ShowDialog();
+        }
     }
 }

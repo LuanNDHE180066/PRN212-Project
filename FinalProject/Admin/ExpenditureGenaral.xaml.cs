@@ -77,6 +77,18 @@ namespace FinalProject.Admin
             Application.Current.Shutdown();
         }
 
-        
+        private void btnDevice_Click(object sender, RoutedEventArgs e)
+        {
+            DeviceManageScreen deviceManageScreen = new DeviceManageScreen();
+            this.Hide();
+            deviceManageScreen.ShowDialog();
+        }
+
+        private void btnCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            ManageCustomerScreen manageCustomerScreen = new ManageCustomerScreen();
+            this.Hide();
+            manageCustomerScreen.ShowDialog();
+        }
     }
 }

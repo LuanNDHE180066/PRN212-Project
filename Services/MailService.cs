@@ -16,6 +16,7 @@ namespace Services
         private const string FromEmail = "baviapartment88@gmail.com";
         private const string Password = "nong aqji krlu xvue"; // Không nên để mật khẩu trực tiếp trong code
         private const string verifyAccountURL = "http://localhost:6969/VerifyPRN/verify-account";
+        private const string resetPasswordURL = "http://localhost:6969/VerifyPRN/reset-password";
         public static string GenerateToken()
         {
             return Guid.NewGuid().ToString();
@@ -30,6 +31,41 @@ namespace Services
         {
             return DateTime.Now > time;
         }
+
+        public static void SendEmailResetPass(string email, int cid)
+        {
+            string token = GenerateToken();
+
+            TokenForgetPassword tokenForgetPassword = new TokenForgetPassword() { IsUsed = false, ExpiryTime = ExpireDateTime(), Cid = cid, Token = token };
+            TokenService tokenService = new TokenService();
+            tokenService.AddToken(tokenForgetPassword);
+            string link = resetPasswordURL + "?id=" + cid + "&token=" + token;
+            try
+            {
+                using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
+                {
+                    client.Credentials = new NetworkCredential(FromEmail, Password);
+                    client.EnableSsl = true;
+
+                    MailMessage mail = new MailMessage();
+                    mail.From = new MailAddress(FromEmail);
+                    mail.To.Add(email);
+                    mail.Subject = "Reset Password";
+                    mail.Body = "<h2>Vào link sau để reset mật khẩu:  </h2>" + link;
+                    mail.IsBodyHtml = true;
+
+                    client.Send(mail);
+                    Console.WriteLine("Email sent successfully.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error sending email: " + ex.Message);
+            }
+        }
+
+
+
         public static void SendEmailVerify(string email,int cid)
         {
             string token = GenerateToken();

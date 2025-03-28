@@ -55,6 +55,9 @@
     <Compile Update="LoginScreen_Admin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ResetPasswordScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkingHistoryScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -109,6 +112,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResetPasswordScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkingHistoryScreen.xaml">
