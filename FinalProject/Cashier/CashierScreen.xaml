@@ -3,16 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:FinalProject.Cashier"
         mc:Ignorable="d"
         xmlns:a="clr-namespace:Repositories.Converter;assembly=Repositories"
-
-        Title="CashierScreen" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="CashierScreen" Height="450" Width="843" Loaded="Window_Loaded" MouseMove="Window_MouseMove">
     <Window.Resources>
         <a:StatusConverter x:Key="StatusConverter"/>
     </Window.Resources>
+
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="Red" Offset="0.4"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -33,19 +40,17 @@
             </StackPanel.Background>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="
-                    0">
+        <StackPanel Grid.Row="1" Grid.Column="0">
             <Button Margin="0,50,0,0" Content="Invoice" Width="120"
                     Height="30" x:Name="btnInvoice"
                     Click="btnInvoice_Click"/>
             <Button Margin="0,50,0,0" Content="Bắt đầu ca" Width="120"
-        Height="30" x:Name="btnStart"
-        Click="btnStart_Click"/>
+                    Height="30" x:Name="btnStart"
+                    Click="btnStart_Click"/>
             <Button Margin="0,50,0,0" Content="Reset" Width="120"
-Height="30" x:Name="btnReset"
-Click="btnReset_Click"/>
+                    Height="30" x:Name="btnReset"
+                    Click="btnReset_Click"/>
         </StackPanel>
-
 
         <ScrollViewer Grid.Row="1" Grid.Column="1">
             <ItemsControl x:Name="itcListDevice" Background="AliceBlue">
@@ -56,18 +61,13 @@ Click="btnReset_Click"/>
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Border  BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5" MouseDown="Border_MouseDown">
+                        <Border BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5" MouseDown="Border_MouseDown">
                             <StackPanel Width="135" Height="200">
-                                <!-- Đảm bảo Image Binding đúng -->
                                 <Image Source="/Images/pc-game.png" Height="110" Width="Auto" Stretch="UniformToFill"/>
                                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                                     <TextBlock HorizontalAlignment="Center" Text="{Binding Type.DtName}" FontWeight="Bold"/>
-
-
                                 </StackPanel>
-                                <TextBlock HorizontalAlignment="Center" Text="{Binding StatusRunning}"></TextBlock>
-
-
+                                <TextBlock HorizontalAlignment="Center" Text="{Binding StatusRunning}"/>
                                 <Button Width="70" Height="20">
                                     <Button.Style>
                                         <Style TargetType="Button">
@@ -75,15 +75,12 @@ Click="btnReset_Click"/>
                                             <Style.Triggers>
                                                 <DataTrigger Binding="{Binding Status, Converter={StaticResource StatusConverter}}" Value="0">
                                                     <Setter Property="Background" Value="Red"/>
-                                                    <!-- Broken -->
                                                 </DataTrigger>
                                                 <DataTrigger Binding="{Binding Status}" Value="1">
                                                     <Setter Property="Background" Value="Green"/>
-                                                    <!-- Available -->
                                                 </DataTrigger>
                                                 <DataTrigger Binding="{Binding Status}" Value="2">
                                                     <Setter Property="Background" Value="Orange"/>
-                                                    <!-- Unavailable -->
                                                 </DataTrigger>
                                             </Style.Triggers>
                                         </Style>
@@ -93,7 +90,6 @@ Click="btnReset_Click"/>
                             </StackPanel>
                         </Border>
                     </DataTemplate>
-
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </ScrollViewer>

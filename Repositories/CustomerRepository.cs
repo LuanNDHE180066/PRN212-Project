@@ -40,6 +40,12 @@ namespace Repositories
             }
             _projectContext.SaveChanges();
         }
+
+        public Customer GetByUsername(string username)
+        {
+            _projectContext = new();
+            return _projectContext.Customers.FirstOrDefault(x => x.Username.Equals(username));
+        }
     }
 }
 

@@ -43,5 +43,11 @@ namespace FinalProject.Admin
             this.Close();
             expenditureGenaral.ShowDialog();
         }
+
+        private void btnGood_Click(object sender, RoutedEventArgs e)
+        {
+            GoodManageScreen gm = new();
+            gm.ShowDialog();
+        }
     }
 }

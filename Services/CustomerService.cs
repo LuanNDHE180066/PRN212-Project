@@ -36,7 +36,7 @@ namespace Services
         }
         public Customer GetCustomerLogin(string user, string pass)
         {
-            return repositories.getAllCustomer().Where(s => s.Username.Equals(user) && s.Password.Equals(pass) && s.Status==1).FirstOrDefault();
+            return repositories.getAllCustomer().Where(s => s.Username.Equals(user) && s.Password.Equals(pass) && s.Status == 1).FirstOrDefault();
         }
         public Customer GetCustomerUsername(string user)
         {
@@ -59,6 +59,11 @@ namespace Services
         public void Update(Customer customer)
         {
             repository.Update(customer);
+        }
+
+        public Customer GetByUsername(string username)
+        {
+            return repository.GetByUsername(username);
         }
 
 

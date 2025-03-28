@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using MaterialDesignThemes.Wpf;
 using Microsoft.IdentityModel.Tokens;
 using Repositories.Models;
@@ -23,6 +24,8 @@ namespace FinalProject.Cashier
     /// </summary>
     public partial class CalculateInvoiceScreem : Window
     {
+        private DispatcherTimer _mouseMoveTimer;
+        private bool _canUpdate = true; // Biến kiểm soát thời điểm cập nhật
         public Device device = null;
         public CustomerService customerService = new();
         public StaffService staffService = new();
@@ -36,6 +39,10 @@ namespace FinalProject.Cashier
         public CalculateInvoiceScreem()
         {
             InitializeComponent();
+            _mouseMoveTimer = new DispatcherTimer();
+            _mouseMoveTimer.Interval = TimeSpan.FromMilliseconds(10000); // Giới hạn cập nhật mỗi 1 giây
+            _mouseMoveTimer.Tick += (s, e) => _canUpdate = true; // Sau mỗi giây, cho phép cập nhật lại
+            _mouseMoveTimer.Start();
         }
 
         private void timeInput_LostFocus(object sender, RoutedEventArgs e)
@@ -334,6 +341,39 @@ namespace FinalProject.Cashier
         private void FillHistoryBuyGood()
         {
             dgvGood.ItemsSource = historyBuyGoodService.GetByInvoiceId(_invoiceId != -1 ? _invoiceId : _invoice.IId);
+        }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (!_canUpdate) return; // Nếu chưa hết thời gian chờ, bỏ qua
+
+            _canUpdate = false; // Chặn cập nhật tiếp theo
+            _mouseMoveTimer.Start(); // Bắt đầu đếm ngược cho lần cập nhật tiếp theo
+
+            if(_invoice != null || _invoiceId != -1)
+            {
+                UpdateData();
+            }
+
+        }
+
+        private void UpdateData()
+        {
+            HistoryUsedDevice hud = historyUsedDeviceService.GetByInvoiceId(
+                _invoiceId != -1 ? _invoiceId : _invoice.IId);
+            if(hud.Start != null)
+            {
+                this.btnSetFrom.IsEnabled = false;
+                timeInput.Text = hud.Start.ToString();
+            }
+            if(hud.End != null)
+            {
+                this.btnSetTo.IsEnabled = false;
+                timeOuput.Text = hud.End.ToString();
+
+            }
+            dgvGood.ItemsSource = historyBuyGoodService.GetByInvoiceId(
+                _invoiceId != -1 ? _invoiceId : _invoice.IId);
         }
     }
 }
