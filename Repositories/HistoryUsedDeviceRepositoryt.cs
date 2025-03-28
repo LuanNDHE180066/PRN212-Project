@@ -57,6 +57,24 @@ namespace Repositories
             _context.HistoryUsedDevices.Add(device);
             _context.SaveChanges();
         }
+        public List<HistoryUsedDevice> GetHistoryUsedDevices()
+        {
+            var result = PrnFinalProjectContext.Ins.HistoryUsedDevices
+            .Include(h => h.Device)
+             .ThenInclude(d => d.Type) 
+             .ToList();
+
+            return result;
+        }
+        public List<HistoryUsedDevice> getListHistoryUsedDeviceByYearAndMonth(int year, int month)
+        {
+            var result = PrnFinalProjectContext.Ins.HistoryUsedDevices
+                .Where(d => d.Date.HasValue && d.Date.Value.Year == year && d.Date.Value.Month == month)
+                .Include(h => h.Device) 
+                .ToList();
+
+            return result;
+        }
 
     }
 }

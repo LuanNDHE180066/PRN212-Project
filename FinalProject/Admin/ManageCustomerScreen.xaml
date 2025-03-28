@@ -51,14 +51,20 @@
 
         <StackPanel Background="#91BEBE" Grid.Row="1" Grid.Column="0">
 
-            
-            <Button Content="Add Customer" Name="btnAdd"  
+            <Button Content="Back" Name="btnBack"  
             Width="110" 
             Height="40" 
             Margin="0,100,0,0"
+         Click="btnBack_Click"
+            />
+
+            <Button Content="Add" Name="btnAdd"  
+            Width="110" 
+            Height="40" 
+            Margin="0,20,0,0"
             Click="btnAdd_Click"
             />
-            <Button Content="Update Customer" Name="btnUpdate"  
+            <Button Content="Update" Name="btnUpdate"  
             Width="110" 
             Height="40" 
             Margin="0,20,0,0" 

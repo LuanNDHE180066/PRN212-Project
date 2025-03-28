@@ -3482,23 +3482,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\quang\\.nuget\\packages\\": {},
+    "C:\\Users\\ACER\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\FinalProject.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\FinalProject.csproj",
       "projectName": "FinalProject",
-      "projectPath": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\FinalProject.csproj",
-      "packagesPath": "C:\\Users\\quang\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\obj\\",
+      "projectPath": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\FinalProject.csproj",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\quang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3513,11 +3513,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\Repositories.csproj": {
-              "projectPath": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\Repositories.csproj"
+            "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Repositories.csproj"
             },
-            "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Services\\Services.csproj": {
-              "projectPath": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Services\\Services.csproj"
+            "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\Services.csproj"
             }
           }
         }

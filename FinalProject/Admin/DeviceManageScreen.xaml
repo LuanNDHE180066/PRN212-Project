@@ -48,7 +48,7 @@
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <Border MouseDown="Border_MouseDown" BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5" >
-                        <StackPanel Width="135" Height="200">
+                        <StackPanel Width="135" Height="220">
                             <!-- Đảm bảo Image Binding đúng -->
                                 <Image Source="/Admin/avatars-000699683875-m5pnre-t500x500.jpg" Height="110" Width="Auto" Stretch="UniformToFill"/>
                                 <Button Width="65">
@@ -79,7 +79,11 @@
 
         <StackPanel Background="#91BEBE" Grid.Row="1" Grid.Column="0">
 
-            
+            <Button Content="Back" Name="btnBack"  
+            Width="110" 
+            Height="40" 
+            Margin="0,100,0,0" 
+            Click="btnBack_Click"/>
 
             <Button Content="Add" Name="btnAdd"  
             Width="110" 
@@ -106,7 +110,7 @@
             DisplayMemberPath="DtName" 
              SelectedValuePath="DtId" FontSize="15" />
             </StackPanel>
-            <Button Width="50" Height="23" Margin="10,0,0,0" Content="Filter" Name="btnFilter" Click="btnFilter_Click"/>
+            <Button Width="70" Height="23" Margin="10,0,0,0" Content="Filter" Name="btnFilter" Click="btnFilter_Click"/>
     </StackPanel>
     </Grid>
 </Window>

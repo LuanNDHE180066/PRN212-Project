@@ -23,5 +23,9 @@ namespace Services
         {
             goodsRepository.Update(good);
         }
+        public int CountGoods()
+        {
+            return goodsRepository.CountGoods();
+        }
     }
 }

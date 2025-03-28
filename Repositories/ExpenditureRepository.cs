@@ -28,5 +28,28 @@ namespace Repositories
             PrnFinalProjectContext.Ins.Expenditures.Add(expenditure);
             PrnFinalProjectContext.Ins.SaveChanges();
         }
+        public decimal? GetTotalByMonth()
+        {
+            return PrnFinalProjectContext.Ins.Expenditures. Sum(e => e.Total);
+        }
+        public decimal? GetTotalByYearAndMonth(int year, int month)
+        {
+            return PrnFinalProjectContext.Ins.Expenditures
+                .Where(i => i.ExDate.HasValue &&
+                            i.ExDate.Value.Year == year &&
+                            i.ExDate.Value.Month == month)
+                .Sum(i => (decimal?)i.Total) ?? 0;
+        }
+        public List<Expenditure> getListHistoryExpenditureByYearAndMonth(int year, int month)
+        {
+            var result = PrnFinalProjectContext.Ins.Expenditures
+                .Where(d => d.ExDate.HasValue && d.ExDate.Value.Year == year && d.ExDate.Value.Month == month)
+                .Include(h => h.Goods)
+                .Include(h => h.Staff) 
+                .ToList();
+
+            return result;
+        }
+
     }
 }

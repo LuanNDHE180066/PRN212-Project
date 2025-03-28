@@ -17,7 +17,11 @@ namespace Repositories
             _projectContext = new PrnFinalProjectContext();
             return _projectContext.Customers.FirstOrDefault(x => x.Cid == id);
         }
-
+        public int CountCustomers()
+        {
+            _projectContext = new PrnFinalProjectContext();
+            return _projectContext.Customers.Count();
+        }
         public void Update(Customer customer)
         {
             _projectContext = new();

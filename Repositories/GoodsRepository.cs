@@ -22,5 +22,9 @@ namespace Repositories
             PrnFinalProjectContext.Ins.Goods.Update(good);  
             PrnFinalProjectContext.Ins.SaveChanges();
         }
+        public int CountGoods()
+        {
+            return PrnFinalProjectContext.Ins.Goods.Count();
+        }
     }
 }

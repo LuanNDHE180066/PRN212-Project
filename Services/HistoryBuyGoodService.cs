@@ -31,7 +31,18 @@ namespace Services
         {
             repo.Update(hbg);
         }
-
+        public List<object> GetTop3BestSellingGoods()
+        {
+            return repo.GetTop3BestSellingGoods();
+        }
+        public List<HistoryBuyGood> getListGoodByYearAndMonth(int year, int month)
+        {
+            return repo.getListHistoryByYearAndMonth(year, month);
+        }
+        public List<HistoryBuyGood> getAllDistinctGood()
+        {
+            return repo.getAllDistinctGood();
+        }
         public void Delete(HistoryBuyGood his)
         {
             repo.Delete(his);

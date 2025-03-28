@@ -54,6 +54,10 @@ namespace Services
         {
             return staffRepository.GetById(id);
         }
+        public int CountStaff()
+        {
+            return staffRepository.CountStaff();
+        }
         public List<WorkingHistoryDTO> WorkingHistoryDTOs()
         {
             return staffRepository.GetAll().Select(s => new WorkingHistoryDTO()

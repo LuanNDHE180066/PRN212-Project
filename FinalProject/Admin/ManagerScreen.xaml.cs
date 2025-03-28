@@ -24,6 +24,19 @@ namespace FinalProject.Admin
             InitializeComponent();
         }
 
+        private void btnDevice_Click(object sender, RoutedEventArgs e)
+        {
+            DeviceManageScreen deviceManageScreen = new DeviceManageScreen();
+            deviceManageScreen.Show();
+            this.Close();
+        }
+
+        private void btnCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            ManageCustomerScreen manageCustomerScreen = new ManageCustomerScreen();
+            manageCustomerScreen.Show();
+            this.Close();
+        }
         private void btnExpenditure_Click(object sender, RoutedEventArgs e)
         {
 

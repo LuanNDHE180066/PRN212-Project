@@ -312,12 +312,15 @@ VALUES
 
 select * from WorkingHistory
 
-select * from HistoryBuyGoods
+ select * from Invoice
+select * from Expenditure
+select * from HistoryUsedDevice
 select * from Invoice
-select * from Role
+select * from Customer
+select * from Device
+select * from Staff
 
-
-
+SELECT * FROM HistoryBuyGoods 
 
 
 

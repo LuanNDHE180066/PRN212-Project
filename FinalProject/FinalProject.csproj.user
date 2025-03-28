@@ -13,6 +13,12 @@
     <Compile Update="Admin\AdminScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Admin\DashBoardDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\DashBoardScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Admin\ManagerScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -35,6 +41,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="CustomerManager\test.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomerManager\UpdateProfile.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ExpenditureDetail.xaml.cs">
@@ -60,6 +69,12 @@
     <Page Update="Admin\AdminScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Admin\DashBoardDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\DashBoardScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Admin\ManagerScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -82,6 +97,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CustomerManager\test.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomerManager\UpdateProfile.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ExpenditureDetail.xaml">

@@ -102,5 +102,12 @@ namespace FinalProject.Admin
 
             dgvDisplay.ItemsSource = sortedList;
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerScreen managerScreen = new ManagerScreen();
+            managerScreen.Show();
+            this.Close();
+        }
     }
 }

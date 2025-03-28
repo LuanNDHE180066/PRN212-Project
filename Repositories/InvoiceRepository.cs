@@ -42,7 +42,17 @@ namespace Repositories
             _context.Update(invoice);
             _context.SaveChanges();
         }
-        
-       
+        public decimal? getAllTotal()
+        {
+            return PrnFinalProjectContext.Ins.Invoices.Sum(i => i.Total);
+        }
+        public decimal? GetTotalByMonthAndYear(int year, int month)
+        {
+            return PrnFinalProjectContext.Ins.Invoices
+                .Where(i => i.InvoiceDate.HasValue &&
+                            i.InvoiceDate.Value.Year == year &&
+                            i.InvoiceDate.Value.Month == month)
+                .Sum(i => (decimal?)i.Total) ?? 0;
+        }
     }
 }

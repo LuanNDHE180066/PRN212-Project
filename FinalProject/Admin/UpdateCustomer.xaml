@@ -40,10 +40,10 @@
             <StackPanel Background="AliceBlue" Margin="10, 10, 0,0">
 
                 <TextBlock Text="Customer ID:"/>
-                <TextBox x:Name="txtcid" Width="200"/>
+                <TextBox x:Name="txtcid" Width="200" IsReadOnly="True"/>
 
                 <TextBlock Text="Customer Name:"/>
-                <TextBox x:Name="txtcName" Width="200"/>
+                <TextBox x:Name="txtcName" Width="200" IsReadOnly="True"/>
 
 
                 <TextBlock Text="Hours:"/>
@@ -51,27 +51,23 @@
 
 
                 <TextBlock Text="Phone:"/>
-                <TextBox x:Name="txtPhone" Width="200"/>
+                <TextBox x:Name="txtPhone" Width="200" IsReadOnly="True"/>
 
                 <TextBlock Text="Email:"/>
-                <TextBox x:Name="txtEmail" Width="200"/>
+                <TextBox x:Name="txtEmail" Width="200" IsReadOnly="True"/>
 
 
                 <TextBlock Text="UserName:"/>
-                <TextBox x:Name="txtUsername" Width="200"/>
+                <TextBox x:Name="txtUsername" Width="200" IsReadOnly="True"/>
 
                 <TextBlock Text="Password:"/>
-                <TextBox x:Name="txtPasword" Width="200"/>
+                <TextBox x:Name="txtPasword" Width="200" IsReadOnly="True"/>
 
                 <TextBlock Text="Status:"/>
                 <ComboBox x:Name="cbStatus" Width="200">
                     <ComboBoxItem Content="Active"/>
                     <ComboBoxItem Content="Not active"/>
                 </ComboBox>
-
-
-
-
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
                     <Button x:Name="btnSave" Content="Add" Width="80" Background="LightGreen" Click="btnSave_Click"/>
 
@@ -82,7 +78,7 @@
         <StackPanel Background="#91BEBE" Grid.Row="1" Grid.Column="0">
 
 
-            <Button Content="Back to list Customer" Name="btnBack"  
+            <Button Content="Back " Name="btnBack"  
             Width="110" 
              Height="40" 
                 Margin="0,100,0,0"

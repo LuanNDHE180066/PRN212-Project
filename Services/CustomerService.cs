@@ -81,6 +81,10 @@ namespace Services
                 StatusCustomer = x.Status == 1 ? "Active" : "Inactive" // Chuyển đổi Status
             }).ToList();
         }
+        public int CountCustomer()
+        {
+            return repository.CountCustomers();
+        }
         public class CustomerDTO()
         {
             public int Cid { get; set; }
