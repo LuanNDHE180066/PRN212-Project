@@ -22,6 +22,9 @@ namespace FinalProject.Admin
         public ManagerScreen()
         {
             InitializeComponent();
+            ExpenditureGenaral expenditureGenaral = new ExpenditureGenaral();
+            this.Close();
+            expenditureGenaral.ShowDialog();
         }
 
         private void btnDevice_Click(object sender, RoutedEventArgs e)
@@ -48,6 +51,13 @@ namespace FinalProject.Admin
         {
             GoodManageScreen gm = new();
             gm.ShowDialog();
+        }
+
+        private void btnGood_Click_1(object sender, RoutedEventArgs e)
+        {
+            GoodManageScreen goodManageScreen = new GoodManageScreen();
+            this.Hide();
+            goodManageScreen.Show();
         }
     }
 }
