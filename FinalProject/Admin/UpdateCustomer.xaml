@@ -82,7 +82,7 @@
         <StackPanel Background="#91BEBE" Grid.Row="1" Grid.Column="0">
 
 
-            <Button Content="Back to list Customer" Name="btnBack"  
+            <Button Content="Back " Name="btnBack"  
             Width="110" 
              Height="40" 
                 Margin="0,100,0,0"

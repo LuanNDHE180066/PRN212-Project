@@ -1,4 +1,5 @@
-﻿using Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+using Repositories;
 using Repositories.Models;
 using System;
 using System.Collections.Generic;
@@ -36,5 +37,20 @@ namespace Services
         {
             expenditureRepository.AddExpenditure(expenditure);
         }
+        public decimal? GetTotal()
+        {
+           return expenditureRepository.GetTotalByMonth();
+        }
+        public decimal? GetTotalByYearAndMonth(int year, int month)
+        {
+            return expenditureRepository.GetTotalByYearAndMonth(year, month);
+        }
+        public List<Expenditure> getListHistoryExpenditureByYearAndMonth(int year, int month)
+        {
+            
+
+            return expenditureRepository.getListHistoryExpenditureByYearAndMonth(year, month);
+        }
+
     }
 }

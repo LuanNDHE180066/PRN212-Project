@@ -4681,23 +4681,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thanh\\.nuget\\packages\\": {},
+    "C:\\Users\\ACER\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\Repositories.csproj",
-      "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thanh\\Downloads\\SP2025\\PRN211\\FinalProject\\FinalProject\\Repositories\\obj\\",
+      "projectPath": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Repositories.csproj",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

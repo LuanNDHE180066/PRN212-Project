@@ -37,11 +37,7 @@
 </WrapPanel>
 -->
         <ScrollViewer Grid.Row="1" Grid.Column="1">
-            <StackPanel Background="AliceBlue" Margin="10">
-                <TextBlock Text="Add New Device" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10"/>
-
-
-
+            <StackPanel Background="AliceBlue" Margin="20">
                 
                 <TextBlock Text="Device Type:"/>
                 <TextBox x:Name="txtDtName" Width="200"/>
@@ -79,7 +75,8 @@
         </StackPanel>
 
         <Grid Background="#91BEBE" Grid.Row="0" Grid.Column="1">
-            
+            <Label Content="Add Device Type" FontSize="40" FontWeight="Bold" 
+HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
     </Grid>
 </Window>

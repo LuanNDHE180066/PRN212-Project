@@ -98,6 +98,11 @@ namespace FinalProject.Admin
             }
         }
 
-        
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerScreen managerScreen = new ManagerScreen();  
+            managerScreen.Show();
+            this.Close();
+        }
     }
 }

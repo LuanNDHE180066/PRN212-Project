@@ -111,5 +111,12 @@ namespace FinalProject.Admin
         {
             Application.Current.Shutdown();
         }
+
+        private void btnDashboard_Click(object sender, RoutedEventArgs e)
+        {
+            DashBoardScreen dash = new DashBoardScreen();
+            dash.Show();
+            this.Hide();
+        }
     }
 }

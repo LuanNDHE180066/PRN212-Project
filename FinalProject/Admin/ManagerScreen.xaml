@@ -23,8 +23,8 @@
             </StackPanel>
             <StackPanel Grid.Row="1" Orientation="Vertical">
                 <Button x:Name="btnGood" Background="#FFD674D0" Height="50" Content="Goods"></Button>
-                <Button x:Name="btnDevice" Background="#FFD674D0" Height="50" Content="Device"></Button>
-                <Button x:Name="btnCustomer" Background="#FFD674D0" Height="50" Content="Customer"></Button>
+                <Button x:Name="btnDevice" Background="#FFD674D0" Height="50" Content="Device" Click="btnDevice_Click"></Button>
+                <Button x:Name="btnCustomer" Background="#FFD674D0" Height="50" Content="Customer" Click="btnCustomer_Click"></Button>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="0" Grid.Column="1">

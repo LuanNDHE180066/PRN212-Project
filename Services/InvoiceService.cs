@@ -43,5 +43,13 @@ namespace Services
             invoice.Total = device.Amount + goods.Sum(s=>s.Amount);
             repo.Update(invoice);
         }
+        public decimal? getAllTotal()
+        {
+            return repo.getAllTotal();
+        }
+        public decimal? GetTotalByMonthAndYear(int year, int month)
+        {
+            return repo.GetTotalByMonthAndYear(year, month);
+        }
     }
 }

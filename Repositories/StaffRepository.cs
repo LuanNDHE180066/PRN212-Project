@@ -28,5 +28,9 @@ namespace Repositories
         {
             return PrnFinalProjectContext.Ins.Staff.Find(id);
         }
+        public int CountStaff()
+        {
+            return PrnFinalProjectContext.Ins.Staff.Count();
+        }
     }
 }

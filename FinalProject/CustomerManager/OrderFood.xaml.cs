@@ -146,5 +146,19 @@ namespace FinalProject.CustomerManager
             HistoryOrder historyOrder = new HistoryOrder();
             historyOrder.Show();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            UpdateProfile updateProfile = new UpdateProfile();
+            updateProfile.Show();
+            this.Close();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            ChangePassword changePassword   = new ChangePassword();
+            changePassword.Show();
+            this.Close();
+        }
     }
 }

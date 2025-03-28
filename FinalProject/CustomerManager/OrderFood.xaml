@@ -14,8 +14,10 @@
         <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Grid.Row="0">
             <Label VerticalAlignment="Center">Người dùng: </Label>
             <Label FontSize="20" FontWeight="Bold" Name="lbName"></Label>
-            <Button HorizontalAlignment="Right" Width="150" Height="30" Margin="300 0 0 0" Click="Button_Click_2">Lịch sử Order</Button>
-            <Button HorizontalAlignment="Right" Width="160" Height="30" Margin="20 0 0 0" Click="Button_Click_1">Kết thúc</Button>
+            <Button HorizontalAlignment="Right" Width="110" Height="30" Margin="120 0 0 0" Click="Button_Click_2">Lịch sử Order</Button>
+            <Button HorizontalAlignment="Right" Width="110" Height="30" Margin="10 0 0 0" Click="Button_Click_1">Kết thúc</Button>
+            <Button HorizontalAlignment="Right" Width="110" Height="30" Margin="10 0 0 0" Click="Button_Click_3">Update Profile</Button>
+            <Button HorizontalAlignment="Right" Width="110" Height="30" Margin="10 0 0 0" Click="Button_Click_4">Change Password</Button>
         </StackPanel>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
             <WrapPanel Name="panelFood">

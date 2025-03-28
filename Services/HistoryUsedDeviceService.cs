@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Repositories.Models;
 
@@ -40,6 +41,16 @@ namespace Services
         {
             repo.AddHistoryUsedDevice(historyUsedDevice);
         }
-       
+        public List<HistoryUsedDevice> GetHistoryUsedDevices()
+        {
+           return repo.GetHistoryUsedDevices();
+
+        }
+        public List<HistoryUsedDevice> getListHistoryUsedDeviceByYearAndMonth(int year, int month)
+        {
+
+            return repo.getListHistoryUsedDeviceByYearAndMonth(year, month);
+        }
+
     }
 }
