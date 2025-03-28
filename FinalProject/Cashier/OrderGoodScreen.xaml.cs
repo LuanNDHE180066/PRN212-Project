@@ -61,35 +61,25 @@ namespace FinalProject.Cashier
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if(invoice != null)
+            if (invoice != null)
             {
                 var border = sender as Border;
-                
+
 
                 if (border != null && border.DataContext is Good selectedGood)
                 {
-                   
-                    if(historyBuyGoodService.GetByInvoiceId(invoice.IId) == null)
-                    {
-                        HistoryBuyGood hbg = new HistoryBuyGood() { Date = invoice.InvoiceDate, InvoiceId = invoice.IId, GoodsId = selectedGood.Gid,
-                        Quantity = 1, Amount = selectedGood.UnitPrice};
-                        MessageBox.Show("Thêm thành công");
-                        historyBuyGoodService.Add(hbg);
-                    }
-                    else
-                    {
-                        List<int?> goodIds = historyBuyGoodService.GetByInvoiceId(invoice.IId).Select(x => x.GoodsId).ToList();
-                        List<HistoryBuyGood> listHbg = historyBuyGoodService.GetByInvoiceId(invoice.IId);
-                        foreach (var hbgs in listHbg)
-                        {
-                            if(hbgs.Quantity > goodService.GetById((int)hbgs.GoodsId).Quantity)
-                            {
-                                MessageBox.Show("Out of stock", "", MessageBoxButton.OK);
-                                return;
-                            }
-                        }
 
-                        if (!goodIds.Contains(selectedGood.Gid))
+                    if (selectedGood.Quantity <= 0)
+                    {
+                        MessageBox.Show("Out of Stock", "", MessageBoxButton.OK);
+                        return;
+                    }
+
+                    MessageBoxResult rs = MessageBox.Show($"Bạn có chắc chắn muốn order {selectedGood.GName}", "Xác nhận", MessageBoxButton.YesNo);
+
+                    if (rs == MessageBoxResult.Yes)
+                    {
+                        if (historyBuyGoodService.GetByInvoiceId(invoice.IId) == null)
                         {
                             HistoryBuyGood hbg = new HistoryBuyGood()
                             {
@@ -101,16 +91,42 @@ namespace FinalProject.Cashier
                             };
                             MessageBox.Show("Thêm thành công");
                             historyBuyGoodService.Add(hbg);
+                            selectedGood.Quantity = selectedGood.Quantity - 1;
+                            goodService.UpdateGood(selectedGood);
                         }
                         else
                         {
-                            HistoryBuyGood hbg = historyBuyGoodService.GetByInvoiceId(invoice.IId).FirstOrDefault(x => x.GoodsId == selectedGood.Gid);
-                            hbg.Quantity = hbg.Quantity + 1;
-                            hbg.Amount = hbg.Amount * hbg.Quantity;
-                            historyBuyGoodService.Update(hbg);
-                            MessageBox.Show("Thêm thành công");
+                            List<int?> goodIds = historyBuyGoodService.GetByInvoiceId(invoice.IId).Select(x => x.GoodsId).ToList();
+                            List<HistoryBuyGood> listHbg = historyBuyGoodService.GetByInvoiceId(invoice.IId);
+
+                            if (!goodIds.Contains(selectedGood.Gid))
+                            {
+                                HistoryBuyGood hbg = new HistoryBuyGood()
+                                {
+                                    Date = invoice.InvoiceDate,
+                                    InvoiceId = invoice.IId,
+                                    GoodsId = selectedGood.Gid,
+                                    Quantity = 1,
+                                    Amount = selectedGood.UnitPrice
+                                };
+                                MessageBox.Show("Thêm thành công");
+                                historyBuyGoodService.Add(hbg);
+                                selectedGood.Quantity = selectedGood.Quantity - 1;
+                                goodService.UpdateGood(selectedGood);
+                            }
+                            else
+                            {
+                                HistoryBuyGood hbg = historyBuyGoodService.GetByInvoiceId(invoice.IId).FirstOrDefault(x => x.GoodsId == selectedGood.Gid);
+                                hbg.Quantity = hbg.Quantity + 1;
+                                hbg.Amount = hbg.Amount * hbg.Quantity;
+                                historyBuyGoodService.Update(hbg);
+                                MessageBox.Show("Thêm thành công");
+                                selectedGood.Quantity = selectedGood.Quantity - 1;
+                                goodService.UpdateGood(selectedGood);
+                            }
                         }
                     }
+                    FillItcGood();
                 }
             }
         }

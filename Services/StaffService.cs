@@ -34,7 +34,7 @@ namespace Services
             return this.GetAll().Where(s => s.Username.Equals(username)).Any();
 
         }
-        public bool isExistPhoneExceptStaff(string phone,Staff staff)
+        public bool isExistPhoneExceptStaff(string phone, Staff staff)
         {
             return this.GetAll().Where(s => s.Phone.Equals(phone) && !s.Sid.Equals(staff.Sid)).Any();
         }

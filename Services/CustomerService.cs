@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Repositories;
 using Repositories.Models;
@@ -10,14 +11,14 @@ namespace Services
 {
     public class CustomerService
     {
-        private CustomerRepository repository =new();
+        private CustomerRepository repository = new();
         private CustomerRepositories repositories = new();
         public Customer GetById(int id)
         {
             return repository.GetById(id);
         }
 
-   public List<Customer> getAllCustomer()
+        public List<Customer> getAllCustomer()
         {
             return repositories.getAllCustomer();
         }
@@ -33,12 +34,34 @@ namespace Services
         {
             return repositories.GetCustomerByID(id);
         }
-        public Customer GetCustomerLogin(string user,string pass)
+        public Customer GetCustomerLogin(string user, string pass)
         {
-            return repositories.getAllCustomer().Where(s=>s.Username.Equals(user) && s.Password.Equals(pass)).FirstOrDefault();
-        } 
-    
-        
+            return repositories.getAllCustomer().Where(s => s.Username.Equals(user) && s.Password.Equals(pass) && s.Status==1).FirstOrDefault();
+        }
+        public Customer GetCustomerUsername(string user)
+        {
+            return repositories.getAllCustomer().Where(s => s.Username.Equals(user)).FirstOrDefault();
+        }
+        public bool isExistedUsername(string username)
+        {
+            return this.getAllCustomer().Where(s => s.Username.Equals(username)).Any();
+        }
+        public bool isValidPassword(string password)
+        {
+            string pattern = @"^(?=.*\d).{6,}$";
+            return Regex.IsMatch(password, pattern);
+        }
+        public bool isValidUsername(string username)
+        {
+            return username.Length >= 6;
+        }
+
+        public void Update(Customer customer)
+        {
+            repository.Update(customer);
+        }
+
+
         public List<CustomerDTO> getAllDTO()
         {
             return repositories.getAllCustomer().Select(x => new CustomerDTO
@@ -75,5 +98,5 @@ namespace Services
 
             public string StatusCustomer { get; set; }
         }
-    } 
+    }
 }

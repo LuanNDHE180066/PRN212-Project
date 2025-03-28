@@ -15,6 +15,8 @@ public partial class Invoice
 
     public int? StaffId { get; set; }
 
+    public bool? IsEnd { get; set; }
+
     public virtual Customer? Customer { get; set; }
 
     public virtual ICollection<HistoryBuyGood> HistoryBuyGoods { get; set; } = new List<HistoryBuyGood>();

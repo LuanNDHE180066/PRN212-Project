@@ -98,5 +98,11 @@ namespace FinalProject
             HistoryUsedDevice history = new HistoryUsedDevice() { InvoiceId = invoiceId, DeviceId = deviceId, Date = date, Start = start };
             historyUsedDeviceService.AddHistoryUsedDevice(history);
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            RegisterCustomer customer = new RegisterCustomer();
+            customer.ShowDialog();
+        }
     }
 }

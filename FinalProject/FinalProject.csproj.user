@@ -28,13 +28,16 @@
     <Compile Update="Admin\WorkingHistoryDetailScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="CustomerManager\ChangePassword.xaml.cs">
+    <Compile Update="Cashier\GoodQuantityScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="CustomerManager\HistoryOrder.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="CustomerManager\OrderFood.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomerManager\RegisterCustomer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="CustomerManager\test.xaml.cs">
@@ -78,13 +81,16 @@
     <Page Update="Admin\WorkingHistoryDetailScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="CustomerManager\ChangePassword.xaml">
+    <Page Update="Cashier\GoodQuantityScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CustomerManager\HistoryOrder.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CustomerManager\OrderFood.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomerManager\RegisterCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CustomerManager\test.xaml">

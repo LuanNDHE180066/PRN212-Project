@@ -78,5 +78,13 @@ namespace Repositories
 
         }
 
+        public void Delete(HistoryBuyGood hbg)
+        {
+            _context = new();
+            _context.HistoryBuyGoods.Remove(hbg);
+            _context.SaveChanges();
+        }
+
+       
     }
 }

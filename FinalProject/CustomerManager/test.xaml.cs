@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Services;
 
 namespace FinalProject.CustomerManager
 {
@@ -27,6 +28,18 @@ namespace FinalProject.CustomerManager
         private void NameTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string token = MailService.GenerateToken();
+            string expiration = MailService.ExpireDateTime().ToString();
+            string toEmail = "luanndhe180066@fpt.edu.vn";
+
+            string subject = "Mã xác nhận của bạn quỳ xuống";
+            string body = $"Mã xác nhận: {token} <br> Hết hạn lúc: {expiration}";
+
+            MailService.SendEmail(toEmail, subject, body);
         }
     }
 }

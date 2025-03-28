@@ -22,4 +22,6 @@ public partial class Customer
     public int? Status { get; set; }
 
     public virtual ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
+
+    public virtual ICollection<TokenForgetPassword> TokenForgetPasswords { get; set; } = new List<TokenForgetPassword>();
 }

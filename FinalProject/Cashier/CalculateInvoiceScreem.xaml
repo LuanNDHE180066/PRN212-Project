@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:xe="http://schemas.xceed.com/wpf/xaml/toolkit"
-        Title="CalculateInvoiceScreem" Height="450" Width="1100">
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="CalculateInvoiceScreem" Height="1000" Width="1820">
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -28,38 +29,49 @@
         </StackPanel>
 
         <!-- Right Panel for Invoice Details -->
-        <WrapPanel Margin="10" Grid.Row="0" Grid.Column="1">
-            <StackPanel Margin="0,0,10,0" Orientation="Horizontal" Width="100">
-                <TextBlock Text="InvoiceID:" Width="80" FontWeight="Bold"/>
-                <TextBox Width="50" IsReadOnly="True" Name="tbxInvoiceId" Margin="5,0" />
-            </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <StackPanel Margin="0,70,0,0" Height="43" Width="14000" Orientation="Horizontal">
+                <StackPanel Height="43" Margin="0,0,10,0" Orientation="Horizontal" Width="250">
+                    <materialDesign:PackIcon Kind="InvoiceSendOutline" Height="44" Width="42" />
+                    <TextBox Width="150" IsReadOnly="True" Name="tbxInvoiceId" Margin="5,0"  FontSize="20"/>
+                </StackPanel>
 
-            <StackPanel Margin="0,0,10,0" Orientation="Horizontal" Width="120">
-                <TextBlock Text="DeviceID:" Width="80" FontWeight="Bold"/>
-                <TextBox Width="80" IsReadOnly="True" Name="txbDevice" Margin="5,0" />
+                <StackPanel Margin="0,0,10,0" Orientation="Horizontal" Width="250">
+                    <materialDesign:PackIcon Kind="Devices" Width="41" Height="47" />
+                    <TextBox  FontSize="20" Width="150" IsReadOnly="True" Name="txbDevice" Margin="5,0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Width="250" Margin="0,0,10,0">
+                    <materialDesign:PackIcon Kind="CalendarRange" Height="45" Width="50" RenderTransformOrigin="0.533,0.863" />
+                    <DatePicker Width="186" Name="dpkDate"  FontSize="20"/>
+                </StackPanel>
             </StackPanel>
+            <WrapPanel Margin="400,50,0,0" Grid.Row="0" Grid.Column="1" Width="1400">
 
-            <StackPanel Orientation="Horizontal" Width="180" Margin="0,0,10,0">
-                <TextBlock Text="Date:" Width="40" FontWeight="Bold"/>
-                <DatePicker Width="120" Name="dpkDate"/>
-            </StackPanel>
+                <StackPanel Orientation="Horizontal" Width="250" Margin="0,0,10,0">
+                    <materialDesign:PackIcon Kind="CurrencyUsd" Height="47" Width="51" />
+                    <TextBox IsReadOnly="True" Width="184"  FontSize="20" Name="tbxTotal" Margin="5,0" RenderTransformOrigin="0.5,0.5" >
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="-0.251"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="-0.329"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                </StackPanel>
 
-            <StackPanel Orientation="Horizontal" Width="100" Margin="0,0,10,0">
-                <TextBlock Text="Total:" Width="40" FontWeight="Bold"/>
-                <TextBox IsReadOnly="True" Width="70" Name="tbxTotal" Margin="5,0" />
-            </StackPanel>
+                <StackPanel Orientation="Horizontal" Width="250" Margin="0,0,10,0">
+                    <materialDesign:PackIcon Kind="AccountNetwork" Height="44" Width="37" />
+                    <TextBox  FontSize="20" Width="201" Name="txbCustomer" Margin="5,0" />
+                </StackPanel>
 
-            <StackPanel Orientation="Horizontal" Width="160">
-                <TextBlock Text="Customer:" Width="80" FontWeight="Bold"/>
-                <TextBox Width="100" Name="txbCustomer" Margin="5,0" />
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Width="130">
-                <TextBlock Text="Staff:" Width="40" FontWeight="Bold"/>
-                <TextBox Width="100" Name="txbStaff" Margin="5,0" />
-            </StackPanel>
-        </WrapPanel>
-
+                <StackPanel Orientation="Horizontal" Width="250">
+                    <materialDesign:PackIcon Kind="ShieldAccount" Height="37" Width="46" />
+                    <TextBox FontSize="20" Width="162" Name="txbStaff" Margin="5,0" />
+                </StackPanel>
+            </WrapPanel>
+        </StackPanel>
         <!-- Good Details and Time Used Device Sections -->
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.ColumnDefinitions>
@@ -69,47 +81,52 @@
 
             <!-- Good Details Section -->
             <StackPanel Grid.Column="0" Margin="10">
-                <TextBlock FontWeight="Bold" Text="GOOD DETAIL" HorizontalAlignment="Center" Margin="0,5"/>
-                <DataGrid Width="192" Name="dgvGood" CanUserAddRows="False" IsReadOnly="True" AutoGenerateColumns="False" Margin="0,5">
+                <TextBlock FontSize="35" FontWeight="Bold" Text="GOOD DETAIL" HorizontalAlignment="Center" Margin="0,5"/>
+                <DataGrid SelectedCellsChanged="dgvGood_SelectedCellsChanged"  Width="600" Name="dgvGood" CanUserAddRows="False" IsReadOnly="True" AutoGenerateColumns="False" Margin="0,5">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="FontSize" Value="25"/>
+                        </Style>
+                    </DataGrid.Resources>
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Good Name" Binding="{Binding Path=Goods.GName}"/>
-                        <DataGridTextColumn Header="Quantity" Binding="{Binding Path=Quantity}"/>
-                        <DataGridTextColumn Header="Amount" Binding="{Binding Path=Amount}"/>
+                        <DataGridTextColumn Header="Good Name" Binding="{Binding Path=Goods.GName}" Width="*"/>
+                        <DataGridTextColumn Header="Quantity" Binding="{Binding Path=Quantity}" Width="*"/>
+                        <DataGridTextColumn Header="Amount" Binding="{Binding Path=Amount}" Width="*"/>
                     </DataGrid.Columns>
                 </DataGrid>
-                <Border Width="192" BorderBrush="Black" BorderThickness="0.25" Margin="0,10,0,10"/>
+                <Border Width="500" BorderBrush="Black" BorderThickness="0.25" Margin="0,10,0,10"/>
                 <StackPanel Orientation="Horizontal" Width="300">
-                    <TextBlock Text="Total:" Margin="15,0,10,0"/>
-                    <TextBox x:Name="txbGoodTotal" Width="60" IsReadOnly="True" Margin="5,0"/>
+                    <TextBlock FontSize="25" Text="Total:" Margin="15,0,10,0"/>
+                    <TextBox Margin="130,0,0,0" x:Name="txbGoodTotal" Width="100" IsReadOnly="True" />
                 </StackPanel>
-                <Button Width="70" Click="btnAddGood_Click" x:Name="btnAddGood" Margin="0,10,0,0" Content="Add Good"/>
+                <Button Width="156" Click="btnAddGood_Click" x:Name="btnAddGood" Margin="0,10,0,0" Content="Add Good" Height="56"/>
             </StackPanel>
 
             <!-- Time Used Device Section -->
-            <StackPanel Grid.Column="1" Margin="10">
-                <TextBlock FontWeight="Bold" Text="Time Used Device" HorizontalAlignment="Center" Margin="0,5"/>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Width="30" Text="From:" FontWeight="Bold"/>
-                    <xe:MaskedTextBox Name="timeInput" Mask="00:00" ValueDataType="{x:Type sys:String}" Width="100" HorizontalAlignment="Center" LostFocus="timeInput_LostFocus" Margin="5,0"/>
-                    <Button x:Name="btnSetFrom" Content="Set From" Width="70" Click="SetFrom_Click"/>
-                    <TextBlock Name="errorText" Foreground="Red" Visibility="Collapsed" Margin="5,0"/>
+            <StackPanel Grid.Column="1" Margin="60,0,0,10">
+                <TextBlock FontSize="35" FontWeight="Bold" Text="Time Used Device" HorizontalAlignment="Center" Margin="0,5"/>
+                <StackPanel Height="35" Margin="50,0,0,0" Orientation="Horizontal">
+                    <TextBlock FontSize="20" Width="82" Text="From:" FontWeight="Bold"/>
+                    <xe:MaskedTextBox Name="timeInput" Mask="00:00" ValueDataType="{x:Type sys:String}" Width="276" IsReadOnly="True" Margin="5,0"/>
+                    <Button x:Name="btnSetFrom" Content="Set From" Width="100" Click="SetFrom_Click"/>
+                    <TextBlock FontSize="25" Name="errorText" Foreground="Red" Visibility="Collapsed" Margin="5,0"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                    <TextBlock Width="30" Text="To:" FontWeight="Bold"/>
-                    <xe:MaskedTextBox Name="timeOuput" Mask="00:00" ValueDataType="{x:Type sys:String}" Width="100" HorizontalAlignment="Center" LostFocus="timeOuput_LostFocus" Margin="5,0"/>
-                    <Button x:Name="btnSetTo" Content="Set To" Width="70" Click="SetTo_Click"/>
+                <StackPanel Margin="50,10,0,0" Orientation="Horizontal" >
+                    <TextBlock FontSize="20" Width="82" Text="To:" FontWeight="Bold"/>
+                    <xe:MaskedTextBox Name="timeOuput" Mask="00:00" ValueDataType="{x:Type sys:String}" Width="275" IsReadOnly="True" Margin="5,0"/>
+                    <Button x:Name="btnSetTo" Content="Set To" Width="100" Click="SetTo_Click"/>
                     <TextBlock Name="errorText2" Foreground="Red" Visibility="Collapsed" Margin="5,0"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                    <TextBlock Width="30" Text="Total:" FontWeight="Bold"/>
-                    <TextBox Width="300" x:Name="txbTotalUseDevice" Margin="5,0"/>
+                <StackPanel Orientation="Horizontal" Margin="50,10,0,0">
+                    <TextBlock FontSize="18" Width="86" Text="Total:" FontWeight="Bold"/>
+                    <TextBox FontSize="20" Width="100" x:Name="txbTotalUseDevice" Margin="5,0" Height="29"/>
                 </StackPanel>
             </StackPanel>
         </Grid>
 
         <!-- Save Button -->
-        <Button Grid.Column="0" Grid.Row="1" Margin="0,70,50,0" Name="btnSave" Click="btnSave_Click" Content="Save" Height="30" Width="100" Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
+        <Button Grid.Column="0" Grid.Row="1" Margin="95,407,121,249" Name="btnSave" Click="btnSave_Click" Content="Save" Background="#673AB7" Height="50" Foreground="White" FontWeight="Bold"/>
     </Grid>
 </Window>

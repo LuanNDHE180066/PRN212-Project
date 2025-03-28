@@ -43,5 +43,9 @@ namespace Services
         {
             return repo.getAllDistinctGood();
         }
+        public void Delete(HistoryBuyGood his)
+        {
+            repo.Delete(his);
+        }
     }
 }
