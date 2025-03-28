@@ -61,6 +61,7 @@
                     <RowDefinition Height="120"/>
                     <RowDefinition Height="120"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5" Grid.Row="0">
@@ -197,14 +198,64 @@
                                             <TextBlock HorizontalAlignment="Center" Text="{Binding GName}" 
                                            FontWeight="Bold" FontSize="12"/>
                                         </StackPanel>
-                                        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                                        <StackPanel  HorizontalAlignment="Center" Orientation="Horizontal">
                                             <Label Content="Total Sold: "></Label>
                                             <TextBlock HorizontalAlignment="Center" Text="{Binding TotalSold}" 
-                                             FontWeight="Bold" FontSize="12"/>
+                                                FontWeight="Bold" FontSize="12"/>
                                         </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                </StackPanel>
+                <StackPanel Grid.Row="4" Grid.Column="1">
+                    <!-- Tiêu đề Best Seller -->
+                    <TextBlock Text="Most Used Device Type" FontSize="22" FontWeight="Bold" Foreground="#E67E22" 
+HorizontalAlignment="Center" Margin="0,10,0,10" TextDecorations="Underline"/>
+
+
+                    <ItemsControl x:Name="listDevice" Background="AliceBlue">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="Gray" BorderThickness="1" Margin="5" Padding="5"
+             CornerRadius="8">
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <Setter Property="Effect">
+                                                <Setter.Value>
+                                                    <DropShadowEffect Color="Gray" BlurRadius="5" ShadowDepth="2"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="BorderBrush" Value="#E67E22"/>
+                                                    <Setter Property="RenderTransform">
+                                                        <Setter.Value>
+                                                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
+                                    <StackPanel Width="135" Height="220">
+                                        <Image Source="/Admin/avatars-000699683875-m5pnre-t500x500.jpg" Height="110" Width="Auto" 
+                    Stretch="UniformToFill" />
+                                        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                                            <TextBlock HorizontalAlignment="Center" Text="{Binding DeviceTypeName}" 
+                            FontWeight="Bold" FontSize="12"/>
+                                        </StackPanel>
+                                        <Label Content="Total Hours: " HorizontalAlignment="Center"></Label>
                                         <Button Width="65" Background="#2ECC71" Foreground="White" 
-                                    FontWeight="Bold" BorderThickness="0" Padding="4">
-                                            <TextBlock FontSize="10" Text="{Binding UnitPrice}"/>
+                     FontWeight="Bold" BorderThickness="0" Padding="4">
+                                            <TextBlock FontSize="10" Text="{Binding TotalHours}"/>
                                         </Button>
                                     </StackPanel>
                                 </Border>

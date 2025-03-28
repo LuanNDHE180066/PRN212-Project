@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,6 +23,7 @@ namespace FinalProject.CustomerManager
     public partial class UpdateProfile : Window
     {
         CustomerService CustomerService = new CustomerService();
+        MailService mailService = new MailService();
         public UpdateProfile()
         {
             InitializeComponent();
@@ -69,23 +71,52 @@ namespace FinalProject.CustomerManager
                     MessageBox.Show("Customer isn't existed", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-
-            
+                if(IsValidPhoneNumber(txtPhone.Text.Trim()) == false)
+                {
+                    MessageBox.Show("Invalid phone only contain number and 10 numbers", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+                if (IsValidEmail(txtEmail.Text.Trim()) == false)
+                {
+                    MessageBox.Show("Invalid email example like abc@gmail.com", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
                 customer.CName = txtFullName.Text.Trim();
                 customer.Username = txtUsername.Text.Trim();
                 customer.Email = txtEmail.Text.Trim();
                 customer.Phone = txtPhone.Text.Trim();
 
                 CustomerService.UpdateCustomer(customer);
-
-          
-                    MessageBox.Show("Update Successfully!", "Annouce", MessageBoxButton.OK, MessageBoxImage.Information);
-                
+                MailService.SendEmailVerify(customer.Email, cid);
+                MessageBox.Show("Sent a mail to your post");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "System Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+            if (string.IsNullOrWhiteSpace(phoneNumber))
+                return false;
+
+            string pattern = @"^\d{10}$";
+            return Regex.IsMatch(phoneNumber, pattern);
+        }
+        private bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, pattern);
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            OrderFood orderFood = new OrderFood();
+            orderFood.Show();
+            this.Close();
         }
     }
 }

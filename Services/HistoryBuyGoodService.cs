@@ -31,7 +31,7 @@ namespace Services
         {
             repo.Update(hbg);
         }
-        public List<Good> GetTop3BestSellingGoods()
+        public List<object> GetTop3BestSellingGoods()
         {
             return repo.GetTop3BestSellingGoods();
         }

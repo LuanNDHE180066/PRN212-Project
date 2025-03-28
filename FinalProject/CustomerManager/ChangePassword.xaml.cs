@@ -29,9 +29,9 @@ namespace FinalProject.CustomerManager
 
         private void btnChange_Click(object sender, RoutedEventArgs e)
         {
-            if(string.IsNullOrEmpty(txtcurrentpass.Text) ||
-                string.IsNullOrEmpty(txtnewpass.Text) ||
-                string.IsNullOrEmpty(txtconfirmpassword.Text))
+            if(string.IsNullOrEmpty(txtcurrentpass.Password) ||
+                string.IsNullOrEmpty(txtnewpass.Password) ||
+                string.IsNullOrEmpty(txtconfirmpassword.Password))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
@@ -52,19 +52,31 @@ namespace FinalProject.CustomerManager
                     MessageBox.Show("Customer isn't existed", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-                if(customer.Password != txtcurrentpass.Text)
+                if(customer.Password != txtcurrentpass.Password)
                 {
-                    MessageBox.Show("Customer isn't existed", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Current password is incorrectly", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-                customer.Password = txtconfirmpassword.Text;
+                if(txtnewpass.Password != txtconfirmpassword.Password)
+                {
+                    MessageBox.Show("Confirm password is incorrectly", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+                customer.Password = txtconfirmpassword.Password;
                 customerService.UpdateCustomer(customer);
                 MessageBox.Show("Update Successfully!", "Annouce", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("");
+                MessageBox.Show("Lỗi");
             }
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            OrderFood orderFood = new OrderFood();
+            orderFood.Show();
+            this.Close();
         }
     }
 }
