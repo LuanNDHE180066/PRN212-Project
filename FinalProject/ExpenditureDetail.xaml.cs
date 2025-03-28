@@ -40,7 +40,12 @@ namespace FinalProject
         {
             InitializeComponent();
             FillComboBoxGoods();
-            int newID = expenditureService.GetAll().Last().ExId+1;
+            int newID;
+            if (!expenditureService.GetAll().Any())
+            {
+                newID = 0;
+            }
+            else newID = expenditureService.GetAll().Last().ExId+1;
             txtId.Text = newID.ToString();
         }
         public void FillComboBoxGoods()

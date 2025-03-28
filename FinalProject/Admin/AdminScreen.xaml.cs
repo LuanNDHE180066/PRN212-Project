@@ -86,13 +86,9 @@ namespace FinalProject.Admin
 
         private void btnGood_Click(object sender, RoutedEventArgs e)
         {
-            CashierScreen cashierScreen = new CashierScreen();
-            this.Hide();
-            if (cashierScreen.ShowDialog() == false)
-            {
-                this.Show();
-            }
-
+            InvoiceManageScreen invoiceManageScreen = new InvoiceManageScreen();
+            this.Close();
+            invoiceManageScreen.ShowDialog();
         }
 
         private void btnStaff_Click(object sender, RoutedEventArgs e)

@@ -36,9 +36,12 @@ namespace FinalProject.Admin
             ManageCustomerScreen manageCustomerScreen = new ManageCustomerScreen();
             manageCustomerScreen.Show();
             this.Close();
+        }
         private void btnExpenditure_Click(object sender, RoutedEventArgs e)
         {
-
+            ExpenditureGenaral expenditureGenaral = new ExpenditureGenaral();
+            this.Close();
+            expenditureGenaral.ShowDialog();
         }
     }
 }
