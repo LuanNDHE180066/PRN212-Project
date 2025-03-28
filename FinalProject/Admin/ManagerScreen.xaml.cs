@@ -28,5 +28,11 @@ namespace FinalProject.Admin
         {
 
         }
+
+        private void btnGood_Click(object sender, RoutedEventArgs e)
+        {
+            GoodManageScreen gm = new();
+            gm.ShowDialog();
+        }
     }
 }

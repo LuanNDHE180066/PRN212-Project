@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using FinalProject.Admin;
 using Repositories.Models;
 using Services;
@@ -22,6 +23,8 @@ namespace FinalProject.Cashier
     /// </summary>
     public partial class CashierScreen : Window
     {
+        private DispatcherTimer _mouseMoveTimer;
+        private bool _canUpdate = true; // Biến kiểm soát thời điểm cập nhật
         private int deviceId = -1;
         private DeviceService deviceService = new();
         private InvoiceService invoiceService = new();
@@ -32,6 +35,10 @@ namespace FinalProject.Cashier
         public CashierScreen()
         {
             InitializeComponent();
+            _mouseMoveTimer = new DispatcherTimer();
+            _mouseMoveTimer.Interval = TimeSpan.FromMilliseconds(3000); // Giới hạn cập nhật mỗi 1 giây
+            _mouseMoveTimer.Tick += (s, e) => _canUpdate = true; // Sau mỗi giây, cho phép cập nhật lại
+            _mouseMoveTimer.Start();
             buttonAlter();
         }
 
@@ -168,7 +175,28 @@ namespace FinalProject.Cashier
             List<Device> devices = PrnFinalProjectContext.Ins.Devices.Where(x => x.Status == 2).ToList();
             foreach (Device device in devices)
             {
-                MessageBox.Show($"{device.Did}");
+           
+                device.Status = 2;
+                deviceService.UpdateDevice(device);
+            }
+            FillItcList();
+        }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (!_canUpdate) return; // Nếu chưa hết thời gian chờ, bỏ qua
+
+            _canUpdate = false; // Chặn cập nhật tiếp theo
+            _mouseMoveTimer.Start(); // Bắt đầu đếm ngược cho lần cập nhật tiếp theo
+            UpdateData();
+        }
+
+        private void UpdateData()
+        {
+            List<Device> devices = PrnFinalProjectContext.Ins.Devices.Where(x => x.Status == 2).ToList();
+            foreach (Device device in devices)
+            {
+
                 device.Status = 2;
                 deviceService.UpdateDevice(device);
             }
