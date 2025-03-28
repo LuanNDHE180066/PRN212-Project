@@ -83,7 +83,7 @@ namespace FinalProject
         private int createInvoice(int cId)
         {
             DateOnly date = DateOnly.FromDateTime(DateTime.Now);
-            Invoice invoice = new Invoice() { InvoiceDate = date, CustomerId = cId, StaffId = 1 };
+            Invoice invoice = new Invoice() { InvoiceDate = date, CustomerId = cId, StaffId = 1, IsEnd = false };
             invoiceService.AddNewInvoice(invoice);
             return invoiceService.GetAll().Last().IId;
         }

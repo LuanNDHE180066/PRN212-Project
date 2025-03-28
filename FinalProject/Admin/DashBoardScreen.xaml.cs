@@ -26,6 +26,7 @@ namespace FinalProject.Admin
         StaffService StaffService = new StaffService();
         GoodsService GoodService = new GoodsService();
         HistoryBuyGoodService historyBuyGoodService = new HistoryBuyGoodService();
+        DeviceService deviceService = new DeviceService();
         public DashBoardScreen()
         {
             InitializeComponent();
@@ -35,11 +36,17 @@ namespace FinalProject.Admin
             tbxStaff.Text = StaffService.CountStaff().ToString();
             tbxGoods.Text = GoodService.CountGoods().ToString();
             loadListGood();
+            loadListDevice();
         }
         public void loadListGood()
         {
             var goods = historyBuyGoodService.GetTop3BestSellingGoods();
             listGoods.ItemsSource = goods;
+        }
+        public void loadListDevice()
+        {
+            var devices = deviceService.GetTop3DeviceTypesByHours();
+            listDevice.ItemsSource = devices;   
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)

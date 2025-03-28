@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\customermanager\\changepassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\changepassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\managerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\managerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\managerscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\managerscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\repositories\\historybuygoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\historybuygoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\services\\historybuygoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|solutionrelative:services\\historybuygoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\dashboardscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\dashboardscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\repositories\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\dashboardscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\dashboardscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|solutionrelative:services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\customermanager\\registercustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\registercustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\customermanager\\updateprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\updateprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\customermanager\\updateprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\updateprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\repositories\\models\\devicetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\models\\devicetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\customermanager\\changepassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\changepassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\repositories\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\updatecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\updatecustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +62,172 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateProfile.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\UpdateProfile.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\UpdateProfile.xaml.cs",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\UpdateProfile.xaml.cs",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\UpdateProfile.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwFEAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T09:28:39.462Z",
+              "DocumentIndex": 0,
+              "Title": "ManagerScreen.xaml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\ManagerScreen.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\ManagerScreen.xaml",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\ManagerScreen.xaml*",
+              "RelativeToolTip": "FinalProject\\Admin\\ManagerScreen.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-28T14:31:07.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateProfile.xaml",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\UpdateProfile.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\UpdateProfile.xaml",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\UpdateProfile.xaml",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\UpdateProfile.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-28T09:23:01.96Z",
+              "DocumentIndex": 1,
+              "Title": "ManagerScreen.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\ManagerScreen.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\ManagerScreen.xaml.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\ManagerScreen.xaml.cs",
+              "RelativeToolTip": "FinalProject\\Admin\\ManagerScreen.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T14:28:56.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ChangePassword.xaml",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\ChangePassword.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\ChangePassword.xaml",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\ChangePassword.xaml",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\ChangePassword.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-28T09:16:14.97Z",
+              "Title": "HistoryBuyGoodService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\HistoryBuyGoodService.cs",
+              "RelativeDocumentMoniker": "Services\\HistoryBuyGoodService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\HistoryBuyGoodService.cs",
+              "RelativeToolTip": "Services\\HistoryBuyGoodService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwC0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:46:00.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChangePassword.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\ChangePassword.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\ChangePassword.xaml.cs",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\ChangePassword.xaml.cs",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\ChangePassword.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwDkAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HistoryBuyGoodRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\HistoryBuyGoodRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\HistoryBuyGoodRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\HistoryBuyGoodRepository.cs",
+              "RelativeToolTip": "Repositories\\HistoryBuyGoodRepository.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAIwD8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T09:16:12.482Z",
+              "WhenOpened": "2025-03-28T13:43:43.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashBoardScreen.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DashBoardScreen.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\DashBoardScreen.xaml.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DashBoardScreen.xaml.cs",
+              "RelativeToolTip": "FinalProject\\Admin\\DashBoardScreen.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:33:36.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\DeviceService.cs",
+              "RelativeDocumentMoniker": "Services\\DeviceService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\DeviceService.cs",
+              "RelativeToolTip": "Services\\DeviceService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwCoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:32:35.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeviceType.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Models\\DeviceType.cs",
+              "RelativeDocumentMoniker": "Repositories\\Models\\DeviceType.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Models\\DeviceType.cs",
+              "RelativeToolTip": "Repositories\\Models\\DeviceType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:29:50.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Device.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Models\\Device.cs",
+              "RelativeDocumentMoniker": "Repositories\\Models\\Device.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\Models\\Device.cs",
+              "RelativeToolTip": "Repositories\\Models\\Device.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:29:36.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeviceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\DeviceRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\DeviceRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\DeviceRepository.cs",
+              "RelativeToolTip": "Repositories\\DeviceRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA3wDMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:28:01.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterCustomer.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
+              "RelativeToolTip": "FinalProject\\CustomerManager\\RegisterCustomer.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA1wDgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:20:41.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UpdateCustomer.xaml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\UpdateCustomer.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\UpdateCustomer.xaml",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\UpdateCustomer.xaml",
+              "RelativeToolTip": "FinalProject\\Admin\\UpdateCustomer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-28T13:18:59.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashBoardScreen.xaml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DashBoardScreen.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\DashBoardScreen.xaml",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DashBoardScreen.xaml",
+              "RelativeToolTip": "FinalProject\\Admin\\DashBoardScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-28T13:17:47.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateProfile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\UpdateProfile.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\UpdateProfile.xaml.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\CustomerManager\\UpdateProfile.xaml.cs",
+              "RelativeToolTip": "FinalProject\\CustomerManager\\UpdateProfile.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAQwFgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:11:14.676Z",
               "EditorCaption": ""
             }
           ]

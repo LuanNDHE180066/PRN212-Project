@@ -8,7 +8,7 @@
         Title="UpdateProfile" Height="450" Width="800">
     <Grid Background="#91BEBE">
         <!-- Thêm hiệu ứng bóng mờ -->
-        <Border Background="White" CornerRadius="10" Padding="20" Margin="150,20,150,20">
+        <Border Background="White" CornerRadius="10" Padding="20" Margin="150,15,150,15">
             <Border.Effect>
                 <DropShadowEffect Color="Black" Opacity="0.3" BlurRadius="10"/>
             </Border.Effect>
@@ -27,23 +27,41 @@
                 <TextBlock Text="Email" FontWeight="SemiBold" Foreground="#555"/>
                 <TextBox x:Name="txtEmail" Height="35" BorderBrush="#ccc" Background="#fff" Margin="0,5,0,15" Padding="5"/>
 
-               
-                <Button x:Name="btnSave" Content="Save" Background="#4CAF50" Foreground="White" 
-                        FontWeight="Bold" Height="40" Cursor="Hand" BorderThickness="0" Click="btnSave_Click">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        </Border>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </Button.Style>
-                </Button>
+
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnSave" Content="Save" Background="#4CAF50" Foreground="White" 
+        FontWeight="Bold" Height="40" Cursor="Hand" BorderThickness="0" Click="btnSave_Click" Width="130">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button x:Name="btnBack" Content="Back" Background="#4CAF50" Foreground="White" 
+        FontWeight="Bold" Height="40" Cursor="Hand" BorderThickness="0" Click="btnBack_Click" Width="130" Margin="40,0,0,0">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
 
             </StackPanel>
         </Border>

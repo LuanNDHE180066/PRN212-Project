@@ -35,7 +35,24 @@ namespace Repositories
             _context = new();
             return _context.Devices.Include(x => x.Type).FirstOrDefault(x => x.Did == id);
         }
+        public List<object> GetTop3DeviceTypesByHours()
+        {
+            
 
+            var result = PrnFinalProjectContext.Ins.Devices
+                .Where(d => d.Type != null) 
+                .GroupBy(d => new { d.Type.DtId, d.Type.DtName })
+                .Select(g => new
+                {
+                    DeviceTypeName = g.Key.DtName,
+                    TotalHours = g.Sum(d => d.Hours ?? 0) 
+                })
+                .OrderByDescending(d => d.TotalHours)
+                .Take(3) 
+                .ToList<object>(); 
+
+            return result;
+        }
 
     }
 }

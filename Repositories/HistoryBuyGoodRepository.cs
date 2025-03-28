@@ -37,22 +37,34 @@ namespace Repositories
             _context.HistoryBuyGoods.Update(hbg);
             _context.SaveChanges();
         }
-        public List<Good> GetTop3BestSellingGoods()
+        public List<object> GetTop3BestSellingGoods()
         {
-            
             var result = PrnFinalProjectContext.Ins.HistoryBuyGoods
-                .GroupBy(d => d.GoodsId) 
+                .GroupBy(d => d.GoodsId)
                 .Select(g => new
                 {
-                    GoodsId = g.Key, 
-                    TotalSold = g.Sum(d => d.Quantity) 
+                    GoodsId = g.Key,
+                    TotalSold = g.Sum(d => d.Quantity)
                 })
-                .OrderByDescending(g => g.TotalSold) 
-                .Take(3) 
-                .ToList(); 
+                .OrderByDescending(g => g.TotalSold)
+                .Take(3)
+                .ToList();
 
-            
-            var topGoods = result.Select(r => PrnFinalProjectContext.Ins.Goods.FirstOrDefault(g => g.Gid == r.GoodsId)).ToList();
+            var topGoods = result
+                .Select(r => new
+                {
+                    Gid = r.GoodsId,
+                    GoodsName = PrnFinalProjectContext.Ins.Goods
+                                   .Where(g => g.Gid == r.GoodsId)
+                                   .Select(g => g.GName)
+                                   .FirstOrDefault(),
+                    Img = PrnFinalProjectContext.Ins.Goods
+                                   .Where(g => g.Gid == r.GoodsId)
+                                   .Select(g => g.Img) // Lấy đường dẫn ảnh
+                                   .FirstOrDefault(),
+                    TotalSold = r.TotalSold
+                })
+                .ToList<object>();  // Ép kiểu sang List<object>
 
             return topGoods;
         }

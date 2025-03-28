@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Repositories.Models;
 
@@ -36,36 +37,12 @@ namespace Services
             return _repo.GetDeviceById(id);
         }
 
-        
-        public List<DeviceDTO> GetAllDeviceDTO()
+        public List<object> GetTop3DeviceTypesByHours()
         {
-            return repositories.GetALlDevice().Select(x => new DeviceDTO
-            {
-                Did = x.Did,
-                Typeid = x.Typeid,
-                Hours = x.Hours,
-                RunningStatus = x.Running == 1 ? "Running" : "Not Running",
-                StatusOfDevice = x.Status == 1 ? "Active" : "Inactive", 
-                PricePerHour = x.PricePerHour,
-                Type = x.Type
-            }).ToList();
+
+            return _repo.GetTop3DeviceTypesByHours();
         }
-        public class DeviceDTO()
-        {
-            public int Did { get; set; }
 
-            public int? Typeid { get; set; }
-
-            public int? Hours { get; set; }
-
-            public String  RunningStatus { get; set; }
-
-            public String StatusOfDevice { get; set; }
-
-            public decimal? PricePerHour { get; set; }
-
-            public virtual DeviceType? Type { get; set; }
-        }
 
 
     }
