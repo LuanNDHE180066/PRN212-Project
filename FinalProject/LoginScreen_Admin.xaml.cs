@@ -76,9 +76,12 @@ namespace FinalProject
             else if(customer != null){
                 Application.Current.Properties["customerId"] = customer.Cid.ToString();
                 int invoiceId = createInvoice(customer.Cid);
+                Invoice invoice = invoiceService.GetById(invoiceId);
+
                 Application.Current.Properties["invoiceId"] = invoiceId.ToString();
                 createUsedDevice(invoiceId);
                 OrderFood orderFood = new OrderFood();
+                orderFood._invoice = invoice;
                 this.Hide();
                 orderFood.ShowDialog();
             }
@@ -96,7 +99,7 @@ namespace FinalProject
         }
 
 
-        private static int deviceId = 1;
+        private static int deviceId = 12;
         public void createUsedDevice(int invoiceId)
         {
             Device device = deviceService.getDeviceByID(deviceId);

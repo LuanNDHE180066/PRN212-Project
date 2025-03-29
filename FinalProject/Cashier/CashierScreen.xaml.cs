@@ -36,8 +36,8 @@ namespace FinalProject.Cashier
         {
             InitializeComponent();
             _mouseMoveTimer = new DispatcherTimer();
-            _mouseMoveTimer.Interval = TimeSpan.FromMilliseconds(3000); // Giới hạn cập nhật mỗi 1 giây
-            _mouseMoveTimer.Tick += (s, e) => _canUpdate = true; // Sau mỗi giây, cho phép cập nhật lại
+            _mouseMoveTimer.Interval = TimeSpan.FromMilliseconds(3000); 
+            _mouseMoveTimer.Tick += (s, e) => _canUpdate = true; 
             _mouseMoveTimer.Start();
             buttonAlter();
         }
@@ -73,7 +73,7 @@ namespace FinalProject.Cashier
             if (border != null && border.DataContext is Device device)
             {
 
-                MessageBox.Show($"{device.Status}");
+             
 
                 CalculateInvoiceScreem ci = new();
                 ci.device = device;

@@ -7,28 +7,20 @@
       "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\repositories\\models\\prnfinalprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\models\\prnfinalprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\admin\\managerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\managerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\customermanager\\orderfood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\orderfood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\customermanager\\orderfood.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\orderfood.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\cashier\\cashierscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\cashier\\cashierscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\cashier\\calculateinvoicescreem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\cashier\\calculateinvoicescreem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\cashier\\cashierscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\cashier\\cashierscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\resetpasswordscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\resetpasswordscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,15 +34,14 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PrnFinalProjectContext.cs",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\Models\\PrnFinalProjectContext.cs",
-              "RelativeDocumentMoniker": "Repositories\\Models\\PrnFinalProjectContext.cs",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\Repositories\\Models\\PrnFinalProjectContext.cs",
-              "RelativeToolTip": "Repositories\\Models\\PrnFinalProjectContext.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAADwvzIAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T15:43:50.688Z",
+              "DocumentIndex": 2,
+              "Title": "OrderFood.xaml",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\CustomerManager\\OrderFood.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\OrderFood.xaml",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\CustomerManager\\OrderFood.xaml",
+              "RelativeToolTip": "FinalProject\\CustomerManager\\OrderFood.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-29T00:52:29.266Z",
               "EditorCaption": ""
             },
             {
@@ -61,74 +52,48 @@
               "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml.cs",
               "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\LoginScreen_Admin.xaml.cs*",
               "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml.cs*",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAowGIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAowGUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T08:43:25.399Z",
+              "WhenOpened": "2025-03-29T00:43:54.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ManagerScreen.xaml",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\ManagerScreen.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\Admin\\ManagerScreen.xaml",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Admin\\ManagerScreen.xaml",
-              "RelativeToolTip": "FinalProject\\Admin\\ManagerScreen.xaml",
+              "DocumentIndex": 1,
+              "Title": "LoginScreen_Admin.xaml",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\LoginScreen_Admin.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\LoginScreen_Admin.xaml",
+              "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-28T09:45:41.273Z",
+              "WhenOpened": "2025-03-29T00:43:51.79Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 120,
-          "SelectedChildIndex": -1,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CalculateInvoiceScreem.xaml",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\CalculateInvoiceScreem.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\Cashier\\CalculateInvoiceScreem.xaml",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\CalculateInvoiceScreem.xaml",
-              "RelativeToolTip": "FinalProject\\Cashier\\CalculateInvoiceScreem.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-27T18:16:41.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CashierScreen.xaml",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\CashierScreen.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\Cashier\\CashierScreen.xaml",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\CashierScreen.xaml",
-              "RelativeToolTip": "FinalProject\\Cashier\\CashierScreen.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-27T18:06:34.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "CashierScreen.xaml.cs",
               "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\CashierScreen.xaml.cs",
               "RelativeDocumentMoniker": "FinalProject\\Cashier\\CashierScreen.xaml.cs",
               "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\CashierScreen.xaml.cs",
               "RelativeToolTip": "FinalProject\\Cashier\\CashierScreen.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAArwCYAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAALAAAAAAAAAAAAAAwMsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T08:39:53.296Z",
+              "WhenOpened": "2025-03-29T00:38:35.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ResetPasswordScreen.xaml",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\ResetPasswordScreen.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\ResetPasswordScreen.xaml",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\ResetPasswordScreen.xaml",
-              "RelativeToolTip": "FinalProject\\ResetPasswordScreen.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-27T17:57:40.118Z"
+              "DocumentIndex": 3,
+              "Title": "OrderFood.xaml.cs",
+              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\CustomerManager\\OrderFood.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
+              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\CustomerManager\\OrderFood.xaml.cs",
+              "RelativeToolTip": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAcwOsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T00:38:09.265Z",
+              "EditorCaption": ""
             }
           ]
         }

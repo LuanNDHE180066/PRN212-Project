@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject.CustomerManager"
         mc:Ignorable="d"
-        Title="OrderFood" Height="450" Width="700">
+        Title="OrderFood" Height="450" Width="700" MouseMove="Window_MouseMove">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>

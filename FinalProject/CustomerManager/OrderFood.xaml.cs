@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace FinalProject.CustomerManager
 {
@@ -22,13 +23,16 @@ namespace FinalProject.CustomerManager
     /// </summary>
     public partial class OrderFood : Window
     {
-        public GoodService GoodService= new GoodService();
-        private CustomerService customerService= new CustomerService();
-        private GoodsService goodService = new GoodsService(); 
+        private DispatcherTimer _mouseMoveTimer;
+        private bool _canUpdate = true; // Biến kiểm soát thời điểm cập nhật
+        public GoodService GoodService = new GoodService();
+        private CustomerService customerService = new CustomerService();
+        private GoodsService goodService = new GoodsService();
         private InvoiceService InvoiceService = new InvoiceService();
         HistoryBuyGoodService historyBuyGoodService = new HistoryBuyGoodService();
         private HistoryUsedDeviceService historyUsedDeviceService = new HistoryUsedDeviceService();
         private DeviceService deviceService = new DeviceService();
+        public Invoice _invoice;
         public OrderFood()
         {
             InitializeComponent();
@@ -36,6 +40,10 @@ namespace FinalProject.CustomerManager
             int cId = int.Parse(Application.Current.Properties["customerId"] as string);
             Customer customer = customerService.GetCustomerByID(cId);
             lbName.Content = customer.CName;
+            _mouseMoveTimer = new DispatcherTimer();
+            _mouseMoveTimer.Interval = TimeSpan.FromMilliseconds(3000); // Giới hạn cập nhật mỗi 1 giây
+            _mouseMoveTimer.Tick += (s, e) => _canUpdate = true; // Sau mỗi giây, cho phép cập nhật lại
+            _mouseMoveTimer.Start();
         }
         public void showFood()
         {
@@ -149,28 +157,35 @@ namespace FinalProject.CustomerManager
             int invoiceId = int.Parse(Application.Current.Properties["invoiceId"] as string);
             DateOnly date = DateOnly.FromDateTime(DateTime.Now);
             NumericUpDown numUpDown = button.DataContext as NumericUpDown;
-            int quantity=1;
+            int quantity = 1;
             if (numUpDown != null)
             {
                 quantity = (int)numUpDown.Value;  // Lấy giá trị số lượng
             }
             Good good = goodService.GetById(gId);
-            good.Quantity = good.Quantity-quantity;
+            good.Quantity = good.Quantity - quantity;
             GoodService gsv = new GoodService();
             gsv.UpdateGood(good);
             decimal amount = good.UnitPrice.Value * quantity;
-            HistoryBuyGood buyGood = new HistoryBuyGood() {InvoiceId= invoiceId, GoodsId= gId,Date =date,Quantity= quantity,Amount
-            =amount};
+            HistoryBuyGood buyGood = new HistoryBuyGood()
+            {
+                InvoiceId = invoiceId,
+                GoodsId = gId,
+                Date = date,
+                Quantity = quantity,
+                Amount
+            = amount
+            };
 
             historyBuyGoodService.Add(buyGood);
-            MessageBox.Show("Order thành công"+button.Tag.ToString());
+            MessageBox.Show("Order thành công" + button.Tag.ToString());
             panelFood.Children.Clear();
             showFood();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var confirm = MessageBox.Show("Chắc chắn offline?","Warning",MessageBoxButton.YesNo, MessageBoxImage.Question);
+            var confirm = MessageBox.Show("Chắc chắn offline?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (confirm == MessageBoxResult.Yes)
             {
                 int invoiceId = int.Parse(Application.Current.Properties["invoiceId"] as string);
@@ -182,12 +197,12 @@ namespace FinalProject.CustomerManager
                 TimeSpan timeSpan = end - historyUsedDevice.Start.Value;
                 decimal duration = Math.Round(((decimal)timeSpan.TotalHours), 2);
                 decimal amount = duration * 10000;
-                
+
                 int cId = int.Parse(Application.Current.Properties["customerId"] as string);
                 Customer customer = customerService.GetCustomerByID(cId);
-                customer.Hours = customer.Hours +(int) duration;
+                customer.Hours = customer.Hours + (int)duration;
                 customerService.UpdateCustomer(customer);
-                
+
                 historyUsedDevice.Amount = amount;
                 historyUsedDeviceService.Update(historyUsedDevice);
                 InvoiceService.UpdateTotal(invoiceId);
@@ -209,11 +224,26 @@ namespace FinalProject.CustomerManager
             this.Close();
         }
 
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            HistoryUsedDevice hud = historyUsedDeviceService.GetByInvoiceId(_invoice.IId);
+            if (hud != null && hud.End != null)
+            {
+                if (!_canUpdate) return; // Nếu chưa hết thời gian chờ, bỏ qua
+
+                _canUpdate = false; // Chặn cập nhật tiếp theo
+                _mouseMoveTimer.Start(); // Bắt đầu đếm ngược cho lần cập nhật tiếp theo
+                MessageBox.Show("Thu ngan da khoa may", "", MessageBoxButton.OK);
+                this.Close();
+            }
+        }
+
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            ChangePassword changePassword   = new ChangePassword();
+            ChangePassword changePassword = new ChangePassword();
             changePassword.Show();
             this.Close();
         }
+       
     }
 }
