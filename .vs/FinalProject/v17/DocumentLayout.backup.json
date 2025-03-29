@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\",
+  "WorkspaceRootPath": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\loginscreen_admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\dashboardscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\dashboardscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\loginscreen_admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\finalproject\\admin\\dashboardscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\admin\\dashboardscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\customermanager\\orderfood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\orderfood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\services\\historybuygoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40670A6D-BC03-4DF7-9471-627F33D9D6C9}|Services\\Services.csproj|solutionrelative:services\\historybuygoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\customermanager\\orderfood.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\customermanager\\orderfood.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|d:\\fpt_hoctap\\semester 5\\prn212\\fn_project\\prn212-project\\finalproject\\cashier\\cashierscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A320FEB-5D5A-4E0B-AAEE-BEFA65C109C5}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\cashier\\cashierscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|c:\\users\\acer\\documents\\github\\prn212_project\\prn212-project\\repositories\\historybuygoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124CCC62-E5BA-42E5-A74D-81C652E07D51}|Repositories\\Repositories.csproj|solutionrelative:repositories\\historybuygoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderFood.xaml",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\CustomerManager\\OrderFood.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\OrderFood.xaml",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\CustomerManager\\OrderFood.xaml",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\OrderFood.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-29T00:52:29.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginScreen_Admin.xaml.cs",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\LoginScreen_Admin.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml.cs",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\LoginScreen_Admin.xaml.cs",
-              "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAowGUAAAAnAAAAAAAAAA==",
+              "Title": "DashBoardScreen.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DashBoardScreen.xaml.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\DashBoardScreen.xaml.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DashBoardScreen.xaml.cs*",
+              "RelativeToolTip": "FinalProject\\Admin\\DashBoardScreen.xaml.cs*",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowFAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T00:43:54.31Z",
+              "WhenOpened": "2025-03-28T15:45:04.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginScreen_Admin.xaml",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\LoginScreen_Admin.xaml",
-              "RelativeDocumentMoniker": "FinalProject\\LoginScreen_Admin.xaml",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\LoginScreen_Admin.xaml",
-              "RelativeToolTip": "FinalProject\\LoginScreen_Admin.xaml",
+              "Title": "DashBoardScreen.xaml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DashBoardScreen.xaml",
+              "RelativeDocumentMoniker": "FinalProject\\Admin\\DashBoardScreen.xaml",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\FinalProject\\Admin\\DashBoardScreen.xaml",
+              "RelativeToolTip": "FinalProject\\Admin\\DashBoardScreen.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-29T00:43:51.79Z",
+              "WhenOpened": "2025-03-28T15:44:57.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CashierScreen.xaml.cs",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\CashierScreen.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Cashier\\CashierScreen.xaml.cs",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\Cashier\\CashierScreen.xaml.cs",
-              "RelativeToolTip": "FinalProject\\Cashier\\CashierScreen.xaml.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAAAwMsAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HistoryBuyGoodService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\HistoryBuyGoodService.cs",
+              "RelativeDocumentMoniker": "Services\\HistoryBuyGoodService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Services\\HistoryBuyGoodService.cs*",
+              "RelativeToolTip": "Services\\HistoryBuyGoodService.cs*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDMAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T00:38:35.358Z",
+              "WhenOpened": "2025-03-28T15:43:54.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "OrderFood.xaml.cs",
-              "DocumentMoniker": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "RelativeDocumentMoniker": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "ToolTip": "D:\\FPT_HocTap\\Semester 5\\PRN212\\FN_Project\\PRN212-Project\\FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "RelativeToolTip": "FinalProject\\CustomerManager\\OrderFood.xaml.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAAAcwOsAAABRAAAAAAAAAA==",
+              "Title": "HistoryBuyGoodRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\HistoryBuyGoodRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\HistoryBuyGoodRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Documents\\GitHub\\PRN212_Project\\PRN212-Project\\Repositories\\HistoryBuyGoodRepository.cs*",
+              "RelativeToolTip": "Repositories\\HistoryBuyGoodRepository.cs*",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwEYAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T00:38:09.265Z",
+              "WhenOpened": "2025-03-28T15:40:56.318Z",
               "EditorCaption": ""
             }
           ]

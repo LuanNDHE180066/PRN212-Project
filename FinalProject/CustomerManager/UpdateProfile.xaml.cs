@@ -69,16 +69,19 @@ namespace FinalProject.CustomerManager
                 if (customer == null)
                 {
                     MessageBox.Show("Customer isn't existed", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    LoadData();
                     return;
                 }
                 if(IsValidPhoneNumber(txtPhone.Text.Trim()) == false)
                 {
                     MessageBox.Show("Invalid phone only contain number and 10 numbers", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    LoadData() ;
                     return;
                 }
                 if (IsValidEmail(txtEmail.Text.Trim()) == false)
                 {
                     MessageBox.Show("Invalid email example like abc@gmail.com", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    LoadData();
                     return;
                 }
                 customer.CName = txtFullName.Text.Trim();
@@ -87,8 +90,7 @@ namespace FinalProject.CustomerManager
                 customer.Phone = txtPhone.Text.Trim();
 
                 CustomerService.UpdateCustomer(customer);
-                MailService.SendEmailVerify(customer.Email, cid);
-                MessageBox.Show("Sent a mail to your post");
+                MessageBox.Show("Update Successfully!");
             }
             catch (Exception ex)
             {

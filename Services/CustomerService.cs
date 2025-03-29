@@ -60,6 +60,10 @@ namespace Services
         {
             repository.Update(customer);
         }
+        public Customer GetCustomerByUsername(string username)
+        {
+            return repositories.GetCustomerByUsername(username);
+        }
 
         public Customer GetByUsername(string username)
         {

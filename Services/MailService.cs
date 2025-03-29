@@ -16,7 +16,7 @@ namespace Services
         private const string FromEmail = "baviapartment88@gmail.com";
         private const string Password = "nong aqji krlu xvue"; // Không nên để mật khẩu trực tiếp trong code
         private const string verifyAccountURL = "http://localhost:6969/VerifyPRN/verify-account";
-        private const string resetPasswordURL = "http://localhost:8080/VerifyPRN/reset-password";
+        private const string resetPasswordURL = "http://localhost:6969/VerifyPRN/reset-password";
         public static string GenerateToken()
         {
             return Guid.NewGuid().ToString();

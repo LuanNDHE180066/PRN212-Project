@@ -56,6 +56,14 @@ namespace FinalProject.Admin
                 
             {
                 MessageBox.Show("Please fill out the below fields", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                loadTypeData();
+                return;
+            }
+            var x = service.getDeviceTypeByName(txtDtName.Text);
+            if (x != null)
+            {
+                MessageBox.Show("Type is exsited!");
+                loadTypeData();
                 return;
             }
             string? Dtname = txtDtName.Text;
